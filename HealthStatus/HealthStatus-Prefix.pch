@@ -1,0 +1,19 @@
+//
+//  HealthStatus-Prefix.pch
+//  HealthStatus
+//
+//  Created by 缪宇青 on 16/1/24.
+//  Copyright © 2016年 缪宇青. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Constant.h"
+#endif
