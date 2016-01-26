@@ -64,9 +64,9 @@
 				0A52E7E51C545F8800E25D61 /* AppDelegate.h */,
 				0A52E7E61C545F8800E25D61 /* AppDelegate.m */,
 				0A52E7FC1C54605D00E25D61 /* VC */,
-				0A52E7FA1C54605D00E25D61 /* Model */,
-				0A52E7FB1C54605D00E25D61 /* Resources */,
-				0A52E7F91C54605D00E25D61 /* Libraries */,
+				915A937E1C576920003211EC /* Model */,
+				915A937D1C57690A003211EC /* Libraries */,
+				915A937F1C576928003211EC /* Resources */,
 				0A52E7E21C545F8800E25D61 /* Supporting Files */,
 			);
 			path = HealthStatus;
@@ -84,27 +84,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0A52E7F91C54605D00E25D61 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		0A52E7FA1C54605D00E25D61 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0A52E7FB1C54605D00E25D61 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		0A52E7FC1C54605D00E25D61 /* VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +92,27 @@
 				0A52E7FF1C54608700E25D61 /* RootViewController.xib */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		915A937D1C57690A003211EC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		915A937E1C576920003211EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		915A937F1C576928003211EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +332,7 @@
 				0A52E7F81C545F8800E25D61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
