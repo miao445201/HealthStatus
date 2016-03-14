@@ -20,11 +20,7 @@
 		915A93931C576A0D003211EC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A938B1C576A0D003211EC /* FMDatabasePool.m */; };
 		915A93941C576A0D003211EC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A938D1C576A0D003211EC /* FMDatabaseQueue.m */; };
 		915A93951C576A0D003211EC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A93901C576A0D003211EC /* FMResultSet.m */; };
-		91AC34CC1C588C8A00D44D24 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AC34CA1C588C8A00D44D24 /* MenuViewController.m */; };
-		91AC34CD1C588C8A00D44D24 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AC34CB1C588C8A00D44D24 /* MenuViewController.xib */; };
-		91AC34D31C588CBE00D44D24 /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AC34D01C588CBE00D44D24 /* ICSDrawerController.m */; };
-		91AC34D41C588CBE00D44D24 /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AC34D21C588CBE00D44D24 /* ICSDropShadowView.m */; };
-		91AC34D81C58A0B000D44D24 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91AC34D71C58A0B000D44D24 /* 01.jpg */; };
+		91AC34DA1C58B16900D44D24 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AC34D91C58B16900D44D24 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,14 +50,7 @@
 		915A938E1C576A0D003211EC /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		915A938F1C576A0D003211EC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		915A93901C576A0D003211EC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		91AC34C91C588C8A00D44D24 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		91AC34CA1C588C8A00D44D24 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		91AC34CB1C588C8A00D44D24 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
-		91AC34CF1C588CBE00D44D24 /* ICSDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDrawerController.h; sourceTree = "<group>"; };
-		91AC34D01C588CBE00D44D24 /* ICSDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDrawerController.m; sourceTree = "<group>"; };
-		91AC34D11C588CBE00D44D24 /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
-		91AC34D21C588CBE00D44D24 /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
-		91AC34D71C58A0B000D44D24 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		91AC34D91C58B16900D44D24 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91AC34DA1C58B16900D44D24 /* HealthKit.framework in Frameworks */,
 				915A93841C57698B003211EC /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +69,7 @@
 		0A52E7D61C545F8800E25D61 = {
 			isa = PBXGroup;
 			children = (
+				91AC34D91C58B16900D44D24 /* HealthKit.framework */,
 				915A93831C57698B003211EC /* libsqlite3.tbd */,
 				0A52E7E11C545F8800E25D61 /* HealthStatus */,
 				0A52E7E01C545F8800E25D61 /* Products */,
@@ -126,9 +117,6 @@
 				0A52E7FD1C54608700E25D61 /* RootViewController.h */,
 				0A52E7FE1C54608700E25D61 /* RootViewController.m */,
 				0A52E7FF1C54608700E25D61 /* RootViewController.xib */,
-				91AC34C91C588C8A00D44D24 /* MenuViewController.h */,
-				91AC34CA1C588C8A00D44D24 /* MenuViewController.m */,
-				91AC34CB1C588C8A00D44D24 /* MenuViewController.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -136,7 +124,6 @@
 		915A937D1C57690A003211EC /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				91AC34CE1C588CBE00D44D24 /* ICSDrawerController */,
 				915A93851C576A0D003211EC /* fmdb */,
 			);
 			path = Libraries;
@@ -154,7 +141,6 @@
 		915A937F1C576928003211EC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				91AC34D71C58A0B000D44D24 /* 01.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -175,17 +161,6 @@
 				915A93901C576A0D003211EC /* FMResultSet.m */,
 			);
 			path = fmdb;
-			sourceTree = "<group>";
-		};
-		91AC34CE1C588CBE00D44D24 /* ICSDrawerController */ = {
-			isa = PBXGroup;
-			children = (
-				91AC34CF1C588CBE00D44D24 /* ICSDrawerController.h */,
-				91AC34D01C588CBE00D44D24 /* ICSDrawerController.m */,
-				91AC34D11C588CBE00D44D24 /* ICSDropShadowView.h */,
-				91AC34D21C588CBE00D44D24 /* ICSDropShadowView.m */,
-			);
-			path = ICSDrawerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,11 +220,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91AC34D81C58A0B000D44D24 /* 01.jpg in Resources */,
 				0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */,
 				0A52E7EF1C545F8800E25D61 /* Assets.xcassets in Resources */,
 				0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */,
-				91AC34CD1C588C8A00D44D24 /* MenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,15 +236,12 @@
 				915A93821C576978003211EC /* HSDBModel.m in Sources */,
 				915A93941C576A0D003211EC /* FMDatabaseQueue.m in Sources */,
 				0A52E7E71C545F8800E25D61 /* AppDelegate.m in Sources */,
-				91AC34D41C588CBE00D44D24 /* ICSDropShadowView.m in Sources */,
 				0A52E7E41C545F8800E25D61 /* main.m in Sources */,
 				915A93911C576A0D003211EC /* FMDatabase.m in Sources */,
 				915A93931C576A0D003211EC /* FMDatabasePool.m in Sources */,
 				915A93951C576A0D003211EC /* FMResultSet.m in Sources */,
 				0A52E8001C54608700E25D61 /* RootViewController.m in Sources */,
 				915A93921C576A0D003211EC /* FMDatabaseAdditions.m in Sources */,
-				91AC34CC1C588C8A00D44D24 /* MenuViewController.m in Sources */,
-				91AC34D31C588CBE00D44D24 /* ICSDrawerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

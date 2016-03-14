@@ -8,8 +8,6 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
-#import "MenuViewController.h"
-#import "ICSDrawerController.h"
 
 @interface AppDelegate ()
 
@@ -20,15 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];//设置窗口
-     //self.window.backgroundColor = [UIColor whiteColor];
+     self.window.backgroundColor = [UIColor whiteColor];
     
-    MenuViewController *menuVC = [[MenuViewController alloc]init];
     RootViewController *rootVC = [[RootViewController alloc] init];
-    ICSDrawerController *drawer = [[ICSDrawerController alloc]initWithLeftViewController:menuVC centerViewController:rootVC];
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mvc];
-    //    nav.navigationBarHidden = YES;//是否隐藏导航栏
-    self.window.rootViewController = drawer;//进入的首个页面
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    nav.navigationBarHidden = YES;//是否隐藏导航栏
+    nav.view.backgroundColor = [UIColor grayColor];
+    nav.tabBarItem.title = @"疾病自查";
+    nav.tabBarItem.image = 
    
+    
+    //a.初始化一个tabBar控制器
+    UITabBarController *tabbar=[[UITabBarController alloc]init];
+    
+    self.window.rootViewController = tabbar;//进入的首个页面
+
+    //设置控制器为Window的根控制器
     [self.window makeKeyAndVisible];//显示
     return YES;
 }
