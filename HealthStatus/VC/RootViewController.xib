@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
             <connections>
+                <outlet property="bodyTableview" destination="8Yt-QW-8iw" id="0Tj-nr-L5m"/>
+                <outlet property="listView" destination="qRm-XQ-CHe" id="gXQ-3h-rFT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,7 +18,61 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="590" y="412"/>
+            <point key="canvasLocation" x="534" y="375"/>
+        </view>
+        <view contentMode="scaleToFill" id="qRm-XQ-CHe">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_ver_1px_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="aqb-cZ-wBw">
+                    <rect key="frame" x="101" y="64" width="1" height="603"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="Pwv-M2-Qw4"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="vLE-lu-2do"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uff-l5-Lrx">
+                    <rect key="frame" x="0.0" y="64" width="100" height="603"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Yt-QW-8iw">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="603"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="EzL-3e-y75"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="N1A-rE-dd6"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="y58-Ii-pAB"/>
+                                <outlet property="delegate" destination="-1" id="1oT-hh-kfb"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="8Yt-QW-8iw" firstAttribute="leading" secondItem="uff-l5-Lrx" secondAttribute="leading" id="7cB-rS-d2Z"/>
+                        <constraint firstItem="8Yt-QW-8iw" firstAttribute="top" secondItem="uff-l5-Lrx" secondAttribute="top" id="Eo0-zA-K6S"/>
+                        <constraint firstAttribute="bottom" secondItem="8Yt-QW-8iw" secondAttribute="bottom" id="fVZ-Dq-l6o"/>
+                        <constraint firstAttribute="trailing" secondItem="8Yt-QW-8iw" secondAttribute="trailing" id="nAd-iv-Rjc"/>
+                        <constraint firstAttribute="width" constant="100" id="sWr-db-gHX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aqb-cZ-wBw" firstAttribute="leading" secondItem="uff-l5-Lrx" secondAttribute="trailing" constant="1" id="4pd-4H-512"/>
+                <constraint firstItem="uff-l5-Lrx" firstAttribute="leading" secondItem="qRm-XQ-CHe" secondAttribute="leading" id="AsH-0Q-LAc"/>
+                <constraint firstAttribute="bottom" secondItem="aqb-cZ-wBw" secondAttribute="bottom" id="GJ6-iX-DuD"/>
+                <constraint firstItem="aqb-cZ-wBw" firstAttribute="top" secondItem="qRm-XQ-CHe" secondAttribute="top" constant="64" id="HDB-qV-Fzu"/>
+                <constraint firstAttribute="bottom" secondItem="aqb-cZ-wBw" secondAttribute="bottom" id="IFU-7x-MT1"/>
+                <constraint firstItem="uff-l5-Lrx" firstAttribute="top" secondItem="qRm-XQ-CHe" secondAttribute="top" constant="64" id="XiK-eS-WCw"/>
+                <constraint firstItem="aqb-cZ-wBw" firstAttribute="top" secondItem="qRm-XQ-CHe" secondAttribute="top" constant="64" id="ZXm-Wm-4GW"/>
+                <constraint firstAttribute="bottom" secondItem="uff-l5-Lrx" secondAttribute="bottom" id="lOE-ap-fWQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="959.5" y="374.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="line_ver_1px_right.png" width="2" height="149"/>
+    </resources>
 </document>

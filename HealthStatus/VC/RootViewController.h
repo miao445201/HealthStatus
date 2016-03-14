@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import "BodyTableViewCell.h"
 
-@interface RootViewController : UIViewController
+@interface RootViewController :BaseViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
