@@ -25,6 +25,8 @@
 		91657CF51C96EF35000CCE22 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91657CF41C96EF35000CCE22 /* BaseViewController.m */; };
 		91657CFA1C96FE63000CCE22 /* BodyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91657CF81C96FE63000CCE22 /* BodyTableViewCell.m */; };
 		91657CFB1C96FE63000CCE22 /* BodyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91657CF91C96FE63000CCE22 /* BodyTableViewCell.xib */; };
+		917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */; };
+		917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */; };
 		91AC34DA1C58B16900D44D24 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AC34D91C58B16900D44D24 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,9 @@
 		91657CF71C96FE63000CCE22 /* BodyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyTableViewCell.h; sourceTree = "<group>"; };
 		91657CF81C96FE63000CCE22 /* BodyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyTableViewCell.m; sourceTree = "<group>"; };
 		91657CF91C96FE63000CCE22 /* BodyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BodyTableViewCell.xib; sourceTree = "<group>"; };
+		917F341C1C97EDB000D510B8 /* SymptomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomTableViewCell.h; sourceTree = "<group>"; };
+		917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomTableViewCell.m; sourceTree = "<group>"; };
+		917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SymptomTableViewCell.xib; sourceTree = "<group>"; };
 		91AC34D91C58B16900D44D24 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -186,6 +191,9 @@
 				91657CF71C96FE63000CCE22 /* BodyTableViewCell.h */,
 				91657CF81C96FE63000CCE22 /* BodyTableViewCell.m */,
 				91657CF91C96FE63000CCE22 /* BodyTableViewCell.xib */,
+				917F341C1C97EDB000D510B8 /* SymptomTableViewCell.h */,
+				917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */,
+				917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */,
 			);
 			name = SymCheckList;
 			sourceTree = "<group>";
@@ -247,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */,
 				914F97801C97027B00742127 /* line_hon_1px_up.png in Resources */,
 				0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */,
 				914F97821C97048800742127 /* line_ver_1px_right.png in Resources */,
@@ -268,6 +277,7 @@
 				91657CF51C96EF35000CCE22 /* BaseViewController.m in Sources */,
 				915A93941C576A0D003211EC /* FMDatabaseQueue.m in Sources */,
 				0A52E7E71C545F8800E25D61 /* AppDelegate.m in Sources */,
+				917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */,
 				0A52E7E41C545F8800E25D61 /* main.m in Sources */,
 				915A93911C576A0D003211EC /* FMDatabase.m in Sources */,
 				915A93931C576A0D003211EC /* FMDatabasePool.m in Sources */,

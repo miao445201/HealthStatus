@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 #import "BodyTableViewCell.h"
+#import "SymptomTableViewCell.h"
 
 @interface RootViewController :BaseViewController<UITableViewDataSource,UITableViewDelegate>
 

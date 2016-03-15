@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="bodyTableview" destination="8Yt-QW-8iw" id="0Tj-nr-L5m"/>
                 <outlet property="listView" destination="qRm-XQ-CHe" id="gXQ-3h-rFT"/>
+                <outlet property="symptomTableview" destination="AgP-Ae-EoG" id="vr5-ts-F9l"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -56,9 +57,20 @@
                         <constraint firstAttribute="width" constant="100" id="sWr-db-gHX"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AgP-Ae-EoG">
+                    <rect key="frame" x="102" y="64" width="273" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PGb-Ey-pbM"/>
+                        <outlet property="delegate" destination="-1" id="aRq-Pl-T7V"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="AgP-Ae-EoG" firstAttribute="top" secondItem="qRm-XQ-CHe" secondAttribute="top" constant="64" id="3C6-QN-Ufv"/>
+                <constraint firstAttribute="bottom" secondItem="AgP-Ae-EoG" secondAttribute="bottom" id="3tI-8I-r3I"/>
                 <constraint firstItem="aqb-cZ-wBw" firstAttribute="leading" secondItem="uff-l5-Lrx" secondAttribute="trailing" constant="1" id="4pd-4H-512"/>
                 <constraint firstItem="uff-l5-Lrx" firstAttribute="leading" secondItem="qRm-XQ-CHe" secondAttribute="leading" id="AsH-0Q-LAc"/>
                 <constraint firstAttribute="bottom" secondItem="aqb-cZ-wBw" secondAttribute="bottom" id="GJ6-iX-DuD"/>
@@ -66,7 +78,9 @@
                 <constraint firstAttribute="bottom" secondItem="aqb-cZ-wBw" secondAttribute="bottom" id="IFU-7x-MT1"/>
                 <constraint firstItem="uff-l5-Lrx" firstAttribute="top" secondItem="qRm-XQ-CHe" secondAttribute="top" constant="64" id="XiK-eS-WCw"/>
                 <constraint firstItem="aqb-cZ-wBw" firstAttribute="top" secondItem="qRm-XQ-CHe" secondAttribute="top" constant="64" id="ZXm-Wm-4GW"/>
+                <constraint firstItem="AgP-Ae-EoG" firstAttribute="leading" secondItem="aqb-cZ-wBw" secondAttribute="trailing" id="ePg-J7-xt5"/>
                 <constraint firstAttribute="bottom" secondItem="uff-l5-Lrx" secondAttribute="bottom" id="lOE-ap-fWQ"/>
+                <constraint firstAttribute="trailing" secondItem="AgP-Ae-EoG" secondAttribute="trailing" id="lZE-66-Hw4"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="959.5" y="374.5"/>

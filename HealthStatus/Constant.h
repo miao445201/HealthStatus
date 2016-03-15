@@ -37,7 +37,7 @@
 #define kUserIconCacheDir   @"UserIconCacheDir"
 #define kFoodIconCacheDir   @"FoodIconCacheDir"
 #define kUsersCacheDataDir  @"UsersCacheDataDir"
-
+#define kSelectSymptomNotification       @"SelectSymptomNotification"
 
 //Notification Keys
 
