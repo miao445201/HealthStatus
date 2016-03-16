@@ -31,8 +31,6 @@
     [self setRightNaviItemWithTitle:@"列表查看" imageName:nil];
     self.bodyArray = [[NSArray alloc]initWithObjects:@"头",@"脑",@"眼",@"咽喉",@"鼻",@"耳",@"口",@"面部",@"颈",@"胸",@"腹",@"腰",@"臀",@"上肢",@"手部",@"肩部",@"下肢",@"大腿",@"膝部",@"小腿",@"足部",@"骨",@"男性生殖",@"盆腔",@"全身",@"肌肉",@"淋巴",@"血液血管",@"皮肤",@"心理",@"背部", nil];
     self.selectSymptomArray = [[NSMutableArray alloc]initWithObjects:@"咳嗽",@"头痛",@"头晕", nil];
-//    self.bodyTableview.delegate = self;
-//    self.bodyTableview.dataSource = self;
     self.selectCell = nil;
     self.selectBodyString = nil;
 }
@@ -64,7 +62,6 @@
         static NSString *CellIdentifier = @"BodyTableViewCell";
         static NSString *selectCellId = @"SelectBodyTableViewCell";
         //初始化cell并指定其类型，也可自定义cell
-        NSLog(@"%@",self.bodyArray[indexPath.row]);
         BOOL select = [self.bodyArray[indexPath.row] isEqualToString:self.selectBodyString];
         NSString *selectId;
         if (select) {
@@ -79,9 +76,6 @@
         }
         cell.bodyLabel.text = self.bodyArray[indexPath.row];
         
-        if (select) {
-            cell.backgroundColor = [UIColor whiteColor];
-        }
         return cell;
 
     }
@@ -116,6 +110,8 @@
     }
     if (tableView == self.symptomTableview) {
         //进入下一页面
+        SecondarySymptomViewController *secondSymVC = [[SecondarySymptomViewController alloc]init];
+        [self.navigationController pushViewController:secondSymVC animated:YES];
     }
 }
 

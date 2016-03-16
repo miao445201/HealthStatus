@@ -89,7 +89,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setLeftNaviItemWithTitle:nil imageName:@"icon_header_back.png"];
-    self.navigationController.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont italicSystemFontOfSize:20]};
+    self.navigationController.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont italicSystemFontOfSize:18]};
 
 }
 

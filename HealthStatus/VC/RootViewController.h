@@ -10,7 +10,9 @@
 #import "BaseViewController.h"
 #import "BodyTableViewCell.h"
 #import "SymptomTableViewCell.h"
+#import "SecondarySymptomViewController.h"
+#import "BaseMenuViewController.h"
 
-@interface RootViewController :BaseViewController<UITableViewDataSource,UITableViewDelegate>
+@interface RootViewController :BaseMenuViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

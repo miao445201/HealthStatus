@@ -28,6 +28,15 @@
 		917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */; };
 		917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */; };
 		91AC34DA1C58B16900D44D24 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AC34D91C58B16900D44D24 /* HealthKit.framework */; };
+		91E33DBF1C994BB700FE46DA /* SecondarySymptomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E33DBD1C994BB700FE46DA /* SecondarySymptomViewController.m */; };
+		91E33DC01C994BB700FE46DA /* SecondarySymptomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DBE1C994BB700FE46DA /* SecondarySymptomViewController.xib */; };
+		91E33DC31C994E8000FE46DA /* icon_header_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DC11C994E8000FE46DA /* icon_header_back@2x.png */; };
+		91E33DC41C994E8000FE46DA /* icon_header_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DC21C994E8000FE46DA /* icon_header_back@3x.png */; };
+		91E33DC71C994F7500FE46DA /* BaseMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E33DC61C994F7500FE46DA /* BaseMenuViewController.m */; };
+		91E33DCB1C9959CE00FE46DA /* SecondarySymptomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E33DC91C9959CE00FE46DA /* SecondarySymptomTableViewCell.m */; };
+		91E33DCC1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DCA1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib */; };
+		91E33DCE1C995DDC00FE46DA /* Circle_32px.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DCD1C995DDC00FE46DA /* Circle_32px.png */; };
+		91E33DD01C995EAE00FE46DA /* Button_circle_checked_32px.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DCF1C995EAE00FE46DA /* Button_circle_checked_32px.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +77,18 @@
 		917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomTableViewCell.m; sourceTree = "<group>"; };
 		917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SymptomTableViewCell.xib; sourceTree = "<group>"; };
 		91AC34D91C58B16900D44D24 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		91E33DBC1C994BB700FE46DA /* SecondarySymptomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondarySymptomViewController.h; sourceTree = "<group>"; };
+		91E33DBD1C994BB700FE46DA /* SecondarySymptomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondarySymptomViewController.m; sourceTree = "<group>"; };
+		91E33DBE1C994BB700FE46DA /* SecondarySymptomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondarySymptomViewController.xib; sourceTree = "<group>"; };
+		91E33DC11C994E8000FE46DA /* icon_header_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_header_back@2x.png"; sourceTree = "<group>"; };
+		91E33DC21C994E8000FE46DA /* icon_header_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_header_back@3x.png"; sourceTree = "<group>"; };
+		91E33DC51C994F7500FE46DA /* BaseMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMenuViewController.h; sourceTree = "<group>"; };
+		91E33DC61C994F7500FE46DA /* BaseMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMenuViewController.m; sourceTree = "<group>"; };
+		91E33DC81C9959CE00FE46DA /* SecondarySymptomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondarySymptomTableViewCell.h; sourceTree = "<group>"; };
+		91E33DC91C9959CE00FE46DA /* SecondarySymptomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondarySymptomTableViewCell.m; sourceTree = "<group>"; };
+		91E33DCA1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondarySymptomTableViewCell.xib; sourceTree = "<group>"; };
+		91E33DCD1C995DDC00FE46DA /* Circle_32px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle_32px.png; sourceTree = "<group>"; };
+		91E33DCF1C995EAE00FE46DA /* Button_circle_checked_32px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_circle_checked_32px.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +152,8 @@
 		0A52E7FC1C54605D00E25D61 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				91E33DC51C994F7500FE46DA /* BaseMenuViewController.h */,
+				91E33DC61C994F7500FE46DA /* BaseMenuViewController.m */,
 				91657CF31C96EF35000CCE22 /* BaseViewController.h */,
 				91657CF41C96EF35000CCE22 /* BaseViewController.m */,
 				0A52E7FD1C54608700E25D61 /* RootViewController.h */,
@@ -161,6 +184,10 @@
 		915A937F1C576928003211EC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				91E33DCF1C995EAE00FE46DA /* Button_circle_checked_32px.png */,
+				91E33DCD1C995DDC00FE46DA /* Circle_32px.png */,
+				91E33DC11C994E8000FE46DA /* icon_header_back@2x.png */,
+				91E33DC21C994E8000FE46DA /* icon_header_back@3x.png */,
 				914F97811C97048800742127 /* line_ver_1px_right.png */,
 				914F977F1C97027B00742127 /* line_hon_1px_up.png */,
 			);
@@ -194,6 +221,12 @@
 				917F341C1C97EDB000D510B8 /* SymptomTableViewCell.h */,
 				917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */,
 				917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */,
+				91E33DBC1C994BB700FE46DA /* SecondarySymptomViewController.h */,
+				91E33DBD1C994BB700FE46DA /* SecondarySymptomViewController.m */,
+				91E33DBE1C994BB700FE46DA /* SecondarySymptomViewController.xib */,
+				91E33DC81C9959CE00FE46DA /* SecondarySymptomTableViewCell.h */,
+				91E33DC91C9959CE00FE46DA /* SecondarySymptomTableViewCell.m */,
+				91E33DCA1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib */,
 			);
 			name = SymCheckList;
 			sourceTree = "<group>";
@@ -255,13 +288,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E33DCE1C995DDC00FE46DA /* Circle_32px.png in Resources */,
 				917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */,
+				91E33DCC1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib in Resources */,
 				914F97801C97027B00742127 /* line_hon_1px_up.png in Resources */,
+				91E33DC31C994E8000FE46DA /* icon_header_back@2x.png in Resources */,
 				0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */,
 				914F97821C97048800742127 /* line_ver_1px_right.png in Resources */,
 				0A52E7EF1C545F8800E25D61 /* Assets.xcassets in Resources */,
+				91E33DD01C995EAE00FE46DA /* Button_circle_checked_32px.png in Resources */,
 				0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */,
 				91657CFB1C96FE63000CCE22 /* BodyTableViewCell.xib in Resources */,
+				91E33DC41C994E8000FE46DA /* icon_header_back@3x.png in Resources */,
+				91E33DC01C994BB700FE46DA /* SecondarySymptomViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +315,11 @@
 				915A93821C576978003211EC /* HSDBModel.m in Sources */,
 				91657CF51C96EF35000CCE22 /* BaseViewController.m in Sources */,
 				915A93941C576A0D003211EC /* FMDatabaseQueue.m in Sources */,
+				91E33DC71C994F7500FE46DA /* BaseMenuViewController.m in Sources */,
 				0A52E7E71C545F8800E25D61 /* AppDelegate.m in Sources */,
+				91E33DBF1C994BB700FE46DA /* SecondarySymptomViewController.m in Sources */,
 				917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */,
+				91E33DCB1C9959CE00FE46DA /* SecondarySymptomTableViewCell.m in Sources */,
 				0A52E7E41C545F8800E25D61 /* main.m in Sources */,
 				915A93911C576A0D003211EC /* FMDatabase.m in Sources */,
 				915A93931C576A0D003211EC /* FMDatabasePool.m in Sources */,
