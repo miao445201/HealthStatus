@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FDDE7998-230A-44F8-8089-4A9EF4779ED2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HealthStatus</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7F42C927489836DFE79682322548C9FD1B7D7D80</key>
+		<string>https://github.com/miao445201/HealthStatus.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HealthStatus.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7F42C927489836DFE79682322548C9FD1B7D7D80</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/miao445201/HealthStatus.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7F42C927489836DFE79682322548C9FD1B7D7D80</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7F42C927489836DFE79682322548C9FD1B7D7D80</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HealthStatus</string>
+		</dict>
+	</array>
+</dict>
+</plist>

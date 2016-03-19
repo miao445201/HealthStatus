@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface SecondarySymptomViewController : BaseViewController
+@interface SecondarySymptomViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

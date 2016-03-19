@@ -98,14 +98,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (tableView == self.bodyTableview) {
-        BodyTableViewCell *cell = (BodyTableViewCell *)[self.bodyTableview cellForRowAtIndexPath:indexPath];
-        self.selectBodyString = self.bodyArray[indexPath.row];
-        if (self.selectCell) {
-            self.selectCell.backgroundColor = [UIColor groupTableViewBackgroundColor];
-        }
-        self.selectCell = cell;
-        cell.backgroundColor = [UIColor whiteColor];
-        NSString *bodyString = self.bodyArray[indexPath.row];
+//        BodyTableViewCell *cell = (BodyTableViewCell *)[self.bodyTableview cellForRowAtIndexPath:indexPath];
+//        self.selectBodyString = self.bodyArray[indexPath.row];
+//        if (self.selectCell) {
+//            self.selectCell.backgroundColor = [UIColor groupTableViewBackgroundColor];
+//        }
+//        self.selectCell = cell;
+//        cell.backgroundColor = [UIColor whiteColor];
+//        NSString *bodyString = self.bodyArray[indexPath.row];
         //数据请求操作，并旋转小菊花
     }
     if (tableView == self.symptomTableview) {

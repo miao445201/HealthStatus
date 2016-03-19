@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondarySymptomTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *SecondSymLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *statusImageView;
+
+- (void)cellClicked;
 
 @end

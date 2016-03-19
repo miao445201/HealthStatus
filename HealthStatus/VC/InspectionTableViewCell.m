@@ -1,17 +1,17 @@
 //
-//  SecondarySymptomTableViewCell.m
+//  InspectionTableViewCell.m
 //  HealthStatus
 //
-//  Created by fitfun on 16/3/16.
+//  Created by fitfun on 16/3/19.
 //  Copyright © 2016年 缪宇青. All rights reserved.
 //
 
-#import "SecondarySymptomTableViewCell.h"
-
-@implementation SecondarySymptomTableViewCell
+#import "InspectionTableViewCell.h"
+@implementation InspectionTableViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    CGAffineTransform transform = CGAffineTransformMakeScale(1.0f, 6.0f);
+    self.diseaseProgressView.transform = transform;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -20,7 +20,4 @@
     // Configure the view for the selected state
 }
 
--(void)cellClicked {
-    
-}
 @end
