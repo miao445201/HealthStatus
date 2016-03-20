@@ -24,6 +24,8 @@
 #define kMainProjColor      [UIColor colorWithRed:240.f/255 green:97.f/255 blue:15.f/255 alpha:1.0f]
 #define kMainBlackColor     [UIColor colorWithRed:30.f/255 green:30.f/255 blue:30.f/255 alpha:1.0f]
 #define kLightTextColor     [UIColor colorWithRed:155.f/255 green:155.f/255 blue:155.f/255 alpha:1.0f]
+#define kTableViewBarColor  [UIColor colorWithRed:245.f/255 green:245.f/255 blue:245.f/255 alpha:1.0f]
+#define kWhiteColor         [UIColor whiteColor]
 #define DOCUMENTS_FOLDER    [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/"]
 #define kCommonParamsDict   [NSMutableDictionary dictionaryWithObjectsAndKeys:nil];
 #define kDeviceTokenKey     @"DeviceTokenKey"

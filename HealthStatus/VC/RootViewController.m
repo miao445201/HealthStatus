@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *symptomTableview;
 @property (strong,nonatomic) NSArray *bodyArray;
 @property (strong,nonatomic) NSMutableArray *selectSymptomArray;
-@property (strong,nonatomic) BodyTableViewCell *selectCell;
 @property (strong, nonatomic) NSString *selectBodyString;
 @end
 
@@ -31,7 +30,6 @@
     [self setRightNaviItemWithTitle:@"列表查看" imageName:nil];
     self.bodyArray = [[NSArray alloc]initWithObjects:@"头",@"脑",@"眼",@"咽喉",@"鼻",@"耳",@"口",@"面部",@"颈",@"胸",@"腹",@"腰",@"臀",@"上肢",@"手部",@"肩部",@"下肢",@"大腿",@"膝部",@"小腿",@"足部",@"骨",@"男性生殖",@"盆腔",@"全身",@"肌肉",@"淋巴",@"血液血管",@"皮肤",@"心理",@"背部", nil];
     self.selectSymptomArray = [[NSMutableArray alloc]initWithObjects:@"咳嗽",@"头痛",@"头晕", nil];
-    self.selectCell = nil;
     self.selectBodyString = nil;
 }
 
@@ -59,53 +57,40 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == self.bodyTableview) {
-        static NSString *CellIdentifier = @"BodyTableViewCell";
+        static NSString *cellId = @"BodyTableViewCell";
         static NSString *selectCellId = @"SelectBodyTableViewCell";
-        //初始化cell并指定其类型，也可自定义cell
-        BOOL select = [self.bodyArray[indexPath.row] isEqualToString:self.selectBodyString];
-        NSString *selectId;
-        if (select) {
-            selectId = selectCellId;
-        }
-        else {
-            selectId = CellIdentifier;
-        }
+
+        //判断cell是否是点击状态
+        BOOL select = [self StateForCellSelect:indexPath];
+        NSString *selectId = select?selectCellId:cellId;
+
         BodyTableViewCell *cell = (BodyTableViewCell*)[tableView  dequeueReusableCellWithIdentifier:selectId];
         if (cell == nil) {
             cell = [[[NSBundle mainBundle] loadNibNamed:@"BodyTableViewCell" owner:self options:nil] lastObject];
         }
-        cell.bodyLabel.text = self.bodyArray[indexPath.row];
         
+        cell.bodyLabel.text = self.bodyArray[indexPath.row];
+        cell.backgroundColor = select?kWhiteColor:kTableViewBarColor;
         return cell;
-
     }
     else {
         //初始化cell并指定其类型，也可自定义cell
         static NSString *CellIdentifier = @"SymptomTableViewCell";
-
-        //初始化cell并指定其类型，也可自定义cell
-        
         SymptomTableViewCell *cell = (SymptomTableViewCell*)[tableView  dequeueReusableCellWithIdentifier:CellIdentifier];
         if (cell == nil) {
             cell = [[[NSBundle mainBundle] loadNibNamed:@"SymptomTableViewCell" owner:self options:nil] lastObject];
         }
         cell.titleLabel.text = self.selectSymptomArray[indexPath.row];
-        
         return cell;
-
     }
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (tableView == self.bodyTableview) {
-//        BodyTableViewCell *cell = (BodyTableViewCell *)[self.bodyTableview cellForRowAtIndexPath:indexPath];
-//        self.selectBodyString = self.bodyArray[indexPath.row];
-//        if (self.selectCell) {
-//            self.selectCell.backgroundColor = [UIColor groupTableViewBackgroundColor];
-//        }
-//        self.selectCell = cell;
-//        cell.backgroundColor = [UIColor whiteColor];
-//        NSString *bodyString = self.bodyArray[indexPath.row];
+        BodyTableViewCell *cell = (BodyTableViewCell *)[self.bodyTableview cellForRowAtIndexPath:indexPath];
+        self.selectBodyString = self.bodyArray[indexPath.row];
+        cell.backgroundColor = kWhiteColor;
+        [self.bodyTableview reloadData];
         //数据请求操作，并旋转小菊花
     }
     if (tableView == self.symptomTableview) {
@@ -115,4 +100,7 @@
     }
 }
 
+- (BOOL)StateForCellSelect:(NSIndexPath *)indexPath {
+    return [self.bodyArray[indexPath.row] isEqualToString:self.selectBodyString];
+}
 @end
