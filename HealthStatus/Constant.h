@@ -27,6 +27,11 @@
 #define kTableViewBarColor  [UIColor colorWithRed:245.f/255 green:245.f/255 blue:245.f/255 alpha:1.0f]
 #define kWhiteColor         [UIColor whiteColor]
 #define DOCUMENTS_FOLDER    [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/"]
+#define SymSelectImage      [UIImage imageNamed:@"full_choice.png"]
+#define SymEmptyImage       [UIImage imageNamed:@"Circle_32px.png"]
+#define ForwardImage        [UIImage imageNamed:@"body.png"]
+#define BackImage           [UIImage imageNamed:@"back.png"]
+
 #define kCommonParamsDict   [NSMutableDictionary dictionaryWithObjectsAndKeys:nil];
 #define kDeviceTokenKey     @"DeviceTokenKey"
 

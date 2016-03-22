@@ -9,5 +9,6 @@
 #import "BaseViewController.h"
 
 @interface SecondarySymptomViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
-
+@property (nonatomic,strong)   NSMutableArray *symptomArray;
+@property (nonatomic,strong)   NSString *mainSymptom;
 @end

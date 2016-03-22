@@ -10,7 +10,7 @@
 @implementation InspectionTableViewCell
 
 - (void)awakeFromNib {
-    CGAffineTransform transform = CGAffineTransformMakeScale(1.0f, 6.0f);
+    CGAffineTransform transform = CGAffineTransformMakeScale(1.0f, 5.0f);
     self.diseaseProgressView.transform = transform;
 }
 

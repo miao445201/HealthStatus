@@ -21,11 +21,11 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="嗅觉丧失" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAW-7c-TCu">
-                        <rect key="frame" x="15" y="9" width="115" height="24"/>
+                        <rect key="frame" x="15" y="9" width="164" height="24"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="24" id="Yjy-Io-bQ5"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="a1x-wH-exo"/>
-                            <constraint firstAttribute="width" constant="115" id="k73-AP-ogd"/>
+                            <constraint firstAttribute="width" constant="164" id="k73-AP-ogd"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>

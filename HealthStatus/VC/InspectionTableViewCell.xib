@@ -17,28 +17,22 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_hon_1px_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="pcB-Fg-YEJ">
                         <rect key="frame" x="15" y="44" width="305" height="1"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="1" id="aP8-3o-xsj"/>
+                            <constraint firstAttribute="height" constant="1" id="x1Q-FW-tj0"/>
                         </constraints>
                     </imageView>
                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-Oe-XYx">
                         <rect key="frame" x="200" y="22" width="108" height="3"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="4" id="3Ag-EP-XZr"/>
-                            <constraint firstAttribute="width" constant="108" id="E5s-Qd-om0"/>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2" id="dUV-sx-v17"/>
+                            <constraint firstAttribute="width" constant="108" id="HSW-aT-quT"/>
                         </constraints>
                         <color key="progressTintColor" red="0.11764705882352941" green="0.61960784313725492" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="trackTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="3Ag-EP-XZr"/>
-                            </mask>
-                        </variation>
                     </progressView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冠心病" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkr-cS-vtA">
                         <rect key="frame" x="15" y="12" width="140" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="140" id="QkD-BM-Eav"/>
+                            <constraint firstAttribute="width" constant="140" id="r6v-v1-DXd"/>
+                            <constraint firstAttribute="height" constant="21" id="thJ-hd-vqd"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,26 +40,16 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="pRn-Oe-XYx" secondAttribute="trailing" constant="8" id="1BJ-bh-MY8"/>
-                    <constraint firstAttribute="trailing" secondItem="pRn-Oe-XYx" secondAttribute="trailing" constant="12" id="5Up-vk-VKr"/>
-                    <constraint firstItem="pkr-cS-vtA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="JfT-9z-gsw"/>
-                    <constraint firstAttribute="trailing" secondItem="pcB-Fg-YEJ" secondAttribute="trailing" id="KP3-gd-n3x"/>
-                    <constraint firstAttribute="trailing" secondItem="pRn-Oe-XYx" secondAttribute="trailing" constant="8" id="OAX-Gd-QpU"/>
-                    <constraint firstItem="pcB-Fg-YEJ" firstAttribute="top" secondItem="pkr-cS-vtA" secondAttribute="bottom" constant="11" id="SEp-3B-zZM"/>
-                    <constraint firstAttribute="bottom" secondItem="pcB-Fg-YEJ" secondAttribute="bottom" id="a9N-SG-keX"/>
-                    <constraint firstItem="pRn-Oe-XYx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="age-HY-8jc"/>
-                    <constraint firstItem="pkr-cS-vtA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="iLP-hs-bTu"/>
-                    <constraint firstItem="pcB-Fg-YEJ" firstAttribute="top" secondItem="pRn-Oe-XYx" secondAttribute="bottom" constant="20" id="jOu-zA-Jv2"/>
-                    <constraint firstItem="pcB-Fg-YEJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jcF-GS-jkX"/>
-                    <constraint firstItem="pcB-Fg-YEJ" firstAttribute="top" secondItem="pRn-Oe-XYx" secondAttribute="bottom" constant="20" id="knK-2Y-uoi"/>
-                    <constraint firstItem="pRn-Oe-XYx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="wvq-dn-LJ7"/>
+                    <constraint firstItem="pcB-Fg-YEJ" firstAttribute="top" secondItem="pkr-cS-vtA" secondAttribute="bottom" constant="11" id="47S-Ne-m9n"/>
+                    <constraint firstItem="pcB-Fg-YEJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Daz-n5-s8w"/>
+                    <constraint firstItem="pkr-cS-vtA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="EKM-ls-TCc"/>
+                    <constraint firstAttribute="bottom" secondItem="pcB-Fg-YEJ" secondAttribute="bottom" constant="-2" id="Mz9-Nt-bII"/>
+                    <constraint firstItem="pcB-Fg-YEJ" firstAttribute="top" secondItem="pRn-Oe-XYx" secondAttribute="bottom" constant="20" id="NXw-2U-dK1"/>
+                    <constraint firstAttribute="trailing" secondItem="pcB-Fg-YEJ" secondAttribute="trailing" id="Tp2-6v-3Iy"/>
+                    <constraint firstAttribute="trailing" secondItem="pRn-Oe-XYx" secondAttribute="trailing" constant="12" id="aDI-P5-Zqd"/>
+                    <constraint firstItem="pkr-cS-vtA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="h5B-VJ-thz"/>
+                    <constraint firstItem="pRn-Oe-XYx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="mB9-V1-QMC"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="1BJ-bh-MY8"/>
-                        <exclude reference="OAX-Gd-QpU"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="diseaseProgressView" destination="pRn-Oe-XYx" id="Mcb-LH-pQL"/>

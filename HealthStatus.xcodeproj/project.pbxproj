@@ -38,10 +38,18 @@
 		917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */; };
 		917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */; };
 		91AC34DA1C58B16900D44D24 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AC34D91C58B16900D44D24 /* HealthKit.framework */; };
+		91B3D3591CA11A8500D49623 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B3D3571CA11A8500D49623 /* back.png */; };
+		91C32ABC1CA1450E00028B31 /* HomeSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C32ABA1CA1450E00028B31 /* HomeSubViewController.m */; };
+		91C32ABD1CA1450E00028B31 /* HomeSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C32ABB1CA1450E00028B31 /* HomeSubViewController.xib */; };
+		91CCFB861C9F93480043CCEC /* DiseaseDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCFB851C9F93480043CCEC /* DiseaseDetailModel.m */; };
+		91CCFB891C9F95690043CCEC /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCFB881C9F95690043CCEC /* BaseModel.m */; };
+		91CCFB8C1C9F96C80043CCEC /* DiseaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCFB8B1C9F96C80043CCEC /* DiseaseModel.m */; };
+		91CCFB8E1C9FA3BD0043CCEC /* icon_header_back_light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91CCFB8D1C9FA3BD0043CCEC /* icon_header_back_light@2x.png */; };
+		91CCFB911C9FA4350043CCEC /* full_choice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91CCFB8F1C9FA4350043CCEC /* full_choice@2x.png */; };
+		91CCFB921C9FA4350043CCEC /* full_choice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91CCFB901C9FA4350043CCEC /* full_choice@3x.png */; };
+		91CCFB961C9FD2E30043CCEC /* body.png in Resources */ = {isa = PBXBuildFile; fileRef = 91CCFB941C9FD2E30043CCEC /* body.png */; };
 		91E33DBF1C994BB700FE46DA /* SecondarySymptomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E33DBD1C994BB700FE46DA /* SecondarySymptomViewController.m */; };
 		91E33DC01C994BB700FE46DA /* SecondarySymptomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DBE1C994BB700FE46DA /* SecondarySymptomViewController.xib */; };
-		91E33DC31C994E8000FE46DA /* icon_header_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DC11C994E8000FE46DA /* icon_header_back@2x.png */; };
-		91E33DC41C994E8000FE46DA /* icon_header_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DC21C994E8000FE46DA /* icon_header_back@3x.png */; };
 		91E33DC71C994F7500FE46DA /* BaseMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E33DC61C994F7500FE46DA /* BaseMenuViewController.m */; };
 		91E33DCB1C9959CE00FE46DA /* SecondarySymptomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E33DC91C9959CE00FE46DA /* SecondarySymptomTableViewCell.m */; };
 		91E33DCC1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DCA1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib */; };
@@ -100,11 +108,23 @@
 		917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomTableViewCell.m; sourceTree = "<group>"; };
 		917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SymptomTableViewCell.xib; sourceTree = "<group>"; };
 		91AC34D91C58B16900D44D24 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		91B3D3571CA11A8500D49623 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		91C32AB91CA1450E00028B31 /* HomeSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeSubViewController.h; sourceTree = "<group>"; };
+		91C32ABA1CA1450E00028B31 /* HomeSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSubViewController.m; sourceTree = "<group>"; };
+		91C32ABB1CA1450E00028B31 /* HomeSubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSubViewController.xib; sourceTree = "<group>"; };
+		91CCFB841C9F93480043CCEC /* DiseaseDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseDetailModel.h; sourceTree = "<group>"; };
+		91CCFB851C9F93480043CCEC /* DiseaseDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseDetailModel.m; sourceTree = "<group>"; };
+		91CCFB871C9F95690043CCEC /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		91CCFB881C9F95690043CCEC /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		91CCFB8A1C9F96C80043CCEC /* DiseaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseModel.h; sourceTree = "<group>"; };
+		91CCFB8B1C9F96C80043CCEC /* DiseaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseModel.m; sourceTree = "<group>"; };
+		91CCFB8D1C9FA3BD0043CCEC /* icon_header_back_light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_header_back_light@2x.png"; sourceTree = "<group>"; };
+		91CCFB8F1C9FA4350043CCEC /* full_choice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full_choice@2x.png"; sourceTree = "<group>"; };
+		91CCFB901C9FA4350043CCEC /* full_choice@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full_choice@3x.png"; sourceTree = "<group>"; };
+		91CCFB941C9FD2E30043CCEC /* body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body.png; sourceTree = "<group>"; };
 		91E33DBC1C994BB700FE46DA /* SecondarySymptomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondarySymptomViewController.h; sourceTree = "<group>"; };
 		91E33DBD1C994BB700FE46DA /* SecondarySymptomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondarySymptomViewController.m; sourceTree = "<group>"; };
 		91E33DBE1C994BB700FE46DA /* SecondarySymptomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondarySymptomViewController.xib; sourceTree = "<group>"; };
-		91E33DC11C994E8000FE46DA /* icon_header_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_header_back@2x.png"; sourceTree = "<group>"; };
-		91E33DC21C994E8000FE46DA /* icon_header_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_header_back@3x.png"; sourceTree = "<group>"; };
 		91E33DC51C994F7500FE46DA /* BaseMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMenuViewController.h; sourceTree = "<group>"; };
 		91E33DC61C994F7500FE46DA /* BaseMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMenuViewController.m; sourceTree = "<group>"; };
 		91E33DC81C9959CE00FE46DA /* SecondarySymptomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondarySymptomTableViewCell.h; sourceTree = "<group>"; };
@@ -181,12 +201,31 @@
 				91E33DC61C994F7500FE46DA /* BaseMenuViewController.m */,
 				91657CF31C96EF35000CCE22 /* BaseViewController.h */,
 				91657CF41C96EF35000CCE22 /* BaseViewController.m */,
-				0A52E7FD1C54608700E25D61 /* RootViewController.h */,
-				0A52E7FE1C54608700E25D61 /* RootViewController.m */,
-				0A52E7FF1C54608700E25D61 /* RootViewController.xib */,
+				91C32AB91CA1450E00028B31 /* HomeSubViewController.h */,
+				91C32ABA1CA1450E00028B31 /* HomeSubViewController.m */,
+				91C32ABB1CA1450E00028B31 /* HomeSubViewController.xib */,
 				91657CF61C96FE0E000CCE22 /* SymCheckList */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		913FA4EA1C9EECB200B11744 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				91657CF71C96FE63000CCE22 /* BodyTableViewCell.h */,
+				91657CF81C96FE63000CCE22 /* BodyTableViewCell.m */,
+				91657CF91C96FE63000CCE22 /* BodyTableViewCell.xib */,
+				917F341C1C97EDB000D510B8 /* SymptomTableViewCell.h */,
+				917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */,
+				917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */,
+				91E33DC81C9959CE00FE46DA /* SecondarySymptomTableViewCell.h */,
+				91E33DC91C9959CE00FE46DA /* SecondarySymptomTableViewCell.m */,
+				91E33DCA1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib */,
+				9116D2DD1C9D24A600D80A50 /* InspectionTableViewCell.h */,
+				9116D2DE1C9D24A600D80A50 /* InspectionTableViewCell.m */,
+				9116D2DF1C9D24A600D80A50 /* InspectionTableViewCell.xib */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 		915A937D1C57690A003211EC /* Libraries */ = {
@@ -200,8 +239,14 @@
 		915A937E1C576920003211EC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				91CCFB871C9F95690043CCEC /* BaseModel.h */,
+				91CCFB881C9F95690043CCEC /* BaseModel.m */,
 				915A93801C576978003211EC /* HSDBModel.h */,
 				915A93811C576978003211EC /* HSDBModel.m */,
+				91CCFB8A1C9F96C80043CCEC /* DiseaseModel.h */,
+				91CCFB8B1C9F96C80043CCEC /* DiseaseModel.m */,
+				91CCFB841C9F93480043CCEC /* DiseaseDetailModel.h */,
+				91CCFB851C9F93480043CCEC /* DiseaseDetailModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,13 +254,16 @@
 		915A937F1C576928003211EC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				91B3D3571CA11A8500D49623 /* back.png */,
+				91CCFB941C9FD2E30043CCEC /* body.png */,
+				91CCFB8F1C9FA4350043CCEC /* full_choice@2x.png */,
+				91CCFB901C9FA4350043CCEC /* full_choice@3x.png */,
 				9116D2E41C9D2E0800D80A50 /* diseases.png */,
 				9116D2DB1C9D242300D80A50 /* disease.png */,
+				91CCFB8D1C9FA3BD0043CCEC /* icon_header_back_light@2x.png */,
 				9116D2D91C9D20FE00D80A50 /* add_disease.png */,
 				91E33DCF1C995EAE00FE46DA /* Button_circle_checked_32px.png */,
 				91E33DCD1C995DDC00FE46DA /* Circle_32px.png */,
-				91E33DC11C994E8000FE46DA /* icon_header_back@2x.png */,
-				91E33DC21C994E8000FE46DA /* icon_header_back@3x.png */,
 				914F97811C97048800742127 /* line_ver_1px_right.png */,
 				914F977F1C97027B00742127 /* line_hon_1px_up.png */,
 			);
@@ -243,24 +291,16 @@
 		91657CF61C96FE0E000CCE22 /* SymCheckList */ = {
 			isa = PBXGroup;
 			children = (
-				91657CF71C96FE63000CCE22 /* BodyTableViewCell.h */,
-				91657CF81C96FE63000CCE22 /* BodyTableViewCell.m */,
-				91657CF91C96FE63000CCE22 /* BodyTableViewCell.xib */,
-				917F341C1C97EDB000D510B8 /* SymptomTableViewCell.h */,
-				917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */,
-				917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */,
+				913FA4EA1C9EECB200B11744 /* cell */,
+				0A52E7FD1C54608700E25D61 /* RootViewController.h */,
+				0A52E7FE1C54608700E25D61 /* RootViewController.m */,
+				0A52E7FF1C54608700E25D61 /* RootViewController.xib */,
 				91E33DBC1C994BB700FE46DA /* SecondarySymptomViewController.h */,
 				91E33DBD1C994BB700FE46DA /* SecondarySymptomViewController.m */,
 				91E33DBE1C994BB700FE46DA /* SecondarySymptomViewController.xib */,
-				91E33DC81C9959CE00FE46DA /* SecondarySymptomTableViewCell.h */,
-				91E33DC91C9959CE00FE46DA /* SecondarySymptomTableViewCell.m */,
-				91E33DCA1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib */,
 				9116D2D41C9D1F3200D80A50 /* InspectionResultViewController.h */,
 				9116D2D51C9D1F3200D80A50 /* InspectionResultViewController.m */,
 				9116D2D61C9D1F3200D80A50 /* InspectionResultViewController.xib */,
-				9116D2DD1C9D24A600D80A50 /* InspectionTableViewCell.h */,
-				9116D2DE1C9D24A600D80A50 /* InspectionTableViewCell.m */,
-				9116D2DF1C9D24A600D80A50 /* InspectionTableViewCell.xib */,
 				9116D2E61C9D35C900D80A50 /* DiseaseViewController.h */,
 				9116D2E71C9D35C900D80A50 /* DiseaseViewController.m */,
 				9116D2E81C9D35C900D80A50 /* DiseaseViewController.xib */,
@@ -329,18 +369,22 @@
 				9116D2D81C9D1F3200D80A50 /* InspectionResultViewController.xib in Resources */,
 				9116D2E11C9D24A600D80A50 /* InspectionTableViewCell.xib in Resources */,
 				917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */,
+				91C32ABD1CA1450E00028B31 /* HomeSubViewController.xib in Resources */,
 				91E33DCC1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib in Resources */,
+				91CCFB921C9FA4350043CCEC /* full_choice@3x.png in Resources */,
 				914F97801C97027B00742127 /* line_hon_1px_up.png in Resources */,
-				91E33DC31C994E8000FE46DA /* icon_header_back@2x.png in Resources */,
+				91CCFB961C9FD2E30043CCEC /* body.png in Resources */,
+				91B3D3591CA11A8500D49623 /* back.png in Resources */,
 				0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */,
 				9116D2E51C9D2E0800D80A50 /* diseases.png in Resources */,
 				914F97821C97048800742127 /* line_ver_1px_right.png in Resources */,
 				0A52E7EF1C545F8800E25D61 /* Assets.xcassets in Resources */,
+				91CCFB8E1C9FA3BD0043CCEC /* icon_header_back_light@2x.png in Resources */,
 				91E33DD01C995EAE00FE46DA /* Button_circle_checked_32px.png in Resources */,
 				0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */,
+				91CCFB911C9FA4350043CCEC /* full_choice@2x.png in Resources */,
 				91657CFB1C96FE63000CCE22 /* BodyTableViewCell.xib in Resources */,
 				9116D2DC1C9D242300D80A50 /* disease.png in Resources */,
-				91E33DC41C994E8000FE46DA /* icon_header_back@3x.png in Resources */,
 				91E33DC01C994BB700FE46DA /* SecondarySymptomViewController.xib in Resources */,
 				9116D2DA1C9D20FE00D80A50 /* add_disease.png in Resources */,
 				9116D2EA1C9D35C900D80A50 /* DiseaseViewController.xib in Resources */,
@@ -364,6 +408,9 @@
 				91E33DBF1C994BB700FE46DA /* SecondarySymptomViewController.m in Sources */,
 				917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */,
 				91E33DCB1C9959CE00FE46DA /* SecondarySymptomTableViewCell.m in Sources */,
+				91C32ABC1CA1450E00028B31 /* HomeSubViewController.m in Sources */,
+				91CCFB8C1C9F96C80043CCEC /* DiseaseModel.m in Sources */,
+				91CCFB861C9F93480043CCEC /* DiseaseDetailModel.m in Sources */,
 				0A52E7E41C545F8800E25D61 /* main.m in Sources */,
 				9116D2D71C9D1F3200D80A50 /* InspectionResultViewController.m in Sources */,
 				915A93911C576A0D003211EC /* FMDatabase.m in Sources */,
@@ -371,6 +418,7 @@
 				915A93951C576A0D003211EC /* FMResultSet.m in Sources */,
 				0A52E8001C54608700E25D61 /* RootViewController.m in Sources */,
 				915A93921C576A0D003211EC /* FMDatabaseAdditions.m in Sources */,
+				91CCFB891C9F95690043CCEC /* BaseModel.m in Sources */,
 				9116D2E91C9D35C900D80A50 /* DiseaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
