@@ -164,7 +164,6 @@
             break;
     }
     self.showClickLabel.text = bodyPart;
-    NSLog(@"%lu",(unsigned long)[self.bodyArray indexOfObject:bodyPart]);
     NSIndexPath *selectPath = [NSIndexPath indexPathForRow:[self.bodyArray indexOfObject:bodyPart] inSection:0];
     [self tableView:self.bodyTableview didSelectRowAtIndexPath:selectPath];
     [self.bodyTableview scrollToRowAtIndexPath:selectPath atScrollPosition:UITableViewScrollPositionTop animated:YES];

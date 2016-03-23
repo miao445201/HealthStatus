@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_hon_1px_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="pcB-Fg-YEJ">
-                        <rect key="frame" x="15" y="44" width="305" height="1"/>
+                        <rect key="frame" x="15" y="42" width="305" height="1"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="x1Q-FW-tj0"/>
                         </constraints>
@@ -40,11 +40,11 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="pcB-Fg-YEJ" firstAttribute="top" secondItem="pkr-cS-vtA" secondAttribute="bottom" constant="11" id="47S-Ne-m9n"/>
+                    <constraint firstItem="pcB-Fg-YEJ" firstAttribute="top" secondItem="pkr-cS-vtA" secondAttribute="bottom" constant="9" id="47S-Ne-m9n"/>
                     <constraint firstItem="pcB-Fg-YEJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Daz-n5-s8w"/>
                     <constraint firstItem="pkr-cS-vtA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="EKM-ls-TCc"/>
-                    <constraint firstAttribute="bottom" secondItem="pcB-Fg-YEJ" secondAttribute="bottom" constant="-2" id="Mz9-Nt-bII"/>
-                    <constraint firstItem="pcB-Fg-YEJ" firstAttribute="top" secondItem="pRn-Oe-XYx" secondAttribute="bottom" constant="20" id="NXw-2U-dK1"/>
+                    <constraint firstAttribute="bottom" secondItem="pcB-Fg-YEJ" secondAttribute="bottom" id="Mz9-Nt-bII"/>
+                    <constraint firstItem="pcB-Fg-YEJ" firstAttribute="top" secondItem="pRn-Oe-XYx" secondAttribute="bottom" constant="18" id="NXw-2U-dK1"/>
                     <constraint firstAttribute="trailing" secondItem="pcB-Fg-YEJ" secondAttribute="trailing" id="Tp2-6v-3Iy"/>
                     <constraint firstAttribute="trailing" secondItem="pRn-Oe-XYx" secondAttribute="trailing" constant="12" id="aDI-P5-Zqd"/>
                     <constraint firstItem="pkr-cS-vtA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="h5B-VJ-thz"/>

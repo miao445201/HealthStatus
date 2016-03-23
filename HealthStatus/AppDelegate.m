@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeSubViewController.h"
 #import "RootViewController.h"
+#import "ActivityViewController.h"
+#import "MyHealthViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,16 +22,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];//设置窗口
      self.window.backgroundColor = [UIColor whiteColor];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor  colorWithRed:30.f/255 green:158.f/255 blue:185.f/255 alpha:1.0f]];
+
+    HomeSubViewController *homeVC = [[HomeSubViewController alloc]init];
+    UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVC];
     
     RootViewController *rootVC = [[RootViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
     //nav.navigationBarHidden = YES;//是否隐藏导航栏
-    [[UINavigationBar appearance] setBarTintColor:[UIColor  colorWithRed:30.f/255 green:158.f/255 blue:185.f/255 alpha:1.0f]];
 
-//    //a.初始化一个tabBar控制器
-//    UITabBarController *tabbarVC=[[UITabBarController alloc]init];
-//    tabbarVC.viewControllers = @[nav];
-    self.window.rootViewController = nav;//进入的首个页面
+    MyHealthViewController *myHealthVC = [[MyHealthViewController alloc]init];
+    UINavigationController *HealthNav = [[UINavigationController alloc] initWithRootViewController:myHealthVC];
+    
+    ActivityViewController *activityVC = [[ActivityViewController alloc]init];
+    UINavigationController *activityNav = [[UINavigationController alloc] initWithRootViewController:activityVC];
+
+
+    //a.初始化一个tabBar控制器
+    UITabBarController *tabbarVC=[[UITabBarController alloc]init];
+    tabbarVC.viewControllers = @[homeNav,HealthNav,activityNav];
+    self.window.rootViewController = tabbarVC;//进入的首个页面
 
     //设置控制器为Window的根控制器
     [self.window makeKeyAndVisible];//显示

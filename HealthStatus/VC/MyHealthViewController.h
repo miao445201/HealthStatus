@@ -1,5 +1,5 @@
 //
-//  HomeSubViewController.h
+//  MyHealthViewController.h
 //  HealthStatus
 //
 //  Created by fitfun on 16/3/22.
@@ -7,8 +7,7 @@
 //
 
 #import "BaseMenuViewController.h"
-#import "Masonry.h"
-
-@interface HomeSubViewController : BaseMenuViewController
+//#import  <HealthKit/HealthKit.h>
+@interface MyHealthViewController : BaseMenuViewController
 
 @end

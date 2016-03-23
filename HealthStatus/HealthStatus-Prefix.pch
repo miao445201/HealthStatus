@@ -16,4 +16,5 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "Constant.h"
+#define MAS_SHORTHAND
 #endif
