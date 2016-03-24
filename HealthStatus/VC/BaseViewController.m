@@ -88,6 +88,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
     [self setLeftNaviItemWithTitle:nil imageName:@"icon_header_back_light.png"];
     self.navigationController.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont italicSystemFontOfSize:18]};
 

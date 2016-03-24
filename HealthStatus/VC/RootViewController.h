@@ -13,6 +13,6 @@
 #import "SecondarySymptomViewController.h"
 #import "BaseMenuViewController.h"
 
-@interface RootViewController :BaseMenuViewController<UITableViewDataSource,UITableViewDelegate>
+@interface RootViewController :BaseViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

@@ -7,65 +7,54 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeSubViewController">
             <connections>
-                <outlet property="checkButton" destination="bQe-E6-uOA" id="qLc-KS-IIB"/>
-                <outlet property="diseaseButton" destination="Ibo-qb-MDu" id="iGJ-8d-Nk2"/>
-                <outlet property="fitnessButton" destination="jcS-ye-gcc" id="i2Y-YZ-GL3"/>
-                <outlet property="scrollImageView" destination="rsi-7i-4nt" id="uuI-zb-Nz0"/>
-                <outlet property="userButton" destination="CA6-9y-qne" id="X84-0n-oxf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rsi-7i-4nt">
-                    <rect key="frame" x="0.0" y="64" width="320" height="141"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="141" id="HwQ-pL-obI"/>
-                    </constraints>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibo-qb-MDu">
-                    <rect key="frame" x="0.0" y="205" width="160" height="160"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-3Z-kHK">
+                    <rect key="frame" x="0.0" y="254" width="125" height="155"/>
                     <color key="backgroundColor" red="0.39215686274509803" green="0.25098039215686274" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="疾病自诊">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="diseaseButtonClicked:" destination="-1" eventType="touchUpInside" id="zYg-hC-ky8"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcS-ye-gcc">
-                    <rect key="frame" x="160" y="205" width="160" height="160"/>
-                    <color key="backgroundColor" red="0.59607843137254901" green="0.38431372549019605" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBp-bn-Pa9">
+                    <rect key="frame" x="250" y="254" width="125" height="155"/>
+                    <color key="backgroundColor" red="0.59215686274509804" green="0.35686274509803922" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="健康运动">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="fitnessButtonClidked:" destination="-1" eventType="touchUpInside" id="dZq-d9-ti5"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQe-E6-uOA">
-                    <rect key="frame" x="0.0" y="364" width="160" height="160"/>
-                    <color key="backgroundColor" red="0.99607843137254903" green="0.51372549019607838" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tk6-Uq-tEf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSE-oQ-giW">
+                    <rect key="frame" x="125" y="254" width="125" height="155"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.51372549020000002" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="健康咨询">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA6-9y-qne">
-                    <rect key="frame" x="160" y="364" width="160" height="160"/>
-                    <color key="backgroundColor" red="0.59215686274509804" green="0.8666666666666667" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <state key="normal" title="我的健康">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                    <connections>
+                        <action selector="checkButtonClicked:" destination="-1" eventType="touchUpInside" id="9eh-Bv-WB0"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="rsi-7i-4nt" secondAttribute="trailing" id="2wM-pM-J8w"/>
-                <constraint firstItem="rsi-7i-4nt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="HiM-FI-RC8"/>
-                <constraint firstItem="rsi-7i-4nt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VCx-90-YXt"/>
-            </constraints>
-            <point key="canvasLocation" x="378" y="457"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="377.5" y="456.5"/>
         </view>
     </objects>
 </document>

@@ -26,23 +26,22 @@
 
     HomeSubViewController *homeVC = [[HomeSubViewController alloc]init];
     UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVC];
-    
-    RootViewController *rootVC = [[RootViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
-    //nav.navigationBarHidden = YES;//是否隐藏导航栏
+    homeNav.title = @"首页";
 
     MyHealthViewController *myHealthVC = [[MyHealthViewController alloc]init];
     UINavigationController *HealthNav = [[UINavigationController alloc] initWithRootViewController:myHealthVC];
+    HealthNav.title = @"我的健康";
     
     ActivityViewController *activityVC = [[ActivityViewController alloc]init];
     UINavigationController *activityNav = [[UINavigationController alloc] initWithRootViewController:activityVC];
-
+    activityNav.title = @"健康运动";
 
     //a.初始化一个tabBar控制器
     UITabBarController *tabbarVC=[[UITabBarController alloc]init];
     tabbarVC.viewControllers = @[homeNav,HealthNav,activityNav];
     self.window.rootViewController = tabbarVC;//进入的首个页面
 
+    tabbarVC.tabBar.alpha = 0.5;
     //设置控制器为Window的根控制器
     [self.window makeKeyAndVisible];//显示
     return YES;

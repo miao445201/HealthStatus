@@ -60,6 +60,7 @@
                 <variation key="default">
                     <mask key="constraints">
                         <exclude reference="fO0-HR-wWO"/>
+                        <exclude reference="EOX-dq-Sby"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>

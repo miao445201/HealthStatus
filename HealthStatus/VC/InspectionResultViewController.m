@@ -24,7 +24,7 @@
 }
 
 - (void)rightItemTapped {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+ [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:1] animated:YES];
 }
 
 -(void)returnToHome {
@@ -54,7 +54,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    InspectionTableViewCell *cell = (InspectionTableViewCell *)[self.diseaseTableView cellForRowAtIndexPath:indexPath];
+//    InspectionTableViewCell *cell = (InspectionTableViewCell *)[self.diseaseTableView cellForRowAtIndexPath:indexPath];
     DiseaseViewController *diseaseVC = [[DiseaseViewController alloc]init];
     [self.navigationController presentViewController:diseaseVC animated:YES completion:nil];
 }

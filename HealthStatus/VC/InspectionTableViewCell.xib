@@ -50,6 +50,11 @@
                     <constraint firstItem="pkr-cS-vtA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="h5B-VJ-thz"/>
                     <constraint firstItem="pRn-Oe-XYx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="mB9-V1-QMC"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Mz9-Nt-bII"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="diseaseProgressView" destination="pRn-Oe-XYx" id="Mcb-LH-pQL"/>
