@@ -24,7 +24,14 @@
 #define kMainProjColor      [UIColor colorWithRed:240.f/255 green:97.f/255 blue:15.f/255 alpha:1.0f]
 #define kMainBlackColor     [UIColor colorWithRed:30.f/255 green:30.f/255 blue:30.f/255 alpha:1.0f]
 #define kLightTextColor     [UIColor colorWithRed:155.f/255 green:155.f/255 blue:155.f/255 alpha:1.0f]
+#define kTableViewBarColor  [UIColor colorWithRed:245.f/255 green:245.f/255 blue:245.f/255 alpha:1.0f]
+#define kWhiteColor         [UIColor whiteColor]
 #define DOCUMENTS_FOLDER    [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/"]
+#define SymSelectImage      [UIImage imageNamed:@"full_choice.png"]
+#define SymEmptyImage       [UIImage imageNamed:@"Circle_32px.png"]
+#define ForwardImage        [UIImage imageNamed:@"body.png"]
+#define BackImage           [UIImage imageNamed:@"back.png"]
+
 #define kCommonParamsDict   [NSMutableDictionary dictionaryWithObjectsAndKeys:nil];
 #define kDeviceTokenKey     @"DeviceTokenKey"
 
@@ -37,7 +44,8 @@
 #define kUserIconCacheDir   @"UserIconCacheDir"
 #define kFoodIconCacheDir   @"FoodIconCacheDir"
 #define kUsersCacheDataDir  @"UsersCacheDataDir"
-
+#define kSelectSymptomNotification       @"SelectSymptomNotification"
+#define kReturnToHomeNotification       @"kReturnToHomeNotification"
 
 //Notification Keys
 

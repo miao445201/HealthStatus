@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiseaseViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKP-cR-UpP">
+                    <rect key="frame" x="0.0" y="64" width="320" height="56"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_hon_1px_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="4JX-Ip-vu1">
+                            <rect key="frame" x="0.0" y="55" width="320" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="4aw-xc-d5B"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冠心病疾病简史" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fQ-2H-cvg">
+                            <rect key="frame" x="22" y="15" width="119" height="26"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.11764705882352941" green="0.61960784313725492" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="2fQ-2H-cvg" firstAttribute="leading" secondItem="EKP-cR-UpP" secondAttribute="leading" constant="22" id="1ui-fd-kGC"/>
+                        <constraint firstAttribute="trailing" secondItem="4JX-Ip-vu1" secondAttribute="trailing" id="5zn-mM-zrZ"/>
+                        <constraint firstItem="4JX-Ip-vu1" firstAttribute="top" secondItem="2fQ-2H-cvg" secondAttribute="bottom" constant="14" id="Igp-BV-VYc"/>
+                        <constraint firstAttribute="height" constant="56" id="M17-lW-VLM"/>
+                        <constraint firstItem="2fQ-2H-cvg" firstAttribute="top" secondItem="EKP-cR-UpP" secondAttribute="top" constant="15" id="TYd-Rz-sNz"/>
+                        <constraint firstItem="4JX-Ip-vu1" firstAttribute="leading" secondItem="EKP-cR-UpP" secondAttribute="leading" id="fti-sV-tmd"/>
+                        <constraint firstAttribute="bottom" secondItem="4JX-Ip-vu1" secondAttribute="bottom" id="hp8-QW-0h0"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="冠心病简介：冠心病是一种由冠状动脉器质性（冬忙粥样硬化或动力性血管痉挛）狭窄或阻塞引起的心肌缺血缺氧（心绞痛）或心肌坏死（心肌梗塞）的心脏病，亦称缺血性心脏病。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="25N-i4-Wmm">
+                    <rect key="frame" x="19" y="146" width="282" height="127"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="127" id="BcW-1n-ApM"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLI-mx-dtY">
+                    <rect key="frame" x="19" y="281" width="282" height="151"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="多发人群：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiP-Ra-iMs">
+                            <rect key="frame" x="8" y="14" width="80" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="中老年人群" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXD-Hx-PhH">
+                            <rect key="frame" x="91" y="14" width="85" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="就诊科室：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjc-kL-H8w">
+                            <rect key="frame" x="8" y="43" width="80" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="心血管内科   心胸外科" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCV-wX-0nC">
+                            <rect key="frame" x="91" y="43" width="167" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="典型症状：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQc-TU-bKP">
+                            <rect key="frame" x="8" y="72" width="80" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="劳动耐力下降   胸骨后疼痛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wb8-ps-UPN">
+                            <rect key="frame" x="91" y="72" width="196" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="相关检查：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUi-eL-8dO">
+                            <rect key="frame" x="8" y="104" width="80" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="血清载脂蛋白a测定   血脂检查   血流突变检查" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWa-gd-ogG">
+                            <rect key="frame" x="91" y="101" width="191" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="151" id="Twl-0U-fu0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ6-an-1zu">
+                    <rect key="frame" x="0.0" y="523" width="160" height="45"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.61960784310000006" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="wpa-4D-LOE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="返回">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="returnButtonClicked:" destination="-1" eventType="touchUpInside" id="f8h-bC-Gni"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJv-wx-Vgt">
+                    <rect key="frame" x="160" y="523" width="160" height="45"/>
+                    <color key="backgroundColor" red="1" green="0.60392156862745094" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="mbk-GO-nbP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="结束自测">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="homeBackButtonClicked:" destination="-1" eventType="touchUpInside" id="dT5-OS-XCP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="25N-i4-Wmm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="7Yj-X9-WI1"/>
+                <constraint firstItem="bLI-mx-dtY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="CJ0-Gn-7v8"/>
+                <constraint firstItem="wJ6-an-1zu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fss-4Q-XjB"/>
+                <constraint firstAttribute="trailing" secondItem="bLI-mx-dtY" secondAttribute="trailing" constant="19" id="N2z-Xn-LC3"/>
+                <constraint firstItem="EKP-cR-UpP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W0F-ec-luH"/>
+                <constraint firstItem="wJv-wx-Vgt" firstAttribute="leading" secondItem="wJ6-an-1zu" secondAttribute="trailing" id="Yq5-3d-J8j"/>
+                <constraint firstItem="wJv-wx-Vgt" firstAttribute="leading" secondItem="wJ6-an-1zu" secondAttribute="trailing" id="ZUN-Hh-Fws"/>
+                <constraint firstItem="25N-i4-Wmm" firstAttribute="top" secondItem="EKP-cR-UpP" secondAttribute="bottom" constant="26" id="bQr-ed-I5m"/>
+                <constraint firstItem="bLI-mx-dtY" firstAttribute="top" secondItem="25N-i4-Wmm" secondAttribute="bottom" constant="8" id="eex-cc-jHs"/>
+                <constraint firstItem="EKP-cR-UpP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ffg-fk-0Yf"/>
+                <constraint firstItem="wJv-wx-Vgt" firstAttribute="width" secondItem="wJ6-an-1zu" secondAttribute="width" id="fnd-Sz-zef"/>
+                <constraint firstAttribute="bottom" secondItem="wJv-wx-Vgt" secondAttribute="bottom" id="ksq-R1-u09"/>
+                <constraint firstAttribute="trailing" secondItem="wJv-wx-Vgt" secondAttribute="trailing" id="oBQ-Ji-2QO"/>
+                <constraint firstAttribute="trailing" secondItem="25N-i4-Wmm" secondAttribute="trailing" constant="19" id="rJS-TR-TLE"/>
+                <constraint firstAttribute="bottom" secondItem="wJ6-an-1zu" secondAttribute="bottom" id="vSo-om-1aU"/>
+                <constraint firstAttribute="trailing" secondItem="EKP-cR-UpP" secondAttribute="trailing" id="vjD-xM-H9N"/>
+            </constraints>
+            <point key="canvasLocation" x="378" y="374"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line_hon_1px_up.png" width="640" height="2"/>
+    </resources>
+</document>

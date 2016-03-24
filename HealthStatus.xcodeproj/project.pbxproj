@@ -13,6 +13,21 @@
 		0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A52E7F01C545F8800E25D61 /* LaunchScreen.storyboard */; };
 		0A52E8001C54608700E25D61 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52E7FE1C54608700E25D61 /* RootViewController.m */; };
 		0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A52E7FF1C54608700E25D61 /* RootViewController.xib */; };
+		345363376B530FB420B8051B /* libPods-HealthStatus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF0C9C9BB4AB078288B5D28 /* libPods-HealthStatus.a */; };
+		910EF4EF1CA288A30035B0AD /* InquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910EF4ED1CA288A30035B0AD /* InquiryViewController.m */; };
+		910EF4F01CA288A30035B0AD /* InquiryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910EF4EE1CA288A30035B0AD /* InquiryViewController.xib */; };
+		9116D2D71C9D1F3200D80A50 /* InspectionResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116D2D51C9D1F3200D80A50 /* InspectionResultViewController.m */; };
+		9116D2D81C9D1F3200D80A50 /* InspectionResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9116D2D61C9D1F3200D80A50 /* InspectionResultViewController.xib */; };
+		9116D2DA1C9D20FE00D80A50 /* add_disease.png in Resources */ = {isa = PBXBuildFile; fileRef = 9116D2D91C9D20FE00D80A50 /* add_disease.png */; };
+		9116D2DC1C9D242300D80A50 /* disease.png in Resources */ = {isa = PBXBuildFile; fileRef = 9116D2DB1C9D242300D80A50 /* disease.png */; };
+		9116D2E01C9D24A600D80A50 /* InspectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116D2DE1C9D24A600D80A50 /* InspectionTableViewCell.m */; };
+		9116D2E11C9D24A600D80A50 /* InspectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9116D2DF1C9D24A600D80A50 /* InspectionTableViewCell.xib */; };
+		9116D2E31C9D277900D80A50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9116D2E21C9D277900D80A50 /* CoreGraphics.framework */; };
+		9116D2E51C9D2E0800D80A50 /* diseases.png in Resources */ = {isa = PBXBuildFile; fileRef = 9116D2E41C9D2E0800D80A50 /* diseases.png */; };
+		9116D2E91C9D35C900D80A50 /* DiseaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116D2E71C9D35C900D80A50 /* DiseaseViewController.m */; };
+		9116D2EA1C9D35C900D80A50 /* DiseaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9116D2E81C9D35C900D80A50 /* DiseaseViewController.xib */; };
+		914F97801C97027B00742127 /* line_hon_1px_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 914F977F1C97027B00742127 /* line_hon_1px_up.png */; };
+		914F97821C97048800742127 /* line_ver_1px_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 914F97811C97048800742127 /* line_ver_1px_right.png */; };
 		915A93821C576978003211EC /* HSDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A93811C576978003211EC /* HSDBModel.m */; };
 		915A93841C57698B003211EC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 915A93831C57698B003211EC /* libsqlite3.tbd */; };
 		915A93911C576A0D003211EC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A93871C576A0D003211EC /* FMDatabase.m */; };
@@ -20,11 +35,39 @@
 		915A93931C576A0D003211EC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A938B1C576A0D003211EC /* FMDatabasePool.m */; };
 		915A93941C576A0D003211EC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A938D1C576A0D003211EC /* FMDatabaseQueue.m */; };
 		915A93951C576A0D003211EC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A93901C576A0D003211EC /* FMResultSet.m */; };
-		91AC34CC1C588C8A00D44D24 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AC34CA1C588C8A00D44D24 /* MenuViewController.m */; };
-		91AC34CD1C588C8A00D44D24 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AC34CB1C588C8A00D44D24 /* MenuViewController.xib */; };
-		91AC34D31C588CBE00D44D24 /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AC34D01C588CBE00D44D24 /* ICSDrawerController.m */; };
-		91AC34D41C588CBE00D44D24 /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AC34D21C588CBE00D44D24 /* ICSDropShadowView.m */; };
-		91AC34D81C58A0B000D44D24 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91AC34D71C58A0B000D44D24 /* 01.jpg */; };
+		91657CF51C96EF35000CCE22 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91657CF41C96EF35000CCE22 /* BaseViewController.m */; };
+		91657CFA1C96FE63000CCE22 /* BodyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91657CF81C96FE63000CCE22 /* BodyTableViewCell.m */; };
+		91657CFB1C96FE63000CCE22 /* BodyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91657CF91C96FE63000CCE22 /* BodyTableViewCell.xib */; };
+		917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */; };
+		917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */; };
+		91B3D3591CA11A8500D49623 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B3D3571CA11A8500D49623 /* back.png */; };
+		91C32ABC1CA1450E00028B31 /* HomeSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C32ABA1CA1450E00028B31 /* HomeSubViewController.m */; };
+		91C32ABD1CA1450E00028B31 /* HomeSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C32ABB1CA1450E00028B31 /* HomeSubViewController.xib */; };
+		91C32AC21CA165F200028B31 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C32AC01CA165F200028B31 /* ActivityViewController.m */; };
+		91C32AC31CA165F200028B31 /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C32AC11CA165F200028B31 /* ActivityViewController.xib */; };
+		91C32AC71CA1663300028B31 /* MyHealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C32AC51CA1663300028B31 /* MyHealthViewController.m */; };
+		91C32AC81CA1663300028B31 /* MyHealthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C32AC61CA1663300028B31 /* MyHealthViewController.xib */; };
+		91CCFB861C9F93480043CCEC /* DiseaseDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCFB851C9F93480043CCEC /* DiseaseDetailModel.m */; };
+		91CCFB891C9F95690043CCEC /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCFB881C9F95690043CCEC /* BaseModel.m */; };
+		91CCFB8C1C9F96C80043CCEC /* DiseaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCFB8B1C9F96C80043CCEC /* DiseaseModel.m */; };
+		91CCFB8E1C9FA3BD0043CCEC /* icon_header_back_light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91CCFB8D1C9FA3BD0043CCEC /* icon_header_back_light@2x.png */; };
+		91CCFB911C9FA4350043CCEC /* full_choice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91CCFB8F1C9FA4350043CCEC /* full_choice@2x.png */; };
+		91CCFB921C9FA4350043CCEC /* full_choice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91CCFB901C9FA4350043CCEC /* full_choice@3x.png */; };
+		91CCFB961C9FD2E30043CCEC /* body.png in Resources */ = {isa = PBXBuildFile; fileRef = 91CCFB941C9FD2E30043CCEC /* body.png */; };
+		91E33DBF1C994BB700FE46DA /* SecondarySymptomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E33DBD1C994BB700FE46DA /* SecondarySymptomViewController.m */; };
+		91E33DC01C994BB700FE46DA /* SecondarySymptomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DBE1C994BB700FE46DA /* SecondarySymptomViewController.xib */; };
+		91E33DC71C994F7500FE46DA /* BaseMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E33DC61C994F7500FE46DA /* BaseMenuViewController.m */; };
+		91E33DCB1C9959CE00FE46DA /* SecondarySymptomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E33DC91C9959CE00FE46DA /* SecondarySymptomTableViewCell.m */; };
+		91E33DCC1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DCA1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib */; };
+		91E33DCE1C995DDC00FE46DA /* Circle_32px.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DCD1C995DDC00FE46DA /* Circle_32px.png */; };
+		91E33DD01C995EAE00FE46DA /* Button_circle_checked_32px.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DCF1C995EAE00FE46DA /* Button_circle_checked_32px.png */; };
+		91E5249F1CA3C0EC00088ECD /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E5249D1CA3C0EC00088ECD /* ActivityTableViewCell.m */; };
+		91E524A01CA3C0EC00088ECD /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E5249E1CA3C0EC00088ECD /* ActivityTableViewCell.xib */; };
+		91E524A41CA3C45C00088ECD /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E524A11CA3C45C00088ECD /* person.png */; };
+		91E524A51CA3C45C00088ECD /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E524A21CA3C45C00088ECD /* location.png */; };
+		91E524A61CA3C45C00088ECD /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E524A31CA3C45C00088ECD /* time.png */; };
+		91E524A81CA3C8FB00088ECD /* yangchenghu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91E524A71CA3C8FB00088ECD /* yangchenghu.jpg */; };
+		91E5867D1CA23DCC00DC5CDF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E5867C1CA23DCC00DC5CDF /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +83,26 @@
 		0A52E7FF1C54608700E25D61 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		0A52E8021C5460B200E25D61 /* HealthStatus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthStatus-Prefix.pch"; sourceTree = "<group>"; };
 		0A52E8031C54617700E25D61 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		33054840A52F16142B3E54F9 /* Pods-HealthStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthStatus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthStatus/Pods-HealthStatus.debug.xcconfig"; sourceTree = "<group>"; };
+		7BF0C9C9BB4AB078288B5D28 /* libPods-HealthStatus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthStatus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		910EF4EC1CA288A30035B0AD /* InquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InquiryViewController.h; sourceTree = "<group>"; };
+		910EF4ED1CA288A30035B0AD /* InquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InquiryViewController.m; sourceTree = "<group>"; };
+		910EF4EE1CA288A30035B0AD /* InquiryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InquiryViewController.xib; sourceTree = "<group>"; };
+		9116D2D41C9D1F3200D80A50 /* InspectionResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionResultViewController.h; sourceTree = "<group>"; };
+		9116D2D51C9D1F3200D80A50 /* InspectionResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectionResultViewController.m; sourceTree = "<group>"; };
+		9116D2D61C9D1F3200D80A50 /* InspectionResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectionResultViewController.xib; sourceTree = "<group>"; };
+		9116D2D91C9D20FE00D80A50 /* add_disease.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_disease.png; sourceTree = "<group>"; };
+		9116D2DB1C9D242300D80A50 /* disease.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disease.png; sourceTree = "<group>"; };
+		9116D2DD1C9D24A600D80A50 /* InspectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectionTableViewCell.h; sourceTree = "<group>"; };
+		9116D2DE1C9D24A600D80A50 /* InspectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectionTableViewCell.m; sourceTree = "<group>"; };
+		9116D2DF1C9D24A600D80A50 /* InspectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectionTableViewCell.xib; sourceTree = "<group>"; };
+		9116D2E21C9D277900D80A50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9116D2E41C9D2E0800D80A50 /* diseases.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diseases.png; sourceTree = "<group>"; };
+		9116D2E61C9D35C900D80A50 /* DiseaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseViewController.h; sourceTree = "<group>"; };
+		9116D2E71C9D35C900D80A50 /* DiseaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseViewController.m; sourceTree = "<group>"; };
+		9116D2E81C9D35C900D80A50 /* DiseaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiseaseViewController.xib; sourceTree = "<group>"; };
+		914F977F1C97027B00742127 /* line_hon_1px_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_hon_1px_up.png; sourceTree = "<group>"; };
+		914F97811C97048800742127 /* line_ver_1px_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_ver_1px_right.png; sourceTree = "<group>"; };
 		915A93801C576978003211EC /* HSDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDBModel.h; sourceTree = "<group>"; };
 		915A93811C576978003211EC /* HSDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDBModel.m; sourceTree = "<group>"; };
 		915A93831C57698B003211EC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -54,14 +117,54 @@
 		915A938E1C576A0D003211EC /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		915A938F1C576A0D003211EC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		915A93901C576A0D003211EC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		91AC34C91C588C8A00D44D24 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		91AC34CA1C588C8A00D44D24 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		91AC34CB1C588C8A00D44D24 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
-		91AC34CF1C588CBE00D44D24 /* ICSDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDrawerController.h; sourceTree = "<group>"; };
-		91AC34D01C588CBE00D44D24 /* ICSDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDrawerController.m; sourceTree = "<group>"; };
-		91AC34D11C588CBE00D44D24 /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
-		91AC34D21C588CBE00D44D24 /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
-		91AC34D71C58A0B000D44D24 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		91657CF31C96EF35000CCE22 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		91657CF41C96EF35000CCE22 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		91657CF71C96FE63000CCE22 /* BodyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyTableViewCell.h; sourceTree = "<group>"; };
+		91657CF81C96FE63000CCE22 /* BodyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyTableViewCell.m; sourceTree = "<group>"; };
+		91657CF91C96FE63000CCE22 /* BodyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BodyTableViewCell.xib; sourceTree = "<group>"; };
+		917F341C1C97EDB000D510B8 /* SymptomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomTableViewCell.h; sourceTree = "<group>"; };
+		917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomTableViewCell.m; sourceTree = "<group>"; };
+		917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SymptomTableViewCell.xib; sourceTree = "<group>"; };
+		91B3D3571CA11A8500D49623 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		91C32AB91CA1450E00028B31 /* HomeSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeSubViewController.h; sourceTree = "<group>"; };
+		91C32ABA1CA1450E00028B31 /* HomeSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSubViewController.m; sourceTree = "<group>"; };
+		91C32ABB1CA1450E00028B31 /* HomeSubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSubViewController.xib; sourceTree = "<group>"; };
+		91C32ABF1CA165F200028B31 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		91C32AC01CA165F200028B31 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+		91C32AC11CA165F200028B31 /* ActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
+		91C32AC41CA1663300028B31 /* MyHealthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHealthViewController.h; sourceTree = "<group>"; };
+		91C32AC51CA1663300028B31 /* MyHealthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHealthViewController.m; sourceTree = "<group>"; };
+		91C32AC61CA1663300028B31 /* MyHealthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyHealthViewController.xib; sourceTree = "<group>"; };
+		91CCFB841C9F93480043CCEC /* DiseaseDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseDetailModel.h; sourceTree = "<group>"; };
+		91CCFB851C9F93480043CCEC /* DiseaseDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseDetailModel.m; sourceTree = "<group>"; };
+		91CCFB871C9F95690043CCEC /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		91CCFB881C9F95690043CCEC /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		91CCFB8A1C9F96C80043CCEC /* DiseaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseModel.h; sourceTree = "<group>"; };
+		91CCFB8B1C9F96C80043CCEC /* DiseaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseModel.m; sourceTree = "<group>"; };
+		91CCFB8D1C9FA3BD0043CCEC /* icon_header_back_light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_header_back_light@2x.png"; sourceTree = "<group>"; };
+		91CCFB8F1C9FA4350043CCEC /* full_choice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full_choice@2x.png"; sourceTree = "<group>"; };
+		91CCFB901C9FA4350043CCEC /* full_choice@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full_choice@3x.png"; sourceTree = "<group>"; };
+		91CCFB941C9FD2E30043CCEC /* body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body.png; sourceTree = "<group>"; };
+		91E33DBC1C994BB700FE46DA /* SecondarySymptomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondarySymptomViewController.h; sourceTree = "<group>"; };
+		91E33DBD1C994BB700FE46DA /* SecondarySymptomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondarySymptomViewController.m; sourceTree = "<group>"; };
+		91E33DBE1C994BB700FE46DA /* SecondarySymptomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondarySymptomViewController.xib; sourceTree = "<group>"; };
+		91E33DC51C994F7500FE46DA /* BaseMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMenuViewController.h; sourceTree = "<group>"; };
+		91E33DC61C994F7500FE46DA /* BaseMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMenuViewController.m; sourceTree = "<group>"; };
+		91E33DC81C9959CE00FE46DA /* SecondarySymptomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondarySymptomTableViewCell.h; sourceTree = "<group>"; };
+		91E33DC91C9959CE00FE46DA /* SecondarySymptomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondarySymptomTableViewCell.m; sourceTree = "<group>"; };
+		91E33DCA1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondarySymptomTableViewCell.xib; sourceTree = "<group>"; };
+		91E33DCD1C995DDC00FE46DA /* Circle_32px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle_32px.png; sourceTree = "<group>"; };
+		91E33DCF1C995EAE00FE46DA /* Button_circle_checked_32px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_circle_checked_32px.png; sourceTree = "<group>"; };
+		91E5249C1CA3C0EC00088ECD /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
+		91E5249D1CA3C0EC00088ECD /* ActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewCell.m; sourceTree = "<group>"; };
+		91E5249E1CA3C0EC00088ECD /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
+		91E524A11CA3C45C00088ECD /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		91E524A21CA3C45C00088ECD /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		91E524A31CA3C45C00088ECD /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time.png; sourceTree = "<group>"; };
+		91E524A71CA3C8FB00088ECD /* yangchenghu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yangchenghu.jpg; sourceTree = "<group>"; };
+		91E5867B1CA23DCC00DC5CDF /* HealthStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HealthStatus.entitlements; sourceTree = "<group>"; };
+		91E5867C1CA23DCC00DC5CDF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		B8348B2679CE82D4DEB767C2 /* Pods-HealthStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthStatus.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthStatus/Pods-HealthStatus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +172,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E5867D1CA23DCC00DC5CDF /* HealthKit.framework in Frameworks */,
+				9116D2E31C9D277900D80A50 /* CoreGraphics.framework in Frameworks */,
 				915A93841C57698B003211EC /* libsqlite3.tbd in Frameworks */,
+				345363376B530FB420B8051B /* libPods-HealthStatus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +185,13 @@
 		0A52E7D61C545F8800E25D61 = {
 			isa = PBXGroup;
 			children = (
+				91E5867C1CA23DCC00DC5CDF /* HealthKit.framework */,
+				9116D2E21C9D277900D80A50 /* CoreGraphics.framework */,
 				915A93831C57698B003211EC /* libsqlite3.tbd */,
 				0A52E7E11C545F8800E25D61 /* HealthStatus */,
 				0A52E7E01C545F8800E25D61 /* Products */,
+				54303CBEEF238F48DDA90330 /* Pods */,
+				7F3987C26487A0549402A0B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +206,7 @@
 		0A52E7E11C545F8800E25D61 /* HealthStatus */ = {
 			isa = PBXGroup;
 			children = (
+				91E5867B1CA23DCC00DC5CDF /* HealthStatus.entitlements */,
 				0A52E8031C54617700E25D61 /* Constant.h */,
 				0A52E7E51C545F8800E25D61 /* AppDelegate.h */,
 				0A52E7E61C545F8800E25D61 /* AppDelegate.m */,
@@ -123,20 +234,60 @@
 		0A52E7FC1C54605D00E25D61 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				0A52E7FD1C54608700E25D61 /* RootViewController.h */,
-				0A52E7FE1C54608700E25D61 /* RootViewController.m */,
-				0A52E7FF1C54608700E25D61 /* RootViewController.xib */,
-				91AC34C91C588C8A00D44D24 /* MenuViewController.h */,
-				91AC34CA1C588C8A00D44D24 /* MenuViewController.m */,
-				91AC34CB1C588C8A00D44D24 /* MenuViewController.xib */,
+				91E33DC51C994F7500FE46DA /* BaseMenuViewController.h */,
+				91E33DC61C994F7500FE46DA /* BaseMenuViewController.m */,
+				91657CF31C96EF35000CCE22 /* BaseViewController.h */,
+				91657CF41C96EF35000CCE22 /* BaseViewController.m */,
+				91C32AB91CA1450E00028B31 /* HomeSubViewController.h */,
+				91C32ABA1CA1450E00028B31 /* HomeSubViewController.m */,
+				91C32ABB1CA1450E00028B31 /* HomeSubViewController.xib */,
+				91C32ACA1CA1664B00028B31 /* Inquiry */,
+				91C32ABE1CA1649900028B31 /* Activity */,
+				91657CF61C96FE0E000CCE22 /* SymCheckList */,
+				91C32AC91CA1663800028B31 /* MyHealth */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		54303CBEEF238F48DDA90330 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33054840A52F16142B3E54F9 /* Pods-HealthStatus.debug.xcconfig */,
+				B8348B2679CE82D4DEB767C2 /* Pods-HealthStatus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F3987C26487A0549402A0B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BF0C9C9BB4AB078288B5D28 /* libPods-HealthStatus.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		913FA4EA1C9EECB200B11744 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				91657CF71C96FE63000CCE22 /* BodyTableViewCell.h */,
+				91657CF81C96FE63000CCE22 /* BodyTableViewCell.m */,
+				91657CF91C96FE63000CCE22 /* BodyTableViewCell.xib */,
+				917F341C1C97EDB000D510B8 /* SymptomTableViewCell.h */,
+				917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */,
+				917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */,
+				91E33DC81C9959CE00FE46DA /* SecondarySymptomTableViewCell.h */,
+				91E33DC91C9959CE00FE46DA /* SecondarySymptomTableViewCell.m */,
+				91E33DCA1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib */,
+				9116D2DD1C9D24A600D80A50 /* InspectionTableViewCell.h */,
+				9116D2DE1C9D24A600D80A50 /* InspectionTableViewCell.m */,
+				9116D2DF1C9D24A600D80A50 /* InspectionTableViewCell.xib */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 		915A937D1C57690A003211EC /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				91AC34CE1C588CBE00D44D24 /* ICSDrawerController */,
 				915A93851C576A0D003211EC /* fmdb */,
 			);
 			path = Libraries;
@@ -145,8 +296,14 @@
 		915A937E1C576920003211EC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				91CCFB871C9F95690043CCEC /* BaseModel.h */,
+				91CCFB881C9F95690043CCEC /* BaseModel.m */,
 				915A93801C576978003211EC /* HSDBModel.h */,
 				915A93811C576978003211EC /* HSDBModel.m */,
+				91CCFB8A1C9F96C80043CCEC /* DiseaseModel.h */,
+				91CCFB8B1C9F96C80043CCEC /* DiseaseModel.m */,
+				91CCFB841C9F93480043CCEC /* DiseaseDetailModel.h */,
+				91CCFB851C9F93480043CCEC /* DiseaseDetailModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,7 +311,22 @@
 		915A937F1C576928003211EC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				91AC34D71C58A0B000D44D24 /* 01.jpg */,
+				91E524A71CA3C8FB00088ECD /* yangchenghu.jpg */,
+				91E524A11CA3C45C00088ECD /* person.png */,
+				91E524A21CA3C45C00088ECD /* location.png */,
+				91E524A31CA3C45C00088ECD /* time.png */,
+				91B3D3571CA11A8500D49623 /* back.png */,
+				91CCFB941C9FD2E30043CCEC /* body.png */,
+				91CCFB8F1C9FA4350043CCEC /* full_choice@2x.png */,
+				91CCFB901C9FA4350043CCEC /* full_choice@3x.png */,
+				9116D2E41C9D2E0800D80A50 /* diseases.png */,
+				9116D2DB1C9D242300D80A50 /* disease.png */,
+				91CCFB8D1C9FA3BD0043CCEC /* icon_header_back_light@2x.png */,
+				9116D2D91C9D20FE00D80A50 /* add_disease.png */,
+				91E33DCF1C995EAE00FE46DA /* Button_circle_checked_32px.png */,
+				91E33DCD1C995DDC00FE46DA /* Circle_32px.png */,
+				914F97811C97048800742127 /* line_ver_1px_right.png */,
+				914F977F1C97027B00742127 /* line_hon_1px_up.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -177,15 +349,57 @@
 			path = fmdb;
 			sourceTree = "<group>";
 		};
-		91AC34CE1C588CBE00D44D24 /* ICSDrawerController */ = {
+		91657CF61C96FE0E000CCE22 /* SymCheckList */ = {
 			isa = PBXGroup;
 			children = (
-				91AC34CF1C588CBE00D44D24 /* ICSDrawerController.h */,
-				91AC34D01C588CBE00D44D24 /* ICSDrawerController.m */,
-				91AC34D11C588CBE00D44D24 /* ICSDropShadowView.h */,
-				91AC34D21C588CBE00D44D24 /* ICSDropShadowView.m */,
+				913FA4EA1C9EECB200B11744 /* cell */,
+				0A52E7FD1C54608700E25D61 /* RootViewController.h */,
+				0A52E7FE1C54608700E25D61 /* RootViewController.m */,
+				0A52E7FF1C54608700E25D61 /* RootViewController.xib */,
+				91E33DBC1C994BB700FE46DA /* SecondarySymptomViewController.h */,
+				91E33DBD1C994BB700FE46DA /* SecondarySymptomViewController.m */,
+				91E33DBE1C994BB700FE46DA /* SecondarySymptomViewController.xib */,
+				9116D2D41C9D1F3200D80A50 /* InspectionResultViewController.h */,
+				9116D2D51C9D1F3200D80A50 /* InspectionResultViewController.m */,
+				9116D2D61C9D1F3200D80A50 /* InspectionResultViewController.xib */,
+				9116D2E61C9D35C900D80A50 /* DiseaseViewController.h */,
+				9116D2E71C9D35C900D80A50 /* DiseaseViewController.m */,
+				9116D2E81C9D35C900D80A50 /* DiseaseViewController.xib */,
 			);
-			path = ICSDrawerController;
+			name = SymCheckList;
+			sourceTree = "<group>";
+		};
+		91C32ABE1CA1649900028B31 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				91C32ABF1CA165F200028B31 /* ActivityViewController.h */,
+				91C32AC01CA165F200028B31 /* ActivityViewController.m */,
+				91C32AC11CA165F200028B31 /* ActivityViewController.xib */,
+				91E5249C1CA3C0EC00088ECD /* ActivityTableViewCell.h */,
+				91E5249D1CA3C0EC00088ECD /* ActivityTableViewCell.m */,
+				91E5249E1CA3C0EC00088ECD /* ActivityTableViewCell.xib */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		91C32AC91CA1663800028B31 /* MyHealth */ = {
+			isa = PBXGroup;
+			children = (
+				91C32AC41CA1663300028B31 /* MyHealthViewController.h */,
+				91C32AC51CA1663300028B31 /* MyHealthViewController.m */,
+				91C32AC61CA1663300028B31 /* MyHealthViewController.xib */,
+			);
+			name = MyHealth;
+			sourceTree = "<group>";
+		};
+		91C32ACA1CA1664B00028B31 /* Inquiry */ = {
+			isa = PBXGroup;
+			children = (
+				910EF4EC1CA288A30035B0AD /* InquiryViewController.h */,
+				910EF4ED1CA288A30035B0AD /* InquiryViewController.m */,
+				910EF4EE1CA288A30035B0AD /* InquiryViewController.xib */,
+			);
+			name = Inquiry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +409,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A52E7F61C545F8800E25D61 /* Build configuration list for PBXNativeTarget "HealthStatus" */;
 			buildPhases = (
+				601649E6FBBFE53A9AEC019F /* Check Pods Manifest.lock */,
 				0A52E7DB1C545F8800E25D61 /* Sources */,
 				0A52E7DC1C545F8800E25D61 /* Frameworks */,
 				0A52E7DD1C545F8800E25D61 /* Resources */,
+				8592334F0E8D46C82642CA0B /* Embed Pods Frameworks */,
+				164CBBC1F6F80A662902B352 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +436,11 @@
 				TargetAttributes = {
 					0A52E7DE1C545F8800E25D61 = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -245,33 +467,121 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91AC34D81C58A0B000D44D24 /* 01.jpg in Resources */,
+				91E33DCE1C995DDC00FE46DA /* Circle_32px.png in Resources */,
+				9116D2D81C9D1F3200D80A50 /* InspectionResultViewController.xib in Resources */,
+				9116D2E11C9D24A600D80A50 /* InspectionTableViewCell.xib in Resources */,
+				917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */,
+				910EF4F01CA288A30035B0AD /* InquiryViewController.xib in Resources */,
+				91C32ABD1CA1450E00028B31 /* HomeSubViewController.xib in Resources */,
+				91E33DCC1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib in Resources */,
+				91CCFB921C9FA4350043CCEC /* full_choice@3x.png in Resources */,
+				914F97801C97027B00742127 /* line_hon_1px_up.png in Resources */,
+				91CCFB961C9FD2E30043CCEC /* body.png in Resources */,
+				91E524A61CA3C45C00088ECD /* time.png in Resources */,
+				91E524A51CA3C45C00088ECD /* location.png in Resources */,
+				91E524A01CA3C0EC00088ECD /* ActivityTableViewCell.xib in Resources */,
+				91B3D3591CA11A8500D49623 /* back.png in Resources */,
 				0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */,
+				9116D2E51C9D2E0800D80A50 /* diseases.png in Resources */,
+				914F97821C97048800742127 /* line_ver_1px_right.png in Resources */,
 				0A52E7EF1C545F8800E25D61 /* Assets.xcassets in Resources */,
+				91E524A81CA3C8FB00088ECD /* yangchenghu.jpg in Resources */,
+				91CCFB8E1C9FA3BD0043CCEC /* icon_header_back_light@2x.png in Resources */,
+				91C32AC31CA165F200028B31 /* ActivityViewController.xib in Resources */,
+				91E33DD01C995EAE00FE46DA /* Button_circle_checked_32px.png in Resources */,
 				0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */,
-				91AC34CD1C588C8A00D44D24 /* MenuViewController.xib in Resources */,
+				91CCFB911C9FA4350043CCEC /* full_choice@2x.png in Resources */,
+				91657CFB1C96FE63000CCE22 /* BodyTableViewCell.xib in Resources */,
+				9116D2DC1C9D242300D80A50 /* disease.png in Resources */,
+				91E524A41CA3C45C00088ECD /* person.png in Resources */,
+				91E33DC01C994BB700FE46DA /* SecondarySymptomViewController.xib in Resources */,
+				9116D2DA1C9D20FE00D80A50 /* add_disease.png in Resources */,
+				9116D2EA1C9D35C900D80A50 /* DiseaseViewController.xib in Resources */,
+				91C32AC81CA1663300028B31 /* MyHealthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		164CBBC1F6F80A662902B352 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthStatus/Pods-HealthStatus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		601649E6FBBFE53A9AEC019F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8592334F0E8D46C82642CA0B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthStatus/Pods-HealthStatus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A52E7DB1C545F8800E25D61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91657CFA1C96FE63000CCE22 /* BodyTableViewCell.m in Sources */,
+				9116D2E01C9D24A600D80A50 /* InspectionTableViewCell.m in Sources */,
 				915A93821C576978003211EC /* HSDBModel.m in Sources */,
+				91657CF51C96EF35000CCE22 /* BaseViewController.m in Sources */,
 				915A93941C576A0D003211EC /* FMDatabaseQueue.m in Sources */,
+				91E33DC71C994F7500FE46DA /* BaseMenuViewController.m in Sources */,
 				0A52E7E71C545F8800E25D61 /* AppDelegate.m in Sources */,
-				91AC34D41C588CBE00D44D24 /* ICSDropShadowView.m in Sources */,
+				91E33DBF1C994BB700FE46DA /* SecondarySymptomViewController.m in Sources */,
+				917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */,
+				91E33DCB1C9959CE00FE46DA /* SecondarySymptomTableViewCell.m in Sources */,
+				91C32ABC1CA1450E00028B31 /* HomeSubViewController.m in Sources */,
+				91CCFB8C1C9F96C80043CCEC /* DiseaseModel.m in Sources */,
+				91CCFB861C9F93480043CCEC /* DiseaseDetailModel.m in Sources */,
 				0A52E7E41C545F8800E25D61 /* main.m in Sources */,
+				91E5249F1CA3C0EC00088ECD /* ActivityTableViewCell.m in Sources */,
+				91C32AC71CA1663300028B31 /* MyHealthViewController.m in Sources */,
+				9116D2D71C9D1F3200D80A50 /* InspectionResultViewController.m in Sources */,
 				915A93911C576A0D003211EC /* FMDatabase.m in Sources */,
 				915A93931C576A0D003211EC /* FMDatabasePool.m in Sources */,
 				915A93951C576A0D003211EC /* FMResultSet.m in Sources */,
+				910EF4EF1CA288A30035B0AD /* InquiryViewController.m in Sources */,
 				0A52E8001C54608700E25D61 /* RootViewController.m in Sources */,
 				915A93921C576A0D003211EC /* FMDatabaseAdditions.m in Sources */,
-				91AC34CC1C588C8A00D44D24 /* MenuViewController.m in Sources */,
-				91AC34D31C588CBE00D44D24 /* ICSDrawerController.m in Sources */,
+				91CCFB891C9F95690043CCEC /* BaseModel.m in Sources */,
+				91C32AC21CA165F200028B31 /* ActivityViewController.m in Sources */,
+				9116D2E91C9D35C900D80A50 /* DiseaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,27 +683,37 @@
 		};
 		0A52E7F71C545F8800E25D61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33054840A52F16142B3E54F9 /* Pods-HealthStatus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HealthStatus/HealthStatus-Prefix.pch";
 				INFOPLIST_FILE = HealthStatus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = miao.HealthStatus;
+				PRODUCT_BUNDLE_IDENTIFIER = miao.healthstatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		0A52E7F81C545F8800E25D61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8348B2679CE82D4DEB767C2 /* Pods-HealthStatus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HealthStatus/HealthStatus-Prefix.pch";
 				INFOPLIST_FILE = HealthStatus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = miao.HealthStatus;
+				PRODUCT_BUNDLE_IDENTIFIER = miao.healthstatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

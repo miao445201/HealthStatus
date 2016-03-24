@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ICSDrawerController.h"
+#import "BaseViewController.h"
+#import "BodyTableViewCell.h"
+#import "SymptomTableViewCell.h"
+#import "SecondarySymptomViewController.h"
+#import "BaseMenuViewController.h"
 
-@interface RootViewController : UIViewController<ICSDrawerControllerChild, ICSDrawerControllerPresenting>
-
-@property(nonatomic, weak) ICSDrawerController *drawer;
+@interface RootViewController :BaseViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

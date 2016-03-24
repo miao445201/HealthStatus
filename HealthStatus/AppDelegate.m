@@ -7,9 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeSubViewController.h"
 #import "RootViewController.h"
-#import "MenuViewController.h"
-#import "ICSDrawerController.h"
+#import "ActivityViewController.h"
+#import "MyHealthViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,15 +21,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];//设置窗口
-     //self.window.backgroundColor = [UIColor whiteColor];
+     self.window.backgroundColor = [UIColor whiteColor];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor  colorWithRed:30.f/255 green:158.f/255 blue:185.f/255 alpha:1.0f]];
+
+    HomeSubViewController *homeVC = [[HomeSubViewController alloc]init];
+    UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVC];
+    homeNav.title = @"首页";
+
+    MyHealthViewController *myHealthVC = [[MyHealthViewController alloc]init];
+    UINavigationController *HealthNav = [[UINavigationController alloc] initWithRootViewController:myHealthVC];
+    HealthNav.title = @"我的健康";
     
-    MenuViewController *menuVC = [[MenuViewController alloc]init];
-    RootViewController *rootVC = [[RootViewController alloc] init];
-    ICSDrawerController *drawer = [[ICSDrawerController alloc]initWithLeftViewController:menuVC centerViewController:rootVC];
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mvc];
-    //    nav.navigationBarHidden = YES;//是否隐藏导航栏
-    self.window.rootViewController = drawer;//进入的首个页面
-   
+    ActivityViewController *activityVC = [[ActivityViewController alloc]init];
+    UINavigationController *activityNav = [[UINavigationController alloc] initWithRootViewController:activityVC];
+    activityNav.title = @"健康运动";
+
+    //a.初始化一个tabBar控制器
+    UITabBarController *tabbarVC=[[UITabBarController alloc]init];
+    tabbarVC.viewControllers = @[homeNav,HealthNav,activityNav];
+    self.window.rootViewController = tabbarVC;//进入的首个页面
+
+    tabbarVC.tabBar.alpha = 0.5;
+    //设置控制器为Window的根控制器
     [self.window makeKeyAndVisible];//显示
     return YES;
 }
