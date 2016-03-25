@@ -7,7 +7,6 @@
 //
 
 #import "MyHealthViewController.h"
-//#import <HealthKit/HKHealthStore.h>
 @interface MyHealthViewController ()
 
 @end
@@ -22,9 +21,8 @@
 }
 
 - (void)getAuthorzation {
-//    NSString *healthState = [HKHealthStore isHealthDataAvailable]?@"健康可用":@"健康不可用";
-//    NSLog(@"%@",healthState);
-//    //[HKHealthStore ]
+    NSString *healthState = [HKHealthStore isHealthDataAvailable]?@"健康可用":@"健康不可用";
+    NSLog(@"%@",healthState);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -7,7 +7,7 @@
 //
 
 #import "BaseMenuViewController.h"
-//#import  <HealthKit/HealthKit.h>
+#import <HealthKit/HKHealthStore.h>
 @interface MyHealthViewController : BaseMenuViewController
 
 @end

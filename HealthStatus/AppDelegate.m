@@ -27,14 +27,21 @@
     HomeSubViewController *homeVC = [[HomeSubViewController alloc]init];
     UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVC];
     homeNav.title = @"首页";
+//    homeNav.tabBarItem.selectedImage =  [UIImage imageNamed:@"Clinic Filled-50.png"];
+//    homeNav.tabBarItem.image =  [UIImage imageNamed:@"Clinic-50.png"];
 
     MyHealthViewController *myHealthVC = [[MyHealthViewController alloc]init];
     UINavigationController *HealthNav = [[UINavigationController alloc] initWithRootViewController:myHealthVC];
     HealthNav.title = @"我的健康";
+//    HealthNav.tabBarItem.selectedImage =  [UIImage imageNamed:@"Doctors Bag Filled-50.png"];
+//    HealthNav.tabBarItem.image =  [UIImage imageNamed:@"Doctors Bag-50.png"];
     
     ActivityViewController *activityVC = [[ActivityViewController alloc]init];
     UINavigationController *activityNav = [[UINavigationController alloc] initWithRootViewController:activityVC];
     activityNav.title = @"健康运动";
+//    activityNav.tabBarItem.selectedImage =  [UIImage imageNamed:@"Exercise Filled-50.png"];
+//    activityNav.tabBarItem.image =  [UIImage imageNamed:@"Exercise-50.png"];
+    
 
     //a.初始化一个tabBar控制器
     UITabBarController *tabbarVC=[[UITabBarController alloc]init];
