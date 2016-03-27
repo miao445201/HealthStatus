@@ -9,7 +9,6 @@
 #import "HomeSubViewController.h"
 #import "RootViewController.h"
 #import "ActivityViewController.h"
-#import "MyHealthViewController.h"
 #import "InquiryViewController.h"
 #import "ImageRollScrollView.h"
 
@@ -20,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"首页";
     [self layoutForView];
 }
 
@@ -29,7 +29,7 @@
     UIImage *image3 = [UIImage imageNamed:@"03.jpg"];
     NSArray *imageArray = [[NSArray alloc]initWithObjects:image1,image2,image3,nil];
     NSArray *textArray = @[@"我美吗",@"吻我",@"别说话"];
-    ImageRollScrollView *imageScrollView = [[ImageRollScrollView alloc]initWithFrame:CGRectMake(0, 0, 375, 465)];
+    ImageRollScrollView *imageScrollView = [[ImageRollScrollView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 183)];
     [self.view addSubview:imageScrollView];
     [imageScrollView loadImages:imageArray withRollTime:2.0f optionalText:textArray];
 }
@@ -39,10 +39,12 @@
     
 }
 - (IBAction)fitnessButtonClidked:(id)sender {
-    self.tabBarController.selectedIndex = 2;
+    ActivityViewController *activityVC = [[ActivityViewController alloc]init];
+    [self.navigationController pushViewController:activityVC animated:YES];
 }
 - (IBAction)checkButtonClicked:(id)sender {
-    self.tabBarController.selectedIndex = 1;
+    InquiryViewController *inquiryVC = [[InquiryViewController alloc]init];
+    [self.navigationController pushViewController:inquiryVC animated:YES];
 }
 
 

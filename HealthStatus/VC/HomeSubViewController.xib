@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeSubViewController">
@@ -15,64 +15,177 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-3Z-kHK">
-                    <rect key="frame" x="0.0" y="478" width="125" height="141"/>
-                    <color key="backgroundColor" red="0.39215686274509803" green="0.25098039215686274" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ph9-8G-oBi">
+                    <rect key="frame" x="0.0" y="247" width="375" height="88"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Doctors Bag-50.png" translatesAutoresizingMaskIntoConstraints="NO" id="7VP-Z3-zwR">
+                            <rect key="frame" x="44" y="11" width="42" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="JSN-nd-ztm"/>
+                                <constraint firstAttribute="width" constant="42" id="JY3-Xg-YNz"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dumbbell-50.png" translatesAutoresizingMaskIntoConstraints="NO" id="eVR-d0-2dx">
+                            <rect key="frame" x="167" y="11" width="42" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="fR5-SY-B4n"/>
+                                <constraint firstAttribute="width" constant="42" id="gqI-cZ-IVp"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="News-50.png" translatesAutoresizingMaskIntoConstraints="NO" id="84r-EY-0hd">
+                            <rect key="frame" x="292" y="11" width="42" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="H78-Yz-aG0"/>
+                                <constraint firstAttribute="width" constant="42" id="oQm-5X-T84"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="疾病自诊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T99-NY-2UB">
+                            <rect key="frame" x="27" y="59" width="76" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="76" id="RzR-s7-E61"/>
+                                <constraint firstAttribute="height" constant="21" id="pWS-MJ-edR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健康运动" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlM-Pj-gBp">
+                            <rect key="frame" x="151" y="59" width="75" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="94L-Wt-VQZ"/>
+                                <constraint firstAttribute="width" constant="75" id="rvh-eb-hg4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-3Z-kHK">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="88"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="88" id="cWO-K2-l5Q"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="diseaseButtonClicked:" destination="-1" eventType="touchUpInside" id="zYg-hC-ky8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBp-bn-Pa9">
+                            <rect key="frame" x="250" y="0.0" width="125" height="88"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="88" id="XjD-br-djm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="fitnessButtonClidked:" destination="-1" eventType="touchUpInside" id="dZq-d9-ti5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSE-oQ-giW">
+                            <rect key="frame" x="125" y="0.0" width="125" height="88"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="88" id="jE3-89-vKl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="checkButtonClicked:" destination="-1" eventType="touchUpInside" id="9eh-Bv-WB0"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健康咨询" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuv-WY-QDP">
+                            <rect key="frame" x="278" y="59" width="71" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="71" id="8Ie-ro-yqE"/>
+                                <constraint firstAttribute="height" constant="21" id="XPC-cS-YZ3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="141" id="ACh-Tb-HBi"/>
-                        <constraint firstAttribute="width" constant="125" id="FZy-ga-efm"/>
+                        <constraint firstItem="LSE-oQ-giW" firstAttribute="width" secondItem="YLt-3Z-kHK" secondAttribute="width" id="1hO-LO-Efs"/>
+                        <constraint firstAttribute="bottom" secondItem="LSE-oQ-giW" secondAttribute="bottom" id="2vD-ww-kJm"/>
+                        <constraint firstItem="T99-NY-2UB" firstAttribute="leading" secondItem="Ph9-8G-oBi" secondAttribute="leading" constant="27" id="7aG-fT-xaq"/>
+                        <constraint firstItem="84r-EY-0hd" firstAttribute="top" secondItem="Ph9-8G-oBi" secondAttribute="top" constant="11" id="BGk-n6-LwE"/>
+                        <constraint firstAttribute="trailing" secondItem="84r-EY-0hd" secondAttribute="trailing" constant="41" id="Doe-JX-p72"/>
+                        <constraint firstItem="QBp-bn-Pa9" firstAttribute="leading" secondItem="LSE-oQ-giW" secondAttribute="trailing" id="EMT-BF-Wfr"/>
+                        <constraint firstItem="YLt-3Z-kHK" firstAttribute="leading" secondItem="Ph9-8G-oBi" secondAttribute="leading" id="IgJ-8g-Dta"/>
+                        <constraint firstItem="QBp-bn-Pa9" firstAttribute="top" secondItem="Ph9-8G-oBi" secondAttribute="top" id="JFg-5X-WEu"/>
+                        <constraint firstItem="QBp-bn-Pa9" firstAttribute="leading" secondItem="eVR-d0-2dx" secondAttribute="trailing" constant="41" id="MAg-Yq-OrS"/>
+                        <constraint firstItem="LSE-oQ-giW" firstAttribute="leading" secondItem="YLt-3Z-kHK" secondAttribute="trailing" id="O7X-n4-PS1"/>
+                        <constraint firstItem="84r-EY-0hd" firstAttribute="centerX" secondItem="nuv-WY-QDP" secondAttribute="centerX" id="Owh-dD-DvC"/>
+                        <constraint firstItem="xlM-Pj-gBp" firstAttribute="top" secondItem="eVR-d0-2dx" secondAttribute="bottom" constant="6" id="PUf-68-x9Z"/>
+                        <constraint firstItem="7VP-Z3-zwR" firstAttribute="top" secondItem="Ph9-8G-oBi" secondAttribute="top" constant="11" id="S2H-Ze-1db"/>
+                        <constraint firstItem="xlM-Pj-gBp" firstAttribute="leading" secondItem="YLt-3Z-kHK" secondAttribute="trailing" constant="26" id="SLK-vr-8vF"/>
+                        <constraint firstItem="eVR-d0-2dx" firstAttribute="centerX" secondItem="xlM-Pj-gBp" secondAttribute="centerX" id="Yu4-eo-Yrq"/>
+                        <constraint firstItem="T99-NY-2UB" firstAttribute="centerX" secondItem="7VP-Z3-zwR" secondAttribute="centerX" id="YxQ-2b-PxR"/>
+                        <constraint firstAttribute="trailing" secondItem="QBp-bn-Pa9" secondAttribute="trailing" id="dnJ-Bv-bLk"/>
+                        <constraint firstItem="QBp-bn-Pa9" firstAttribute="width" secondItem="YLt-3Z-kHK" secondAttribute="width" id="eSk-oq-f9S"/>
+                        <constraint firstAttribute="bottom" secondItem="YLt-3Z-kHK" secondAttribute="bottom" id="fUk-l0-qTM"/>
+                        <constraint firstItem="LSE-oQ-giW" firstAttribute="top" secondItem="Ph9-8G-oBi" secondAttribute="top" id="hEb-3r-bmr"/>
+                        <constraint firstItem="7VP-Z3-zwR" firstAttribute="leading" secondItem="Ph9-8G-oBi" secondAttribute="leading" constant="44" id="ixV-ad-Yzx"/>
+                        <constraint firstAttribute="height" constant="88" id="j1o-dd-WU3"/>
+                        <constraint firstAttribute="trailing" secondItem="nuv-WY-QDP" secondAttribute="trailing" constant="26" id="ns6-w2-tCC"/>
+                        <constraint firstItem="eVR-d0-2dx" firstAttribute="top" secondItem="Ph9-8G-oBi" secondAttribute="top" constant="11" id="nui-w2-LkL"/>
+                        <constraint firstItem="LSE-oQ-giW" firstAttribute="height" secondItem="YLt-3Z-kHK" secondAttribute="height" id="nyL-7z-yIM"/>
+                        <constraint firstAttribute="bottom" secondItem="T99-NY-2UB" secondAttribute="bottom" constant="8" id="o9q-Ti-YJO"/>
+                        <constraint firstAttribute="bottom" secondItem="QBp-bn-Pa9" secondAttribute="bottom" id="oFk-ix-aEe"/>
+                        <constraint firstItem="eVR-d0-2dx" firstAttribute="leading" secondItem="YLt-3Z-kHK" secondAttribute="trailing" constant="42" id="oQ5-JX-qJY"/>
+                        <constraint firstItem="nuv-WY-QDP" firstAttribute="top" secondItem="84r-EY-0hd" secondAttribute="bottom" constant="6" id="oca-n3-0mF"/>
+                        <constraint firstItem="T99-NY-2UB" firstAttribute="top" secondItem="7VP-Z3-zwR" secondAttribute="bottom" constant="6" id="psn-u8-OtJ"/>
+                        <constraint firstAttribute="bottom" secondItem="xlM-Pj-gBp" secondAttribute="bottom" constant="8" id="toZ-kM-Bwf"/>
+                        <constraint firstItem="YLt-3Z-kHK" firstAttribute="top" secondItem="Ph9-8G-oBi" secondAttribute="top" id="v6T-e8-Z20"/>
+                        <constraint firstItem="QBp-bn-Pa9" firstAttribute="height" secondItem="YLt-3Z-kHK" secondAttribute="height" id="xuL-kn-rgO"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <state key="normal" title="疾病自诊">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="diseaseButtonClicked:" destination="-1" eventType="touchUpInside" id="zYg-hC-ky8"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBp-bn-Pa9">
-                    <rect key="frame" x="250" y="478" width="125" height="141"/>
-                    <color key="backgroundColor" red="0.59215686274509804" green="0.35686274509803922" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhu-qT-cSF">
+                    <rect key="frame" x="21" y="341" width="72" height="21"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="125" id="eaS-KX-pNo"/>
-                        <constraint firstAttribute="height" constant="141" id="fgC-FP-rpI"/>
+                        <constraint firstAttribute="height" constant="21" id="fsz-Wq-tC3"/>
+                        <constraint firstAttribute="width" constant="72" id="peN-HY-u9x"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <state key="normal" title="健康运动">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="fitnessButtonClidked:" destination="-1" eventType="touchUpInside" id="dZq-d9-ti5"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSE-oQ-giW">
-                    <rect key="frame" x="125" y="478" width="125" height="141"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.51372549020000002" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="144" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HHg-RE-kQj">
+                    <rect key="frame" x="0.0" y="368" width="375" height="255"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="125" id="5K1-Jg-IGc"/>
-                        <constraint firstAttribute="height" constant="141" id="9tW-bl-R2S"/>
+                        <constraint firstAttribute="height" constant="255" id="b4d-uh-I3s"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <state key="normal" title="健康咨询">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="checkButtonClicked:" destination="-1" eventType="touchUpInside" id="9eh-Bv-WB0"/>
-                    </connections>
-                </button>
+                </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="QBp-bn-Pa9" secondAttribute="trailing" id="4ne-6B-cW7"/>
-                <constraint firstItem="QBp-bn-Pa9" firstAttribute="leading" secondItem="LSE-oQ-giW" secondAttribute="trailing" id="9IO-NJ-6Kl"/>
-                <constraint firstAttribute="bottom" secondItem="YLt-3Z-kHK" secondAttribute="bottom" constant="48" id="BSF-cW-kvJ"/>
-                <constraint firstAttribute="bottom" secondItem="LSE-oQ-giW" secondAttribute="bottom" constant="48" id="boz-6G-KBz"/>
-                <constraint firstAttribute="bottom" secondItem="QBp-bn-Pa9" secondAttribute="bottom" constant="48" id="dNY-IL-nnm"/>
-                <constraint firstItem="YLt-3Z-kHK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dSb-l8-eg9"/>
-                <constraint firstItem="LSE-oQ-giW" firstAttribute="leading" secondItem="YLt-3Z-kHK" secondAttribute="trailing" id="qai-8C-9SI"/>
+                <constraint firstAttribute="trailing" secondItem="Ph9-8G-oBi" secondAttribute="trailing" id="8hO-Yc-V4S"/>
+                <constraint firstItem="Ph9-8G-oBi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="247" id="9IN-rN-2d8"/>
+                <constraint firstItem="Ph9-8G-oBi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="C1o-AS-fn8"/>
+                <constraint firstItem="Rhu-qT-cSF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="JWL-iK-rPd"/>
+                <constraint firstAttribute="trailing" secondItem="HHg-RE-kQj" secondAttribute="trailing" id="L02-HI-OXt"/>
+                <constraint firstItem="HHg-RE-kQj" firstAttribute="top" secondItem="Rhu-qT-cSF" secondAttribute="bottom" constant="6" id="Spb-qJ-Iw2"/>
+                <constraint firstItem="Rhu-qT-cSF" firstAttribute="top" secondItem="Ph9-8G-oBi" secondAttribute="bottom" constant="6" id="XXp-W8-pan"/>
+                <constraint firstItem="HHg-RE-kQj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hpk-t8-FyE"/>
+                <constraint firstAttribute="bottom" secondItem="HHg-RE-kQj" secondAttribute="bottom" constant="44" id="xBY-Hg-3H3"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="377.5" y="456.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="Doctors Bag-50.png" width="50" height="50"/>
+        <image name="Dumbbell-50.png" width="50" height="50"/>
+        <image name="News-50.png" width="50" height="50"/>
+    </resources>
 </document>

@@ -8,6 +8,6 @@
 
 #import "BaseMenuViewController.h"
 
-@interface ActivityViewController : BaseMenuViewController<UITableViewDataSource,UITableViewDelegate>
+@interface ActivityViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

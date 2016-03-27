@@ -8,8 +8,6 @@
 
 #import "AppDelegate.h"
 #import "HomeSubViewController.h"
-#import "RootViewController.h"
-#import "ActivityViewController.h"
 #import "MyHealthViewController.h"
 
 @interface AppDelegate ()
@@ -35,17 +33,10 @@
     HealthNav.title = @"我的健康";
 //    HealthNav.tabBarItem.selectedImage =  [UIImage imageNamed:@"Doctors Bag Filled-50.png"];
 //    HealthNav.tabBarItem.image =  [UIImage imageNamed:@"Doctors Bag-50.png"];
-    
-    ActivityViewController *activityVC = [[ActivityViewController alloc]init];
-    UINavigationController *activityNav = [[UINavigationController alloc] initWithRootViewController:activityVC];
-    activityNav.title = @"健康运动";
-//    activityNav.tabBarItem.selectedImage =  [UIImage imageNamed:@"Exercise Filled-50.png"];
-//    activityNav.tabBarItem.image =  [UIImage imageNamed:@"Exercise-50.png"];
-    
 
     //a.初始化一个tabBar控制器
     UITabBarController *tabbarVC=[[UITabBarController alloc]init];
-    tabbarVC.viewControllers = @[homeNav,HealthNav,activityNav];
+    tabbarVC.viewControllers = @[homeNav,HealthNav];
     self.window.rootViewController = tabbarVC;//进入的首个页面
 
     tabbarVC.tabBar.alpha = 0.5;
