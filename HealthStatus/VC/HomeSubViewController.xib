@@ -15,9 +15,13 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-3Z-kHK">
-                    <rect key="frame" x="0.0" y="254" width="125" height="155"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-3Z-kHK">
+                    <rect key="frame" x="0.0" y="478" width="125" height="141"/>
                     <color key="backgroundColor" red="0.39215686274509803" green="0.25098039215686274" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="141" id="ACh-Tb-HBi"/>
+                        <constraint firstAttribute="width" constant="125" id="FZy-ga-efm"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="疾病自诊">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -26,9 +30,13 @@
                         <action selector="diseaseButtonClicked:" destination="-1" eventType="touchUpInside" id="zYg-hC-ky8"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBp-bn-Pa9">
-                    <rect key="frame" x="250" y="254" width="125" height="155"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBp-bn-Pa9">
+                    <rect key="frame" x="250" y="478" width="125" height="141"/>
                     <color key="backgroundColor" red="0.59215686274509804" green="0.35686274509803922" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="eaS-KX-pNo"/>
+                        <constraint firstAttribute="height" constant="141" id="fgC-FP-rpI"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="健康运动">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,12 +45,13 @@
                         <action selector="fitnessButtonClidked:" destination="-1" eventType="touchUpInside" id="dZq-d9-ti5"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tk6-Uq-tEf">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSE-oQ-giW">
-                    <rect key="frame" x="125" y="254" width="125" height="155"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSE-oQ-giW">
+                    <rect key="frame" x="125" y="478" width="125" height="141"/>
                     <color key="backgroundColor" red="0.99607843139999996" green="0.51372549020000002" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="5K1-Jg-IGc"/>
+                        <constraint firstAttribute="height" constant="141" id="9tW-bl-R2S"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="健康咨询">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,6 +62,15 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QBp-bn-Pa9" secondAttribute="trailing" id="4ne-6B-cW7"/>
+                <constraint firstItem="QBp-bn-Pa9" firstAttribute="leading" secondItem="LSE-oQ-giW" secondAttribute="trailing" id="9IO-NJ-6Kl"/>
+                <constraint firstAttribute="bottom" secondItem="YLt-3Z-kHK" secondAttribute="bottom" constant="48" id="BSF-cW-kvJ"/>
+                <constraint firstAttribute="bottom" secondItem="LSE-oQ-giW" secondAttribute="bottom" constant="48" id="boz-6G-KBz"/>
+                <constraint firstAttribute="bottom" secondItem="QBp-bn-Pa9" secondAttribute="bottom" constant="48" id="dNY-IL-nnm"/>
+                <constraint firstItem="YLt-3Z-kHK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dSb-l8-eg9"/>
+                <constraint firstItem="LSE-oQ-giW" firstAttribute="leading" secondItem="YLt-3Z-kHK" secondAttribute="trailing" id="qai-8C-9SI"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="377.5" y="456.5"/>
         </view>
