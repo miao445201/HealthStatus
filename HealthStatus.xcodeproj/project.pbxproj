@@ -50,6 +50,7 @@
 		91E33DCC1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E33DCA1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib */; };
 		91E5249F1CA3C0EC00088ECD /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E5249D1CA3C0EC00088ECD /* ActivityTableViewCell.m */; };
 		91E524A01CA3C0EC00088ECD /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E5249E1CA3C0EC00088ECD /* ActivityTableViewCell.xib */; };
+		91E63E021CA8BF4A009757DA /* libPods-HealthStatus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E63E011CA8BF4A009757DA /* libPods-HealthStatus.a */; };
 		91FA37BE1CA4CFEB00F8299E /* ImageRollScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FA37BD1CA4CFEB00F8299E /* ImageRollScrollView.m */; };
 		91FA37EC1CA4E11500F8299E /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37C61CA4E11500F8299E /* 01.jpg */; };
 		91FA37ED1CA4E11500F8299E /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37C71CA4E11500F8299E /* 02.jpg */; };
@@ -165,6 +166,7 @@
 		91E5249C1CA3C0EC00088ECD /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
 		91E5249D1CA3C0EC00088ECD /* ActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewCell.m; sourceTree = "<group>"; };
 		91E5249E1CA3C0EC00088ECD /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
+		91E63E011CA8BF4A009757DA /* libPods-HealthStatus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPods-HealthStatus.a"; sourceTree = "<group>"; };
 		91FA37BC1CA4CFEB00F8299E /* ImageRollScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRollScrollView.h; sourceTree = "<group>"; };
 		91FA37BD1CA4CFEB00F8299E /* ImageRollScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRollScrollView.m; sourceTree = "<group>"; };
 		91FA37C61CA4E11500F8299E /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FA381E1CA508A200F8299E /* HealthKit.framework in Frameworks */,
+				91E63E021CA8BF4A009757DA /* libPods-HealthStatus.a in Frameworks */,
 				9116D2E31C9D277900D80A50 /* CoreGraphics.framework in Frameworks */,
 				915A93841C57698B003211EC /* libsqlite3.tbd in Frameworks */,
 			);
@@ -300,6 +303,7 @@
 		7F3987C26487A0549402A0B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91E63E011CA8BF4A009757DA /* libPods-HealthStatus.a */,
 				91FA381A1CA4EB7500F8299E /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -780,6 +784,10 @@
 				INFOPLIST_FILE = HealthStatus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.miao.healthstatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "017ca8ae-be96-404e-bead-877caede263c";
@@ -802,6 +810,10 @@
 				INFOPLIST_FILE = HealthStatus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.miao.healthstatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "017ca8ae-be96-404e-bead-877caede263c";

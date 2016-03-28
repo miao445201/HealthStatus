@@ -39,7 +39,7 @@
     tabbarVC.viewControllers = @[homeNav,HealthNav];
     self.window.rootViewController = tabbarVC;//进入的首个页面
 
-    tabbarVC.tabBar.alpha = 0.5;
+    //tabbarVC.tabBar.alpha = 0.5;
     //设置控制器为Window的根控制器
     [self.window makeKeyAndVisible];//显示
     return YES;
