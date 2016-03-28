@@ -7,61 +7,77 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="ActivityTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="KGk-i7-Jjw" customClass="ActivityTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="158"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yangchenghu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mqD-jd-uyL">
-                        <rect key="frame" x="15" y="6" width="105" height="105"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zn3-0K-Nmk">
+                        <rect key="frame" x="9" y="116" width="357" height="27"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="步天下红牛帐篷节参加送好礼" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhI-ff-hAN">
+                                <rect key="frame" x="8" y="3" width="191" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="5MS-F9-RTc"/>
+                                    <constraint firstAttribute="height" constant="21" id="96t-E0-toD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余2天3小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEB-Eb-HAt">
+                                <rect key="frame" x="271" y="6" width="80" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="TQ1-en-rHv"/>
+                                    <constraint firstAttribute="height" constant="16" id="rxg-sz-Whi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="U6Y-19-hhi">
+                                <rect key="frame" x="253" y="6" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="hzM-v2-I9g"/>
+                                    <constraint firstAttribute="height" constant="16" id="un9-8p-W7o"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JhI-ff-hAN" firstAttribute="top" secondItem="Zn3-0K-Nmk" secondAttribute="top" constant="3" id="21o-1y-wt0"/>
+                            <constraint firstItem="sEB-Eb-HAt" firstAttribute="top" secondItem="Zn3-0K-Nmk" secondAttribute="top" constant="6" id="5hk-GU-E4E"/>
+                            <constraint firstAttribute="height" constant="27" id="97s-ST-TWU"/>
+                            <constraint firstItem="sEB-Eb-HAt" firstAttribute="leading" secondItem="U6Y-19-hhi" secondAttribute="trailing" constant="2" id="bVp-eZ-1K7"/>
+                            <constraint firstAttribute="trailing" secondItem="sEB-Eb-HAt" secondAttribute="trailing" constant="6" id="l6F-bP-me5"/>
+                            <constraint firstItem="U6Y-19-hhi" firstAttribute="top" secondItem="Zn3-0K-Nmk" secondAttribute="top" constant="6" id="zCp-Cc-Php"/>
+                            <constraint firstItem="JhI-ff-hAN" firstAttribute="leading" secondItem="Zn3-0K-Nmk" secondAttribute="leading" constant="8" id="zyu-h5-fjy"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activity.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YXM-nf-xg8">
+                        <rect key="frame" x="9" y="0.0" width="357" height="116"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="116" id="4iI-30-rJa"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="阳澄湖骑行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXg-5J-WiU">
-                        <rect key="frame" x="133" y="6" width="159" height="29"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="阳澄湖环岛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcA-L4-uEK">
-                        <rect key="frame" x="159" y="63" width="212" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.png" translatesAutoresizingMaskIntoConstraints="NO" id="fea-6a-Zp8">
-                        <rect key="frame" x="133" y="41" width="16" height="16"/>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location.png" translatesAutoresizingMaskIntoConstraints="NO" id="tPI-Bv-O7M">
-                        <rect key="frame" x="136" y="66" width="11" height="15"/>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="xIK-bz-3Wn">
-                        <rect key="frame" x="134" y="89" width="16" height="15"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="赵振宇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgd-2S-3SY">
-                        <rect key="frame" x="159" y="38" width="212" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_hon_1px_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="q9m-iv-XlW">
-                        <rect key="frame" x="0.0" y="115" width="375" height="1"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2016.3.26-2016.3.27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrR-7l-Hva">
-                        <rect key="frame" x="159" y="87" width="212" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="YXM-nf-xg8" secondAttribute="trailing" constant="9" id="Gs2-BD-K1t"/>
+                    <constraint firstItem="YXM-nf-xg8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JbX-Sl-iwu"/>
+                    <constraint firstAttribute="trailing" secondItem="Zn3-0K-Nmk" secondAttribute="trailing" constant="9" id="JcP-SW-ORX"/>
+                    <constraint firstItem="Zn3-0K-Nmk" firstAttribute="top" secondItem="YXM-nf-xg8" secondAttribute="bottom" id="SDJ-WA-ZUa"/>
+                    <constraint firstItem="YXM-nf-xg8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="Tsr-YL-dyN"/>
+                    <constraint firstItem="Zn3-0K-Nmk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="iv4-k2-FJ0"/>
+                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="383.5" y="395"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="383.5" y="402"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="line_hon_1px_up.png" width="640" height="2"/>
-        <image name="location.png" width="11" height="15"/>
-        <image name="person.png" width="16" height="15"/>
+        <image name="activity.jpg" width="1424" height="609"/>
         <image name="time.png" width="16" height="16"/>
-        <image name="yangchenghu.jpg" width="780" height="518"/>
     </resources>
 </document>

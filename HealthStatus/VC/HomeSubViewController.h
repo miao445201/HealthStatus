@@ -8,7 +8,8 @@
 
 #import "BaseMenuViewController.h"
 #import "Masonry.h"
+#import "ActivityTableViewCell.h"
 
-@interface HomeSubViewController : BaseMenuViewController
+@interface HomeSubViewController : BaseMenuViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
