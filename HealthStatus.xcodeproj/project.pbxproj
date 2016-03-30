@@ -32,6 +32,19 @@
 		91657CF51C96EF35000CCE22 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91657CF41C96EF35000CCE22 /* BaseViewController.m */; };
 		91657CFA1C96FE63000CCE22 /* BodyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91657CF81C96FE63000CCE22 /* BodyTableViewCell.m */; };
 		91657CFB1C96FE63000CCE22 /* BodyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91657CF91C96FE63000CCE22 /* BodyTableViewCell.xib */; };
+		916AD2BA1CABCAB4003A00BF /* ActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916AD2B81CABCAB4003A00BF /* ActivityDetailViewController.m */; };
+		916AD2BB1CABCAB4003A00BF /* ActivityDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2B91CABCAB4003A00BF /* ActivityDetailViewController.xib */; };
+		916AD2BE1CABD199003A00BF /* Clinic Filled-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2BC1CABD199003A00BF /* Clinic Filled-16.png */; };
+		916AD2BF1CABD199003A00BF /* Clinic-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2BD1CABD199003A00BF /* Clinic-16.png */; };
+		916AD2C21CABD22C003A00BF /* Clinic Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2C01CABD22C003A00BF /* Clinic Filled-32.png */; };
+		916AD2C31CABD22C003A00BF /* Clinic-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2C11CABD22C003A00BF /* Clinic-32.png */; };
+		916AD2C61CABD3D0003A00BF /* Gender Neutral User Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2C41CABD3D0003A00BF /* Gender Neutral User Filled-32.png */; };
+		916AD2C71CABD3D0003A00BF /* Gender Neutral User-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2C51CABD3D0003A00BF /* Gender Neutral User-32.png */; };
+		916AD2CB1CABFB2B003A00BF /* sucai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2CA1CABFB2B003A00BF /* sucai.jpg */; };
+		916AD2CE1CABFEE7003A00BF /* _location.png in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2CC1CABFEE7003A00BF /* _location.png */; };
+		916AD2CF1CABFEE7003A00BF /* _user.png in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2CD1CABFEE7003A00BF /* _user.png */; };
+		916AD2D11CABFF7B003A00BF /* -dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2D01CABFF7B003A00BF /* -dollar.png */; };
+		916AD2D51CAC019E003A00BF /* _group.png in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2D41CAC019E003A00BF /* _group.png */; };
 		917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */; };
 		917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */; };
 		91C32ABC1CA1450E00028B31 /* HomeSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C32ABA1CA1450E00028B31 /* HomeSubViewController.m */; };
@@ -62,8 +75,6 @@
 		91FA37F21CA4E11500F8299E /* Button_circle_checked_32px.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37CC1CA4E11500F8299E /* Button_circle_checked_32px.png */; };
 		91FA37F31CA4E11500F8299E /* Checked-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37CD1CA4E11500F8299E /* Checked-50.png */; };
 		91FA37F41CA4E11500F8299E /* Circle_32px.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37CE1CA4E11500F8299E /* Circle_32px.png */; };
-		91FA37F51CA4E11500F8299E /* Clinic Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37CF1CA4E11500F8299E /* Clinic Filled-50.png */; };
-		91FA37F61CA4E11500F8299E /* Clinic-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37D01CA4E11500F8299E /* Clinic-50.png */; };
 		91FA37F81CA4E11500F8299E /* disease.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37D21CA4E11500F8299E /* disease.png */; };
 		91FA37F91CA4E11500F8299E /* diseases.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37D31CA4E11500F8299E /* diseases.png */; };
 		91FA37FA1CA4E11500F8299E /* Doctors Bag Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37D41CA4E11500F8299E /* Doctors Bag Filled-50.png */; };
@@ -138,6 +149,20 @@
 		91657CF71C96FE63000CCE22 /* BodyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyTableViewCell.h; sourceTree = "<group>"; };
 		91657CF81C96FE63000CCE22 /* BodyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyTableViewCell.m; sourceTree = "<group>"; };
 		91657CF91C96FE63000CCE22 /* BodyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BodyTableViewCell.xib; sourceTree = "<group>"; };
+		916AD2B71CABCAB4003A00BF /* ActivityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailViewController.h; sourceTree = "<group>"; };
+		916AD2B81CABCAB4003A00BF /* ActivityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetailViewController.m; sourceTree = "<group>"; };
+		916AD2B91CABCAB4003A00BF /* ActivityDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityDetailViewController.xib; sourceTree = "<group>"; };
+		916AD2BC1CABD199003A00BF /* Clinic Filled-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clinic Filled-16.png"; sourceTree = "<group>"; };
+		916AD2BD1CABD199003A00BF /* Clinic-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clinic-16.png"; sourceTree = "<group>"; };
+		916AD2C01CABD22C003A00BF /* Clinic Filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clinic Filled-32.png"; sourceTree = "<group>"; };
+		916AD2C11CABD22C003A00BF /* Clinic-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clinic-32.png"; sourceTree = "<group>"; };
+		916AD2C41CABD3D0003A00BF /* Gender Neutral User Filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gender Neutral User Filled-32.png"; sourceTree = "<group>"; };
+		916AD2C51CABD3D0003A00BF /* Gender Neutral User-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gender Neutral User-32.png"; sourceTree = "<group>"; };
+		916AD2CA1CABFB2B003A00BF /* sucai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sucai.jpg; sourceTree = "<group>"; };
+		916AD2CC1CABFEE7003A00BF /* _location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _location.png; sourceTree = "<group>"; };
+		916AD2CD1CABFEE7003A00BF /* _user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _user.png; sourceTree = "<group>"; };
+		916AD2D01CABFF7B003A00BF /* -dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-dollar.png"; sourceTree = "<group>"; };
+		916AD2D41CAC019E003A00BF /* _group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _group.png; sourceTree = "<group>"; };
 		917F341C1C97EDB000D510B8 /* SymptomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomTableViewCell.h; sourceTree = "<group>"; };
 		917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomTableViewCell.m; sourceTree = "<group>"; };
 		917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SymptomTableViewCell.xib; sourceTree = "<group>"; };
@@ -180,8 +205,6 @@
 		91FA37CC1CA4E11500F8299E /* Button_circle_checked_32px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_circle_checked_32px.png; sourceTree = "<group>"; };
 		91FA37CD1CA4E11500F8299E /* Checked-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checked-50.png"; sourceTree = "<group>"; };
 		91FA37CE1CA4E11500F8299E /* Circle_32px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle_32px.png; sourceTree = "<group>"; };
-		91FA37CF1CA4E11500F8299E /* Clinic Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clinic Filled-50.png"; sourceTree = "<group>"; };
-		91FA37D01CA4E11500F8299E /* Clinic-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clinic-50.png"; sourceTree = "<group>"; };
 		91FA37D21CA4E11500F8299E /* disease.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disease.png; sourceTree = "<group>"; };
 		91FA37D31CA4E11500F8299E /* diseases.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diseases.png; sourceTree = "<group>"; };
 		91FA37D41CA4E11500F8299E /* Doctors Bag Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doctors Bag Filled-50.png"; sourceTree = "<group>"; };
@@ -402,6 +425,9 @@
 				91E5249C1CA3C0EC00088ECD /* ActivityTableViewCell.h */,
 				91E5249D1CA3C0EC00088ECD /* ActivityTableViewCell.m */,
 				91E5249E1CA3C0EC00088ECD /* ActivityTableViewCell.xib */,
+				916AD2B71CABCAB4003A00BF /* ActivityDetailViewController.h */,
+				916AD2B81CABCAB4003A00BF /* ActivityDetailViewController.m */,
+				916AD2B91CABCAB4003A00BF /* ActivityDetailViewController.xib */,
 			);
 			name = Activity;
 			sourceTree = "<group>";
@@ -429,6 +455,13 @@
 		91FA37C51CA4E11500F8299E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				916AD2D41CAC019E003A00BF /* _group.png */,
+				916AD2D01CABFF7B003A00BF /* -dollar.png */,
+				916AD2CC1CABFEE7003A00BF /* _location.png */,
+				916AD2CD1CABFEE7003A00BF /* _user.png */,
+				916AD2CA1CABFB2B003A00BF /* sucai.jpg */,
+				916AD2C01CABD22C003A00BF /* Clinic Filled-32.png */,
+				916AD2C11CABD22C003A00BF /* Clinic-32.png */,
 				91E63E031CA8C58C009757DA /* activity.jpg */,
 				91FA37C61CA4E11500F8299E /* 01.jpg */,
 				91FA37C71CA4E11500F8299E /* 02.jpg */,
@@ -439,10 +472,10 @@
 				91FA37CC1CA4E11500F8299E /* Button_circle_checked_32px.png */,
 				91FA37CD1CA4E11500F8299E /* Checked-50.png */,
 				91FA37CE1CA4E11500F8299E /* Circle_32px.png */,
-				91FA37CF1CA4E11500F8299E /* Clinic Filled-50.png */,
-				91FA37D01CA4E11500F8299E /* Clinic-50.png */,
 				91FA37D21CA4E11500F8299E /* disease.png */,
 				91FA37D31CA4E11500F8299E /* diseases.png */,
+				916AD2BC1CABD199003A00BF /* Clinic Filled-16.png */,
+				916AD2BD1CABD199003A00BF /* Clinic-16.png */,
 				91FA37D41CA4E11500F8299E /* Doctors Bag Filled-50.png */,
 				91FA37D51CA4E11500F8299E /* Doctors Bag-50.png */,
 				91FA37D61CA4E11500F8299E /* Dumbbell Filled-50.png */,
@@ -466,6 +499,8 @@
 				91FA37E91CA4E11500F8299E /* Watch Filled-50.png */,
 				91FA37EA1CA4E11500F8299E /* Watch-50.png */,
 				91FA37EB1CA4E11500F8299E /* yangchenghu.jpg */,
+				916AD2C41CABD3D0003A00BF /* Gender Neutral User Filled-32.png */,
+				916AD2C51CABD3D0003A00BF /* Gender Neutral User-32.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -539,14 +574,17 @@
 				91FA380A1CA4E11500F8299E /* time.png in Resources */,
 				91FA37F41CA4E11500F8299E /* Circle_32px.png in Resources */,
 				9116D2D81C9D1F3200D80A50 /* InspectionResultViewController.xib in Resources */,
+				916AD2D11CABFF7B003A00BF /* -dollar.png in Resources */,
 				9116D2E11C9D24A600D80A50 /* InspectionTableViewCell.xib in Resources */,
 				917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */,
 				910EF4F01CA288A30035B0AD /* InquiryViewController.xib in Resources */,
 				91FA37EF1CA4E11500F8299E /* Active State-50.png in Resources */,
 				91FA37FA1CA4E11500F8299E /* Doctors Bag Filled-50.png in Resources */,
 				91C32ABD1CA1450E00028B31 /* HomeSubViewController.xib in Resources */,
+				916AD2BE1CABD199003A00BF /* Clinic Filled-16.png in Resources */,
 				91E33DCC1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib in Resources */,
 				91FA37F81CA4E11500F8299E /* disease.png in Resources */,
+				916AD2BB1CABCAB4003A00BF /* ActivityDetailViewController.xib in Resources */,
 				91FA38041CA4E11500F8299E /* line_ver_1px_right.png in Resources */,
 				91E63E041CA8C58C009757DA /* activity.jpg in Resources */,
 				91FA37EE1CA4E11500F8299E /* 03.jpg in Resources */,
@@ -557,11 +595,14 @@
 				91FA37FF1CA4E11500F8299E /* Exercise-50.png in Resources */,
 				91FA380C1CA4E11500F8299E /* User Group-50.png in Resources */,
 				91FA380E1CA4E11500F8299E /* User Menu-50.png in Resources */,
+				916AD2C61CABD3D0003A00BF /* Gender Neutral User Filled-32.png in Resources */,
 				91FA38031CA4E11500F8299E /* line_hon_1px_up.png in Resources */,
 				0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */,
+				916AD2CE1CABFEE7003A00BF /* _location.png in Resources */,
 				0A52E7EF1C545F8800E25D61 /* Assets.xcassets in Resources */,
 				91C32AC31CA165F200028B31 /* ActivityViewController.xib in Resources */,
 				91FA37FC1CA4E11500F8299E /* Dumbbell Filled-50.png in Resources */,
+				916AD2CF1CABFEE7003A00BF /* _user.png in Resources */,
 				91FA38091CA4E11500F8299E /* person.png in Resources */,
 				91FA38101CA4E11500F8299E /* Watch-50.png in Resources */,
 				0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */,
@@ -570,22 +611,26 @@
 				91FA38051CA4E11500F8299E /* location.png in Resources */,
 				91FA380D1CA4E11500F8299E /* User Menu Filled-50.png in Resources */,
 				91FA37F31CA4E11500F8299E /* Checked-50.png in Resources */,
+				916AD2C31CABD22C003A00BF /* Clinic-32.png in Resources */,
 				91657CFB1C96FE63000CCE22 /* BodyTableViewCell.xib in Resources */,
+				916AD2C71CABD3D0003A00BF /* Gender Neutral User-32.png in Resources */,
+				916AD2D51CAC019E003A00BF /* _group.png in Resources */,
 				91FA38111CA4E11500F8299E /* yangchenghu.jpg in Resources */,
 				91FA37ED1CA4E11500F8299E /* 02.jpg in Resources */,
 				91FA37F01CA4E11500F8299E /* back.png in Resources */,
 				91FA37F11CA4E11500F8299E /* body.png in Resources */,
+				916AD2C21CABD22C003A00BF /* Clinic Filled-32.png in Resources */,
 				91FA38001CA4E11500F8299E /* full_choice@2x.png in Resources */,
 				91E33DC01C994BB700FE46DA /* SecondarySymptomViewController.xib in Resources */,
-				91FA37F61CA4E11500F8299E /* Clinic-50.png in Resources */,
 				91FA38011CA4E11500F8299E /* full_choice@3x.png in Resources */,
 				91FA38021CA4E11500F8299E /* icon_header_back_light@2x.png in Resources */,
-				91FA37F51CA4E11500F8299E /* Clinic Filled-50.png in Resources */,
 				9116D2EA1C9D35C900D80A50 /* DiseaseViewController.xib in Resources */,
 				91FA38071CA4E11500F8299E /* News-50.png in Resources */,
 				91FA380B1CA4E11500F8299E /* User Group Filled-50.png in Resources */,
+				916AD2BF1CABD199003A00BF /* Clinic-16.png in Resources */,
 				91FA37F91CA4E11500F8299E /* diseases.png in Resources */,
 				91C32AC81CA1663300028B31 /* MyHealthViewController.xib in Resources */,
+				916AD2CB1CABFB2B003A00BF /* sucai.jpg in Resources */,
 				91FA380F1CA4E11500F8299E /* Watch Filled-50.png in Resources */,
 				91FA37FE1CA4E11500F8299E /* Exercise Filled-50.png in Resources */,
 			);
@@ -666,6 +711,7 @@
 				9116D2D71C9D1F3200D80A50 /* InspectionResultViewController.m in Sources */,
 				915A93911C576A0D003211EC /* FMDatabase.m in Sources */,
 				915A93931C576A0D003211EC /* FMDatabasePool.m in Sources */,
+				916AD2BA1CABCAB4003A00BF /* ActivityDetailViewController.m in Sources */,
 				915A93951C576A0D003211EC /* FMResultSet.m in Sources */,
 				910EF4EF1CA288A30035B0AD /* InquiryViewController.m in Sources */,
 				0A52E8001C54608700E25D61 /* RootViewController.m in Sources */,

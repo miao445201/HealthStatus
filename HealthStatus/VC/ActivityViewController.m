@@ -8,6 +8,7 @@
 
 #import "ActivityViewController.h"
 #import "ActivityTableViewCell.h"
+#import "ActivityDetailViewController.h"
 
 @interface ActivityViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *activityTableView;
@@ -24,13 +25,13 @@
     self.activityTableView.dataSource = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 #pragma tableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
+    return 1;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 8;
 }
 
@@ -48,6 +49,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    ActivityDetailViewController *activityDetail = [[ActivityDetailViewController alloc]init];
+    [self.navigationController pushViewController:activityDetail animated:YES];
 }
 
 @end
