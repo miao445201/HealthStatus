@@ -22,6 +22,10 @@
 		9116D2E31C9D277900D80A50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9116D2E21C9D277900D80A50 /* CoreGraphics.framework */; };
 		9116D2E91C9D35C900D80A50 /* DiseaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116D2E71C9D35C900D80A50 /* DiseaseViewController.m */; };
 		9116D2EA1C9D35C900D80A50 /* DiseaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9116D2E81C9D35C900D80A50 /* DiseaseViewController.xib */; };
+		914B272D1CAD22380037F25B /* Dislike Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 914B272A1CAD22380037F25B /* Dislike Filled-50.png */; };
+		914B272E1CAD22380037F25B /* Like Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 914B272B1CAD22380037F25B /* Like Filled-50.png */; };
+		914B272F1CAD22380037F25B /* Like-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 914B272C1CAD22380037F25B /* Like-50.png */; };
+		914B27311CAD22DB0037F25B /* Like-50 .png in Resources */ = {isa = PBXBuildFile; fileRef = 914B27301CAD22DB0037F25B /* Like-50 .png */; };
 		915A93821C576978003211EC /* HSDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A93811C576978003211EC /* HSDBModel.m */; };
 		915A93841C57698B003211EC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 915A93831C57698B003211EC /* libsqlite3.tbd */; };
 		915A93911C576A0D003211EC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A93871C576A0D003211EC /* FMDatabase.m */; };
@@ -81,10 +85,6 @@
 		91FA37FB1CA4E11500F8299E /* Doctors Bag-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37D51CA4E11500F8299E /* Doctors Bag-50.png */; };
 		91FA37FC1CA4E11500F8299E /* Dumbbell Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37D61CA4E11500F8299E /* Dumbbell Filled-50.png */; };
 		91FA37FD1CA4E11500F8299E /* Dumbbell-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37D71CA4E11500F8299E /* Dumbbell-50.png */; };
-		91FA37FE1CA4E11500F8299E /* Exercise Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37D81CA4E11500F8299E /* Exercise Filled-50.png */; };
-		91FA37FF1CA4E11500F8299E /* Exercise-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37D91CA4E11500F8299E /* Exercise-50.png */; };
-		91FA38001CA4E11500F8299E /* full_choice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37DA1CA4E11500F8299E /* full_choice@2x.png */; };
-		91FA38011CA4E11500F8299E /* full_choice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37DB1CA4E11500F8299E /* full_choice@3x.png */; };
 		91FA38021CA4E11500F8299E /* icon_header_back_light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37DC1CA4E11500F8299E /* icon_header_back_light@2x.png */; };
 		91FA38031CA4E11500F8299E /* line_hon_1px_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37DD1CA4E11500F8299E /* line_hon_1px_up.png */; };
 		91FA38041CA4E11500F8299E /* line_ver_1px_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37DE1CA4E11500F8299E /* line_ver_1px_right.png */; };
@@ -95,11 +95,6 @@
 		91FA380A1CA4E11500F8299E /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37E41CA4E11500F8299E /* time.png */; };
 		91FA380B1CA4E11500F8299E /* User Group Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37E51CA4E11500F8299E /* User Group Filled-50.png */; };
 		91FA380C1CA4E11500F8299E /* User Group-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37E61CA4E11500F8299E /* User Group-50.png */; };
-		91FA380D1CA4E11500F8299E /* User Menu Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37E71CA4E11500F8299E /* User Menu Filled-50.png */; };
-		91FA380E1CA4E11500F8299E /* User Menu-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37E81CA4E11500F8299E /* User Menu-50.png */; };
-		91FA380F1CA4E11500F8299E /* Watch Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37E91CA4E11500F8299E /* Watch Filled-50.png */; };
-		91FA38101CA4E11500F8299E /* Watch-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37EA1CA4E11500F8299E /* Watch-50.png */; };
-		91FA38111CA4E11500F8299E /* yangchenghu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37EB1CA4E11500F8299E /* yangchenghu.jpg */; };
 		91FA381E1CA508A200F8299E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FA381A1CA4EB7500F8299E /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +125,10 @@
 		9116D2E61C9D35C900D80A50 /* DiseaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseViewController.h; sourceTree = "<group>"; };
 		9116D2E71C9D35C900D80A50 /* DiseaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseViewController.m; sourceTree = "<group>"; };
 		9116D2E81C9D35C900D80A50 /* DiseaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiseaseViewController.xib; sourceTree = "<group>"; };
+		914B272A1CAD22380037F25B /* Dislike Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dislike Filled-50.png"; sourceTree = "<group>"; };
+		914B272B1CAD22380037F25B /* Like Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like Filled-50.png"; sourceTree = "<group>"; };
+		914B272C1CAD22380037F25B /* Like-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like-50.png"; sourceTree = "<group>"; };
+		914B27301CAD22DB0037F25B /* Like-50 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like-50 .png"; sourceTree = "<group>"; };
 		915A93801C576978003211EC /* HSDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDBModel.h; sourceTree = "<group>"; };
 		915A93811C576978003211EC /* HSDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDBModel.m; sourceTree = "<group>"; };
 		915A93831C57698B003211EC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -211,10 +210,6 @@
 		91FA37D51CA4E11500F8299E /* Doctors Bag-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doctors Bag-50.png"; sourceTree = "<group>"; };
 		91FA37D61CA4E11500F8299E /* Dumbbell Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dumbbell Filled-50.png"; sourceTree = "<group>"; };
 		91FA37D71CA4E11500F8299E /* Dumbbell-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dumbbell-50.png"; sourceTree = "<group>"; };
-		91FA37D81CA4E11500F8299E /* Exercise Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Exercise Filled-50.png"; sourceTree = "<group>"; };
-		91FA37D91CA4E11500F8299E /* Exercise-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Exercise-50.png"; sourceTree = "<group>"; };
-		91FA37DA1CA4E11500F8299E /* full_choice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full_choice@2x.png"; sourceTree = "<group>"; };
-		91FA37DB1CA4E11500F8299E /* full_choice@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full_choice@3x.png"; sourceTree = "<group>"; };
 		91FA37DC1CA4E11500F8299E /* icon_header_back_light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_header_back_light@2x.png"; sourceTree = "<group>"; };
 		91FA37DD1CA4E11500F8299E /* line_hon_1px_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_hon_1px_up.png; sourceTree = "<group>"; };
 		91FA37DE1CA4E11500F8299E /* line_ver_1px_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_ver_1px_right.png; sourceTree = "<group>"; };
@@ -225,11 +220,6 @@
 		91FA37E41CA4E11500F8299E /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time.png; sourceTree = "<group>"; };
 		91FA37E51CA4E11500F8299E /* User Group Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Group Filled-50.png"; sourceTree = "<group>"; };
 		91FA37E61CA4E11500F8299E /* User Group-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Group-50.png"; sourceTree = "<group>"; };
-		91FA37E71CA4E11500F8299E /* User Menu Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Menu Filled-50.png"; sourceTree = "<group>"; };
-		91FA37E81CA4E11500F8299E /* User Menu-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Menu-50.png"; sourceTree = "<group>"; };
-		91FA37E91CA4E11500F8299E /* Watch Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Watch Filled-50.png"; sourceTree = "<group>"; };
-		91FA37EA1CA4E11500F8299E /* Watch-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Watch-50.png"; sourceTree = "<group>"; };
-		91FA37EB1CA4E11500F8299E /* yangchenghu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yangchenghu.jpg; sourceTree = "<group>"; };
 		91FA381A1CA4EB7500F8299E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		91FA381D1CA508A200F8299E /* HealthStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HealthStatus.entitlements; sourceTree = "<group>"; };
 		B8348B2679CE82D4DEB767C2 /* Pods-HealthStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthStatus.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthStatus/Pods-HealthStatus.release.xcconfig"; sourceTree = "<group>"; };
@@ -455,6 +445,10 @@
 		91FA37C51CA4E11500F8299E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				914B27301CAD22DB0037F25B /* Like-50 .png */,
+				914B272A1CAD22380037F25B /* Dislike Filled-50.png */,
+				914B272B1CAD22380037F25B /* Like Filled-50.png */,
+				914B272C1CAD22380037F25B /* Like-50.png */,
 				916AD2D41CAC019E003A00BF /* _group.png */,
 				916AD2D01CABFF7B003A00BF /* -dollar.png */,
 				916AD2CC1CABFEE7003A00BF /* _location.png */,
@@ -480,10 +474,6 @@
 				91FA37D51CA4E11500F8299E /* Doctors Bag-50.png */,
 				91FA37D61CA4E11500F8299E /* Dumbbell Filled-50.png */,
 				91FA37D71CA4E11500F8299E /* Dumbbell-50.png */,
-				91FA37D81CA4E11500F8299E /* Exercise Filled-50.png */,
-				91FA37D91CA4E11500F8299E /* Exercise-50.png */,
-				91FA37DA1CA4E11500F8299E /* full_choice@2x.png */,
-				91FA37DB1CA4E11500F8299E /* full_choice@3x.png */,
 				91FA37DC1CA4E11500F8299E /* icon_header_back_light@2x.png */,
 				91FA37DD1CA4E11500F8299E /* line_hon_1px_up.png */,
 				91FA37DE1CA4E11500F8299E /* line_ver_1px_right.png */,
@@ -494,11 +484,6 @@
 				91FA37E41CA4E11500F8299E /* time.png */,
 				91FA37E51CA4E11500F8299E /* User Group Filled-50.png */,
 				91FA37E61CA4E11500F8299E /* User Group-50.png */,
-				91FA37E71CA4E11500F8299E /* User Menu Filled-50.png */,
-				91FA37E81CA4E11500F8299E /* User Menu-50.png */,
-				91FA37E91CA4E11500F8299E /* Watch Filled-50.png */,
-				91FA37EA1CA4E11500F8299E /* Watch-50.png */,
-				91FA37EB1CA4E11500F8299E /* yangchenghu.jpg */,
 				916AD2C41CABD3D0003A00BF /* Gender Neutral User Filled-32.png */,
 				916AD2C51CABD3D0003A00BF /* Gender Neutral User-32.png */,
 			);
@@ -572,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FA380A1CA4E11500F8299E /* time.png in Resources */,
+				914B272D1CAD22380037F25B /* Dislike Filled-50.png in Resources */,
 				91FA37F41CA4E11500F8299E /* Circle_32px.png in Resources */,
 				9116D2D81C9D1F3200D80A50 /* InspectionResultViewController.xib in Resources */,
 				916AD2D11CABFF7B003A00BF /* -dollar.png in Resources */,
@@ -580,6 +566,7 @@
 				910EF4F01CA288A30035B0AD /* InquiryViewController.xib in Resources */,
 				91FA37EF1CA4E11500F8299E /* Active State-50.png in Resources */,
 				91FA37FA1CA4E11500F8299E /* Doctors Bag Filled-50.png in Resources */,
+				914B272E1CAD22380037F25B /* Like Filled-50.png in Resources */,
 				91C32ABD1CA1450E00028B31 /* HomeSubViewController.xib in Resources */,
 				916AD2BE1CABD199003A00BF /* Clinic Filled-16.png in Resources */,
 				91E33DCC1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib in Resources */,
@@ -589,12 +576,11 @@
 				91E63E041CA8C58C009757DA /* activity.jpg in Resources */,
 				91FA37EE1CA4E11500F8299E /* 03.jpg in Resources */,
 				91FA38061CA4E11500F8299E /* News Filled-50.png in Resources */,
+				914B27311CAD22DB0037F25B /* Like-50 .png in Resources */,
 				91FA37EC1CA4E11500F8299E /* 01.jpg in Resources */,
 				91E524A01CA3C0EC00088ECD /* ActivityTableViewCell.xib in Resources */,
 				91FA37F21CA4E11500F8299E /* Button_circle_checked_32px.png in Resources */,
-				91FA37FF1CA4E11500F8299E /* Exercise-50.png in Resources */,
 				91FA380C1CA4E11500F8299E /* User Group-50.png in Resources */,
-				91FA380E1CA4E11500F8299E /* User Menu-50.png in Resources */,
 				916AD2C61CABD3D0003A00BF /* Gender Neutral User Filled-32.png in Resources */,
 				91FA38031CA4E11500F8299E /* line_hon_1px_up.png in Resources */,
 				0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */,
@@ -604,25 +590,21 @@
 				91FA37FC1CA4E11500F8299E /* Dumbbell Filled-50.png in Resources */,
 				916AD2CF1CABFEE7003A00BF /* _user.png in Resources */,
 				91FA38091CA4E11500F8299E /* person.png in Resources */,
-				91FA38101CA4E11500F8299E /* Watch-50.png in Resources */,
 				0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */,
 				91FA37FD1CA4E11500F8299E /* Dumbbell-50.png in Resources */,
 				91FA37FB1CA4E11500F8299E /* Doctors Bag-50.png in Resources */,
 				91FA38051CA4E11500F8299E /* location.png in Resources */,
-				91FA380D1CA4E11500F8299E /* User Menu Filled-50.png in Resources */,
 				91FA37F31CA4E11500F8299E /* Checked-50.png in Resources */,
 				916AD2C31CABD22C003A00BF /* Clinic-32.png in Resources */,
 				91657CFB1C96FE63000CCE22 /* BodyTableViewCell.xib in Resources */,
 				916AD2C71CABD3D0003A00BF /* Gender Neutral User-32.png in Resources */,
 				916AD2D51CAC019E003A00BF /* _group.png in Resources */,
-				91FA38111CA4E11500F8299E /* yangchenghu.jpg in Resources */,
 				91FA37ED1CA4E11500F8299E /* 02.jpg in Resources */,
+				914B272F1CAD22380037F25B /* Like-50.png in Resources */,
 				91FA37F01CA4E11500F8299E /* back.png in Resources */,
 				91FA37F11CA4E11500F8299E /* body.png in Resources */,
 				916AD2C21CABD22C003A00BF /* Clinic Filled-32.png in Resources */,
-				91FA38001CA4E11500F8299E /* full_choice@2x.png in Resources */,
 				91E33DC01C994BB700FE46DA /* SecondarySymptomViewController.xib in Resources */,
-				91FA38011CA4E11500F8299E /* full_choice@3x.png in Resources */,
 				91FA38021CA4E11500F8299E /* icon_header_back_light@2x.png in Resources */,
 				9116D2EA1C9D35C900D80A50 /* DiseaseViewController.xib in Resources */,
 				91FA38071CA4E11500F8299E /* News-50.png in Resources */,
@@ -631,8 +613,6 @@
 				91FA37F91CA4E11500F8299E /* diseases.png in Resources */,
 				91C32AC81CA1663300028B31 /* MyHealthViewController.xib in Resources */,
 				916AD2CB1CABFB2B003A00BF /* sucai.jpg in Resources */,
-				91FA380F1CA4E11500F8299E /* Watch Filled-50.png in Resources */,
-				91FA37FE1CA4E11500F8299E /* Exercise Filled-50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

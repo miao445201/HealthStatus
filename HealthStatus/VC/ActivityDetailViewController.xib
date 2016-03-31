@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="detailTextView" destination="SLo-ma-v97" id="pU7-Ic-yPK"/>
                 <outlet property="introductionView" destination="qAr-n0-qde" id="WwI-7p-hGJ"/>
+                <outlet property="loveImageView" destination="1km-vg-Nzo" id="FeD-x9-oPQ"/>
                 <outlet property="posterImageView" destination="o2T-XA-emj" id="jIr-8d-PIz"/>
                 <outlet property="scrollView" destination="8lZ-Uz-NtV" id="XdO-ul-72f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -32,6 +33,21 @@
                             <state key="normal" title="立即参加">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Like-50 .png" translatesAutoresizingMaskIntoConstraints="NO" id="1km-vg-Nzo">
+                            <rect key="frame" x="32" y="0.0" width="49" height="49"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="889个人喜欢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQt-Tk-bDv">
+                            <rect key="frame" x="89" y="20" width="118" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt4-jL-TVH">
+                            <rect key="frame" x="32" y="0.0" width="49" height="49"/>
+                            <connections>
+                                <action selector="loveButtonClicked:" destination="-1" eventType="touchUpInside" id="UmE-ku-uIG"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -118,6 +134,7 @@
     </objects>
     <resources>
         <image name="-dollar.png" width="16" height="16"/>
+        <image name="Like-50 .png" width="50" height="50"/>
         <image name="_location.png" width="16" height="16"/>
         <image name="_user.png" width="16" height="16"/>
         <image name="line_hon_1px_up.png" width="640" height="2"/>
