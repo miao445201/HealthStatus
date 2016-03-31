@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIView *introductionView;
 @property (weak, nonatomic) IBOutlet UITextView *detailTextView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIScrollView *posterScrollView;
 
 @end
 
@@ -41,11 +42,31 @@
         make.width.equalTo(@(ScreenWidth - 16));
     }];
     
+    
+    [self.posterImageView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.top);
+        make.width.equalTo(@(ScreenWidth));
+        make.height.equalTo(@325);
+    }];
+    
+    [self.posterScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.top);
+        make.bottom.equalTo(self.posterImageView.bottom);
+        make.width.equalTo(@(ScreenWidth));
+    }];
+    
     [self.scrollView makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(ScreenWidth));
         make.bottom.equalTo(self.detailTextView.bottom);
+        make.top.equalTo(self.posterScrollView.bottom);
     }];
     
+    
+    [self.introductionView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.scrollView.top);
+        make.width.equalTo(@(ScreenWidth));
+        make.height.equalTo(@183);
+    }];
     
     self.scrollView.delegate = self;
     self.scrollView.bounces = YES;
@@ -57,11 +78,13 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat yOffset = scrollView.contentOffset.y;
     if (yOffset < 0) {
-        CGRect f = self.posterImageView.frame;
-        f.origin.y = 0;
-        f.size.height += -yOffset*10;
-        self.posterImageView.frame = f;
-        [self.scrollView reloadInputViews];
+//        CGFloat scale = (-yOffset)/50.f + 1;
+//        [self.posterImageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+//            //make.top.equalTo(@0);
+//            make.width.equalTo(@(ScreenWidth*scale));
+//            make.height.equalTo(@(325*scale));
+//        }];
+        
     }
 }
 

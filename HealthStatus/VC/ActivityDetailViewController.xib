@@ -10,6 +10,7 @@
                 <outlet property="detailTextView" destination="SLo-ma-v97" id="pU7-Ic-yPK"/>
                 <outlet property="introductionView" destination="qAr-n0-qde" id="WwI-7p-hGJ"/>
                 <outlet property="posterImageView" destination="o2T-XA-emj" id="jIr-8d-PIz"/>
+                <outlet property="posterScrollView" destination="i0h-pY-XVn" id="b4f-Gc-NQv"/>
                 <outlet property="scrollView" destination="8lZ-Uz-NtV" id="XdO-ul-72f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -36,14 +37,19 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8lZ-Uz-NtV">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i0h-pY-XVn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sucai.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o2T-XA-emj">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
                         </imageView>
+                    </subviews>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8lZ-Uz-NtV">
+                    <rect key="frame" x="0.0" y="325" width="375" height="293"/>
+                    <subviews>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qAr-n0-qde">
-                            <rect key="frame" x="0.0" y="325" width="375" height="183"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="【第一期】 一字影评接龙大赛" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqG-ms-axR">
                                     <rect key="frame" x="8" y="17" width="278" height="21"/>
@@ -102,7 +108,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLo-ma-v97">
-                            <rect key="frame" x="8" y="524" width="359" height="1200"/>
+                            <rect key="frame" x="8" y="183" width="359" height="1200"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
