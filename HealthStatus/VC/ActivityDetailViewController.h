@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface ActivityDetailViewController : BaseViewController
+@interface ActivityDetailViewController : BaseViewController<UIScrollViewDelegate>
 
 @end

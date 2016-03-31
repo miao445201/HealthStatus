@@ -91,6 +91,7 @@
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
     [self setLeftNaviItemWithTitle:nil imageName:@"icon_header_back_light.png"];
     self.navigationController.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont italicSystemFontOfSize:18]};
+    self.navigationController.navigationBar.barTintColor = [UIColor  colorWithRed:30.f/255 green:158.f/255 blue:185.f/255 alpha:1.0f];//导航条的颜色
 
 }
 

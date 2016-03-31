@@ -25,6 +25,10 @@
     self.activityTableView.dataSource = self;
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:0];
+    self.navigationController.navigationBar.shadowImage = nil;
+}
 #pragma tableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
@@ -44,6 +48,16 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:@"ActivityTableViewCell" owner:self options:nil] lastObject];
     }
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 16.f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 0.1f;
 }
 
 

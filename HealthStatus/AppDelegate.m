@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];//设置窗口
      self.window.backgroundColor = [UIColor whiteColor];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor  colorWithRed:30.f/255 green:158.f/255 blue:185.f/255 alpha:1.0f]];
+    //[[UINavigationBar appearance] setBarTintColor:[UIColor  colorWithRed:30.f/255 green:158.f/255 blue:185.f/255 alpha:1.0f]];
 
     HomeSubViewController *homeVC = [[HomeSubViewController alloc]init];
     UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVC];
