@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "Masonry.h"
 
 @interface ActivityDetailViewController : BaseViewController<UIScrollViewDelegate>
 
