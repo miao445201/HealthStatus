@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zn3-0K-Nmk">
-                        <rect key="frame" x="9" y="116" width="357" height="27"/>
+                        <rect key="frame" x="0.0" y="116" width="375" height="27"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="步天下红牛帐篷节参加送好礼" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhI-ff-hAN">
                                 <rect key="frame" x="8" y="3" width="191" height="21"/>
@@ -27,17 +27,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余2天3小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEB-Eb-HAt">
-                                <rect key="frame" x="271" y="6" width="80" height="16"/>
+                                <rect key="frame" x="289" y="6" width="80" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="TQ1-en-rHv"/>
                                     <constraint firstAttribute="height" constant="16" id="rxg-sz-Whi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="U6Y-19-hhi">
-                                <rect key="frame" x="253" y="6" width="16" height="16"/>
+                                <rect key="frame" x="271" y="6" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16" id="hzM-v2-I9g"/>
                                     <constraint firstAttribute="height" constant="16" id="un9-8p-W7o"/>
@@ -56,20 +56,20 @@
                         </constraints>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activity.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YXM-nf-xg8">
-                        <rect key="frame" x="9" y="0.0" width="357" height="116"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="116" id="4iI-30-rJa"/>
                         </constraints>
                     </imageView>
                 </subviews>
-                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="YXM-nf-xg8" secondAttribute="trailing" constant="9" id="Gs2-BD-K1t"/>
+                    <constraint firstAttribute="trailing" secondItem="YXM-nf-xg8" secondAttribute="trailing" id="Gs2-BD-K1t"/>
                     <constraint firstItem="YXM-nf-xg8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JbX-Sl-iwu"/>
-                    <constraint firstAttribute="trailing" secondItem="Zn3-0K-Nmk" secondAttribute="trailing" constant="9" id="JcP-SW-ORX"/>
+                    <constraint firstAttribute="trailing" secondItem="Zn3-0K-Nmk" secondAttribute="trailing" id="JcP-SW-ORX"/>
                     <constraint firstItem="Zn3-0K-Nmk" firstAttribute="top" secondItem="YXM-nf-xg8" secondAttribute="bottom" id="SDJ-WA-ZUa"/>
-                    <constraint firstItem="YXM-nf-xg8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="Tsr-YL-dyN"/>
-                    <constraint firstItem="Zn3-0K-Nmk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="iv4-k2-FJ0"/>
+                    <constraint firstItem="YXM-nf-xg8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Tsr-YL-dyN"/>
+                    <constraint firstItem="Zn3-0K-Nmk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iv4-k2-FJ0"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

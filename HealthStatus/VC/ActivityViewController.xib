@@ -17,20 +17,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="144" sectionHeaderHeight="1" sectionFooterHeight="12" translatesAutoresizingMaskIntoConstraints="NO" id="wdB-l4-l7b">
-                    <rect key="frame" x="0.0" y="16" width="375" height="651"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <rect key="frame" x="9" y="16" width="357" height="651"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="p05-mK-qUc"/>
                         <outlet property="delegate" destination="-1" id="MaH-Rm-Rg0"/>
                     </connections>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="wdB-l4-l7b" secondAttribute="bottom" id="Boc-Dp-IGY"/>
-                <constraint firstAttribute="trailing" secondItem="wdB-l4-l7b" secondAttribute="trailing" id="Eqf-Fm-HCc"/>
                 <constraint firstItem="wdB-l4-l7b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="H0q-se-9EU"/>
-                <constraint firstItem="wdB-l4-l7b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nfz-rn-1vZ"/>
+                <constraint firstItem="wdB-l4-l7b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="9" id="Rph-vm-Iie"/>
+                <constraint firstAttribute="trailing" secondItem="wdB-l4-l7b" secondAttribute="trailing" constant="9" id="uVZ-yY-zvk"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="304.5" y="299.5"/>

@@ -51,6 +51,14 @@
 		916AD2D51CAC019E003A00BF /* _group.png in Resources */ = {isa = PBXBuildFile; fileRef = 916AD2D41CAC019E003A00BF /* _group.png */; };
 		917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */; };
 		917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */; };
+		91846FEB1CB3684E005D9424 /* InquiryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91846FE91CB3684E005D9424 /* InquiryTableViewCell.m */; };
+		91846FEC1CB3684E005D9424 /* InquiryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91846FEA1CB3684E005D9424 /* InquiryTableViewCell.xib */; };
+		91846FEE1CB36BC1005D9424 /* Hearts Filled-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 91846FED1CB36BC1005D9424 /* Hearts Filled-20.png */; };
+		91846FF01CB385B2005D9424 /* head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91846FEF1CB385B2005D9424 /* head.jpg */; };
+		91846FF41CB388EE005D9424 /* InquiryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91846FF21CB388EE005D9424 /* InquiryDetailViewController.m */; };
+		91846FF51CB388EE005D9424 /* InquiryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91846FF31CB388EE005D9424 /* InquiryDetailViewController.xib */; };
+		918470011CB39ACC005D9424 /* Star-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 918470001CB39ACC005D9424 /* Star-30.png */; };
+		918470031CB39AED005D9424 /* Star Filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 918470021CB39AED005D9424 /* Star Filled-30.png */; };
 		91C32ABC1CA1450E00028B31 /* HomeSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C32ABA1CA1450E00028B31 /* HomeSubViewController.m */; };
 		91C32ABD1CA1450E00028B31 /* HomeSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C32ABB1CA1450E00028B31 /* HomeSubViewController.xib */; };
 		91C32AC21CA165F200028B31 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C32AC01CA165F200028B31 /* ActivityViewController.m */; };
@@ -165,6 +173,16 @@
 		917F341C1C97EDB000D510B8 /* SymptomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomTableViewCell.h; sourceTree = "<group>"; };
 		917F341D1C97EDB000D510B8 /* SymptomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomTableViewCell.m; sourceTree = "<group>"; };
 		917F341E1C97EDB000D510B8 /* SymptomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SymptomTableViewCell.xib; sourceTree = "<group>"; };
+		91846FE81CB3684E005D9424 /* InquiryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InquiryTableViewCell.h; sourceTree = "<group>"; };
+		91846FE91CB3684E005D9424 /* InquiryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InquiryTableViewCell.m; sourceTree = "<group>"; };
+		91846FEA1CB3684E005D9424 /* InquiryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InquiryTableViewCell.xib; sourceTree = "<group>"; };
+		91846FED1CB36BC1005D9424 /* Hearts Filled-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hearts Filled-20.png"; sourceTree = "<group>"; };
+		91846FEF1CB385B2005D9424 /* head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head.jpg; sourceTree = "<group>"; };
+		91846FF11CB388EE005D9424 /* InquiryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InquiryDetailViewController.h; sourceTree = "<group>"; };
+		91846FF21CB388EE005D9424 /* InquiryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InquiryDetailViewController.m; sourceTree = "<group>"; };
+		91846FF31CB388EE005D9424 /* InquiryDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InquiryDetailViewController.xib; sourceTree = "<group>"; };
+		918470001CB39ACC005D9424 /* Star-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-30.png"; sourceTree = "<group>"; };
+		918470021CB39AED005D9424 /* Star Filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star Filled-30.png"; sourceTree = "<group>"; };
 		91C32AB91CA1450E00028B31 /* HomeSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeSubViewController.h; sourceTree = "<group>"; };
 		91C32ABA1CA1450E00028B31 /* HomeSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSubViewController.m; sourceTree = "<group>"; };
 		91C32ABB1CA1450E00028B31 /* HomeSubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSubViewController.xib; sourceTree = "<group>"; };
@@ -438,6 +456,12 @@
 				910EF4EC1CA288A30035B0AD /* InquiryViewController.h */,
 				910EF4ED1CA288A30035B0AD /* InquiryViewController.m */,
 				910EF4EE1CA288A30035B0AD /* InquiryViewController.xib */,
+				91846FE81CB3684E005D9424 /* InquiryTableViewCell.h */,
+				91846FE91CB3684E005D9424 /* InquiryTableViewCell.m */,
+				91846FEA1CB3684E005D9424 /* InquiryTableViewCell.xib */,
+				91846FF11CB388EE005D9424 /* InquiryDetailViewController.h */,
+				91846FF21CB388EE005D9424 /* InquiryDetailViewController.m */,
+				91846FF31CB388EE005D9424 /* InquiryDetailViewController.xib */,
 			);
 			name = Inquiry;
 			sourceTree = "<group>";
@@ -445,6 +469,10 @@
 		91FA37C51CA4E11500F8299E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				918470021CB39AED005D9424 /* Star Filled-30.png */,
+				918470001CB39ACC005D9424 /* Star-30.png */,
+				91846FEF1CB385B2005D9424 /* head.jpg */,
+				91846FED1CB36BC1005D9424 /* Hearts Filled-20.png */,
 				914B27301CAD22DB0037F25B /* Like-50 .png */,
 				914B272A1CAD22380037F25B /* Dislike Filled-50.png */,
 				914B272B1CAD22380037F25B /* Like Filled-50.png */,
@@ -557,9 +585,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FA380A1CA4E11500F8299E /* time.png in Resources */,
+				91846FF01CB385B2005D9424 /* head.jpg in Resources */,
 				914B272D1CAD22380037F25B /* Dislike Filled-50.png in Resources */,
 				91FA37F41CA4E11500F8299E /* Circle_32px.png in Resources */,
 				9116D2D81C9D1F3200D80A50 /* InspectionResultViewController.xib in Resources */,
+				91846FEE1CB36BC1005D9424 /* Hearts Filled-20.png in Resources */,
 				916AD2D11CABFF7B003A00BF /* -dollar.png in Resources */,
 				9116D2E11C9D24A600D80A50 /* InspectionTableViewCell.xib in Resources */,
 				917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */,
@@ -577,12 +607,14 @@
 				91FA37EE1CA4E11500F8299E /* 03.jpg in Resources */,
 				91FA38061CA4E11500F8299E /* News Filled-50.png in Resources */,
 				914B27311CAD22DB0037F25B /* Like-50 .png in Resources */,
+				91846FF51CB388EE005D9424 /* InquiryDetailViewController.xib in Resources */,
 				91FA37EC1CA4E11500F8299E /* 01.jpg in Resources */,
 				91E524A01CA3C0EC00088ECD /* ActivityTableViewCell.xib in Resources */,
 				91FA37F21CA4E11500F8299E /* Button_circle_checked_32px.png in Resources */,
 				91FA380C1CA4E11500F8299E /* User Group-50.png in Resources */,
 				916AD2C61CABD3D0003A00BF /* Gender Neutral User Filled-32.png in Resources */,
 				91FA38031CA4E11500F8299E /* line_hon_1px_up.png in Resources */,
+				918470031CB39AED005D9424 /* Star Filled-30.png in Resources */,
 				0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */,
 				916AD2CE1CABFEE7003A00BF /* _location.png in Resources */,
 				0A52E7EF1C545F8800E25D61 /* Assets.xcassets in Resources */,
@@ -591,6 +623,7 @@
 				916AD2CF1CABFEE7003A00BF /* _user.png in Resources */,
 				91FA38091CA4E11500F8299E /* person.png in Resources */,
 				0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */,
+				918470011CB39ACC005D9424 /* Star-30.png in Resources */,
 				91FA37FD1CA4E11500F8299E /* Dumbbell-50.png in Resources */,
 				91FA37FB1CA4E11500F8299E /* Doctors Bag-50.png in Resources */,
 				91FA38051CA4E11500F8299E /* location.png in Resources */,
@@ -611,6 +644,7 @@
 				91FA380B1CA4E11500F8299E /* User Group Filled-50.png in Resources */,
 				916AD2BF1CABD199003A00BF /* Clinic-16.png in Resources */,
 				91FA37F91CA4E11500F8299E /* diseases.png in Resources */,
+				91846FEC1CB3684E005D9424 /* InquiryTableViewCell.xib in Resources */,
 				91C32AC81CA1663300028B31 /* MyHealthViewController.xib in Resources */,
 				916AD2CB1CABFB2B003A00BF /* sucai.jpg in Resources */,
 			);
@@ -682,6 +716,7 @@
 				91E33DBF1C994BB700FE46DA /* SecondarySymptomViewController.m in Sources */,
 				917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */,
 				91E33DCB1C9959CE00FE46DA /* SecondarySymptomTableViewCell.m in Sources */,
+				91846FF41CB388EE005D9424 /* InquiryDetailViewController.m in Sources */,
 				91C32ABC1CA1450E00028B31 /* HomeSubViewController.m in Sources */,
 				91CCFB8C1C9F96C80043CCEC /* DiseaseModel.m in Sources */,
 				91CCFB861C9F93480043CCEC /* DiseaseDetailModel.m in Sources */,
@@ -699,6 +734,7 @@
 				91CCFB891C9F95690043CCEC /* BaseModel.m in Sources */,
 				91C32AC21CA165F200028B31 /* ActivityViewController.m in Sources */,
 				9116D2E91C9D35C900D80A50 /* DiseaseViewController.m in Sources */,
+				91846FEB1CB3684E005D9424 /* InquiryTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

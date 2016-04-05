@@ -8,6 +8,6 @@
 
 #import "BaseMenuViewController.h"
 
-@interface InquiryViewController : BaseViewController
+@interface InquiryViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
