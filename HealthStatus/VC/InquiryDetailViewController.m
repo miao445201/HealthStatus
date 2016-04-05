@@ -37,10 +37,7 @@
                                  NSParagraphStyleAttributeName:paragraphStyle
                                  };
     self.aritcleTextView.attributedText = [[NSAttributedString alloc] initWithString:newsString attributes:attributes];
-    float fPadding = 15.0; // 8.0px x 2
-    CGSize constraint = CGSizeMake(self.aritcleTextView.contentSize.width - fPadding, CGFLOAT_MAX);
-    CGSize size = [newsString sizeWithFont:self.aritcleTextView.font constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
-    CGFloat articleHeight = size.height;
+    CGFloat articleHeight = 2500.f;
     CGRect rect = self.aritcleTextView.frame;
     rect.size.height = articleHeight;
     self.aritcleTextView.frame = rect;
@@ -48,7 +45,7 @@
     
     [self.titleView makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(ScreenWidth));
-        make.top.equalTo(self.inquiryScrollView.top).with.offset(64);
+        make.top.equalTo(self.inquiryScrollView.top);
         make.height.equalTo(@60);
         make.left.equalTo(self.inquiryScrollView.left);
     }];
