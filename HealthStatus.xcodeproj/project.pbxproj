@@ -77,6 +77,7 @@
 		91E524A01CA3C0EC00088ECD /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E5249E1CA3C0EC00088ECD /* ActivityTableViewCell.xib */; };
 		91E63E021CA8BF4A009757DA /* libPods-HealthStatus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E63E011CA8BF4A009757DA /* libPods-HealthStatus.a */; };
 		91E63E041CA8C58C009757DA /* activity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91E63E031CA8C58C009757DA /* activity.jpg */; };
+		91F31CDF1CB52B3600FE0B95 /* headphoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91F31CDE1CB52B3600FE0B95 /* headphoto.jpg */; };
 		91FA37BE1CA4CFEB00F8299E /* ImageRollScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FA37BD1CA4CFEB00F8299E /* ImageRollScrollView.m */; };
 		91FA37EC1CA4E11500F8299E /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37C61CA4E11500F8299E /* 01.jpg */; };
 		91FA37ED1CA4E11500F8299E /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37C71CA4E11500F8299E /* 02.jpg */; };
@@ -84,7 +85,6 @@
 		91FA37EF1CA4E11500F8299E /* Active State-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37C91CA4E11500F8299E /* Active State-50.png */; };
 		91FA37F01CA4E11500F8299E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37CA1CA4E11500F8299E /* back.png */; };
 		91FA37F11CA4E11500F8299E /* body.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37CB1CA4E11500F8299E /* body.png */; };
-		91FA37F21CA4E11500F8299E /* Button_circle_checked_32px.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37CC1CA4E11500F8299E /* Button_circle_checked_32px.png */; };
 		91FA37F31CA4E11500F8299E /* Checked-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37CD1CA4E11500F8299E /* Checked-50.png */; };
 		91FA37F41CA4E11500F8299E /* Circle_32px.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37CE1CA4E11500F8299E /* Circle_32px.png */; };
 		91FA37F81CA4E11500F8299E /* disease.png in Resources */ = {isa = PBXBuildFile; fileRef = 91FA37D21CA4E11500F8299E /* disease.png */; };
@@ -211,6 +211,7 @@
 		91E5249E1CA3C0EC00088ECD /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
 		91E63E011CA8BF4A009757DA /* libPods-HealthStatus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPods-HealthStatus.a"; sourceTree = "<group>"; };
 		91E63E031CA8C58C009757DA /* activity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = activity.jpg; sourceTree = "<group>"; };
+		91F31CDE1CB52B3600FE0B95 /* headphoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = headphoto.jpg; sourceTree = "<group>"; };
 		91FA37BC1CA4CFEB00F8299E /* ImageRollScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRollScrollView.h; sourceTree = "<group>"; };
 		91FA37BD1CA4CFEB00F8299E /* ImageRollScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRollScrollView.m; sourceTree = "<group>"; };
 		91FA37C61CA4E11500F8299E /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
@@ -219,7 +220,6 @@
 		91FA37C91CA4E11500F8299E /* Active State-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Active State-50.png"; sourceTree = "<group>"; };
 		91FA37CA1CA4E11500F8299E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		91FA37CB1CA4E11500F8299E /* body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body.png; sourceTree = "<group>"; };
-		91FA37CC1CA4E11500F8299E /* Button_circle_checked_32px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_circle_checked_32px.png; sourceTree = "<group>"; };
 		91FA37CD1CA4E11500F8299E /* Checked-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checked-50.png"; sourceTree = "<group>"; };
 		91FA37CE1CA4E11500F8299E /* Circle_32px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle_32px.png; sourceTree = "<group>"; };
 		91FA37D21CA4E11500F8299E /* disease.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disease.png; sourceTree = "<group>"; };
@@ -469,6 +469,7 @@
 		91FA37C51CA4E11500F8299E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				91F31CDE1CB52B3600FE0B95 /* headphoto.jpg */,
 				918470021CB39AED005D9424 /* Star Filled-30.png */,
 				918470001CB39ACC005D9424 /* Star-30.png */,
 				91846FEF1CB385B2005D9424 /* head.jpg */,
@@ -491,7 +492,6 @@
 				91FA37C91CA4E11500F8299E /* Active State-50.png */,
 				91FA37CA1CA4E11500F8299E /* back.png */,
 				91FA37CB1CA4E11500F8299E /* body.png */,
-				91FA37CC1CA4E11500F8299E /* Button_circle_checked_32px.png */,
 				91FA37CD1CA4E11500F8299E /* Checked-50.png */,
 				91FA37CE1CA4E11500F8299E /* Circle_32px.png */,
 				91FA37D21CA4E11500F8299E /* disease.png */,
@@ -610,7 +610,6 @@
 				91846FF51CB388EE005D9424 /* InquiryDetailViewController.xib in Resources */,
 				91FA37EC1CA4E11500F8299E /* 01.jpg in Resources */,
 				91E524A01CA3C0EC00088ECD /* ActivityTableViewCell.xib in Resources */,
-				91FA37F21CA4E11500F8299E /* Button_circle_checked_32px.png in Resources */,
 				91FA380C1CA4E11500F8299E /* User Group-50.png in Resources */,
 				916AD2C61CABD3D0003A00BF /* Gender Neutral User Filled-32.png in Resources */,
 				91FA38031CA4E11500F8299E /* line_hon_1px_up.png in Resources */,
@@ -639,6 +638,7 @@
 				916AD2C21CABD22C003A00BF /* Clinic Filled-32.png in Resources */,
 				91E33DC01C994BB700FE46DA /* SecondarySymptomViewController.xib in Resources */,
 				91FA38021CA4E11500F8299E /* icon_header_back_light@2x.png in Resources */,
+				91F31CDF1CB52B3600FE0B95 /* headphoto.jpg in Resources */,
 				9116D2EA1C9D35C900D80A50 /* DiseaseViewController.xib in Resources */,
 				91FA38071CA4E11500F8299E /* News-50.png in Resources */,
 				91FA380B1CA4E11500F8299E /* User Group Filled-50.png in Resources */,

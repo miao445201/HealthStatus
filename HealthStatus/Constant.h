@@ -48,7 +48,8 @@
 #define kFoodIconCacheDir   @"FoodIconCacheDir"
 #define kUsersCacheDataDir  @"UsersCacheDataDir"
 #define kSelectSymptomNotification       @"SelectSymptomNotification"
-#define kReturnToHomeNotification       @"kReturnToHomeNotification"
+#define kReturnToHomeNotification       @"ReturnToHomeNotification"
+#define kObtainWorkDataNotification     @"ObtainWorkDataNotification"
 
 //Notification Keys
 
