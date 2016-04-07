@@ -34,8 +34,8 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Like-50 .png" translatesAutoresizingMaskIntoConstraints="NO" id="1km-vg-Nzo">
-                            <rect key="frame" x="32" y="0.0" width="49" height="49"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hearts-40.png" translatesAutoresizingMaskIntoConstraints="NO" id="1km-vg-Nzo">
+                            <rect key="frame" x="32" y="5" width="40" height="40"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="889个人喜欢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQt-Tk-bDv">
                             <rect key="frame" x="89" y="20" width="118" height="21"/>
@@ -44,7 +44,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt4-jL-TVH">
-                            <rect key="frame" x="32" y="0.0" width="49" height="49"/>
+                            <rect key="frame" x="32" y="5" width="40" height="40"/>
                             <connections>
                                 <action selector="loveButtonClicked:" destination="-1" eventType="touchUpInside" id="UmE-ku-uIG"/>
                             </connections>
@@ -134,7 +134,7 @@
     </objects>
     <resources>
         <image name="-dollar.png" width="16" height="16"/>
-        <image name="Like-50 .png" width="50" height="50"/>
+        <image name="Hearts-40.png" width="40" height="40"/>
         <image name="_location.png" width="16" height="16"/>
         <image name="_user.png" width="16" height="16"/>
         <image name="line_hon_1px_up.png" width="640" height="2"/>

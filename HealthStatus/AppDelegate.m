@@ -24,22 +24,28 @@
     HomeSubViewController *homeVC = [[HomeSubViewController alloc]init];
     UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVC];
     homeNav.title = @"首页";
-    homeNav.tabBarItem.selectedImage =  [UIImage imageNamed:@"Clinic Filled-32.png"];
-    homeNav.tabBarItem.image =  [UIImage imageNamed:@"Clinic-32.png"];
+    homeNav.tabBarItem.selectedImage =  [UIImage imageNamed:@"Home-25-2.png"];
+    homeNav.tabBarItem.image =  [UIImage imageNamed:@"Home-25.png"];
 
     MyHealthViewController *myHealthVC = [[MyHealthViewController alloc]init];
     UINavigationController *HealthNav = [[UINavigationController alloc] initWithRootViewController:myHealthVC];
     HealthNav.title = @"我的健康";
-    HealthNav.tabBarItem.selectedImage =  [UIImage imageNamed:@"Gender Neutral User Filled-32.png"];
-    HealthNav.tabBarItem.image =  [UIImage imageNamed:@"Gender Neutral User-32.png"];
+    HealthNav.tabBarItem.selectedImage =  [UIImage imageNamed:@"Contacts-25-2.png"];
+    HealthNav.tabBarItem.image =  [UIImage imageNamed:@"Contacts-25.png"];
 
     //a.初始化一个tabBar控制器
     UITabBarController *tabbarVC=[[UITabBarController alloc]init];
     tabbarVC.viewControllers = @[homeNav,HealthNav];
     self.window.rootViewController = tabbarVC;//进入的首个页面
 
-    //tabbarVC.tabBar.alpha = 0.5;
-    //设置控制器为Window的根控制器
+    
+    UIView *bgView = [[UIView alloc] initWithFrame:tabbarVC.tabBar.bounds];
+    bgView.backgroundColor = [UIColor whiteColor];
+    UIImageView *lineImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 1)];
+    lineImageView.image = [UIImage imageNamed:@"line_hon_1px_up.png"];
+    [bgView addSubview:lineImageView];
+    [tabbarVC.tabBar insertSubview:bgView atIndex:0];
+    tabbarVC.tabBar.opaque = YES;    //设置控制器为Window的根控制器
     [self.window makeKeyAndVisible];//显示
     return YES;
 }

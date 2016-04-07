@@ -8,6 +8,7 @@
 
 #import "BaseMenuViewController.h"
 #import <HealthKit/HealthKit.h>
+#import "Masonry.h"
 
 @interface MyHealthViewController : BaseMenuViewController
 

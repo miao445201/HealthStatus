@@ -15,7 +15,14 @@
 @property (weak, nonatomic) IBOutlet UIImageView *linedownImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *lineleftImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *linerightImageView;
+@property (weak, nonatomic) IBOutlet UIView *healthDataView;
+@property (weak, nonatomic) IBOutlet UILabel *footCountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *energyLabel;
 @property double currentFootCount;
+@property double currentDistance;
+@property double currentEnergy;
+
 @end
 
 @implementation MyHealthViewController
@@ -25,15 +32,13 @@
     [super viewDidLoad];
     self.title = @"我的健康";
     [self getAuthorzation];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(refreshStatus:) name:kObtainWorkDataNotification object:nil];
+    [self loadSubviews];
 }
 
-- (void)refreshStatus:(NSNotification*)notification {
-    
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)loadSubviews {
+    self.headPhotoImageView.layer.cornerRadius = self.headPhotoImageView.frame.size.width / 2;
+    self.headPhotoImageView.clipsToBounds = YES;
+
 }
 
 - (void)getAuthorzation {
@@ -93,7 +98,7 @@
     // Use the sample type for step count
     HKSampleType *sampleType = [HKSampleType quantityTypeForIdentifier:HKQuantityTypeIdentifierStepCount];
     HKSampleType *distanceSampleType = [HKSampleType quantityTypeForIdentifier:HKQuantityTypeIdentifierDistanceWalkingRunning];
-    HKSampleType *EnergysampleType = [HKSampleType quantityTypeForIdentifier:HKQuantityTypeIdentifierActiveEnergyBurned];
+    HKSampleType *energysampleType = [HKSampleType quantityTypeForIdentifier:HKQuantityTypeIdentifierActiveEnergyBurned];
 
     // Create a predicate to set start/end date bounds of the query
     NSPredicate *predicate = [HKQuery predicateForSamplesWithStartDate:startDate endDate:endDate options:HKQueryOptionStrictStartDate];
@@ -118,12 +123,64 @@
                                                                         self.currentFootCount += footCount;
                                                                     }
                                                                     NSLog(@"我今天到现在一共走了%f步",self.currentFootCount);
+                                                                    dispatch_async(dispatch_get_main_queue(), ^{
+                                                                        self.footCountLabel.text = [NSString stringWithFormat:@"%d",                                                                    (int)self.currentFootCount];                                                                    });
+                                                                    
+
                                                                 }
                                                                 
                                                             }];
+    HKSampleQuery *distancesampleQuery = [[HKSampleQuery alloc] initWithSampleType:distanceSampleType
+                                                                 predicate:predicate
+                                                                     limit:HKObjectQueryNoLimit
+                                                           sortDescriptors:@[sortDescriptor]
+                                                            resultsHandler:^(HKSampleQuery *query, NSArray *results, NSError *error) {
+                                                                
+                                                                if(!error && results)
+                                                                {
+                                                                    for(HKQuantitySample *samples in results)
+                                                                    {
+                                                                        
+                                                                        HKUnit *distanceUnit = [HKUnit meterUnitWithMetricPrefix:HKMetricPrefixKilo];
+                                                                        double distance = [samples.quantity doubleValueForUnit:distanceUnit];
+                                                                        self.currentDistance += distance;
+                                                                    }
+                                                                    NSLog(@"我今天到现在一共走了%f公里",self.currentDistance);
+                                                                    dispatch_async(dispatch_get_main_queue(), ^{
+                                                                        self.distanceLabel.text = [NSString stringWithFormat:@"%.1f",                                                                    self.currentDistance];                                                                    });
+                                                                    
+                                                                }
+                                                                
+                                                            }];
+    HKSampleQuery *energysampleQuery = [[HKSampleQuery alloc] initWithSampleType:energysampleType
+                                                                 predicate:predicate
+                                                                     limit:HKObjectQueryNoLimit
+                                                           sortDescriptors:@[sortDescriptor]
+                                                            resultsHandler:^(HKSampleQuery *query, NSArray *results, NSError *error) {
+                                                                
+                                                                if(!error && results)
+                                                                {
+                                                                    for(HKQuantitySample *samples in results)
+                                                                    {
+                                                                        
+                                                                        HKUnit *energyUnit = [HKUnit unitFromString:@"kcal"];
+                                                                        double energy = [samples.quantity doubleValueForUnit:energyUnit];
+                                                                        self.currentEnergy += energy;
+                                                                    }
+                                                                    NSLog(@"我今天到现在一共花费了%f能量",self.currentEnergy);
+                                                                    dispatch_async(dispatch_get_main_queue(), ^{
+                                                                         self.energyLabel.text = [NSString stringWithFormat:@"%d",                                                                    (int)self.currentEnergy];                                                                    });
+                  
+                                                                }
+                                                                
+                                                            }];
+
     
     // Execute the query
     [healthStore executeQuery:sampleQuery];
+    [healthStore executeQuery:distancesampleQuery];
+    [healthStore executeQuery:energysampleQuery];
+
 }
 
 - (NSDate*)obtainZeroTime:(NSDate *)currentTime {
@@ -142,4 +199,13 @@
     
     return [calendar dateFromComponents:components];
 }
+
+#pragma IBAction Methods 
+- (IBAction)myCollectionButtonClicked:(id)sender {
+}
+
+- (IBAction)myActivityButtonClicked:(id)sender {
+}
+
+
 @end
