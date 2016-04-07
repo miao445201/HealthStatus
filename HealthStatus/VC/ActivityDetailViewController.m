@@ -7,6 +7,7 @@
 //
 
 #import "ActivityDetailViewController.h"
+#import "MBProgressHUD.h"
 
 @interface ActivityDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *posterImageView;
@@ -69,6 +70,23 @@
 - (IBAction)loveButtonClicked:(id)sender {
     self.isLike = self.isLike?NO:YES;
     self.loveImageView.image = self.isLike?LikeImage:NotLikeImage;
+    self.isLike?[self showHUBWithString:@"点赞成功"]:[self showHUBWithString:@"哼，不喜欢你了"];
+}
+
+- (void)showHUBWithString:(NSString *)string {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+    
+    // Set the custom view mode to show any view.
+    hud.mode = MBProgressHUDModeCustomView;
+    // Set an image view with a checkmark.
+    UIImage *image = [[UIImage imageNamed:@"Checkmark"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    hud.customView = [[UIImageView alloc] initWithImage:image];
+    // Looks a bit nicer if we make it square.
+    hud.square = YES;
+    // Optional label text.
+    hud.labelText = string;
+    
+    [hud hide:YES afterDelay:1.5f];
 }
 
 @end

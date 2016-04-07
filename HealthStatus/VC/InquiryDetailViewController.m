@@ -7,6 +7,8 @@
 //
 
 #import "InquiryDetailViewController.h"
+#import "MBProgressHUD.h"
+
 #define UILABEL_LINE_SPACE 6
 
 @interface InquiryDetailViewController ()
@@ -80,8 +82,25 @@
 - (void)rightItemTapped {
     self.isCollect = !self.isCollect;
     self.isCollect?[self setRightNaviItemWithTitle:nil imageName:@"Star Filled-30.png"]:[self setRightNaviItemWithTitle:nil imageName:@"Star-30.png"];
+
+        self.isCollect?[self showHUBWithString:@"加入收藏成功"]:[self showHUBWithString:@"取消收藏成功"];
 }
 
+- (void)showHUBWithString:(NSString *)string {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+    
+    // Set the custom view mode to show any view.
+    hud.mode = MBProgressHUDModeCustomView;
+    // Set an image view with a checkmark.
+    UIImage *image = [[UIImage imageNamed:@"Checkmark"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    hud.customView = [[UIImageView alloc] initWithImage:image];
+    // Looks a bit nicer if we make it square.
+    hud.square = YES;
+    // Optional label text.
+    hud.labelText = string;
+    
+    [hud hide:YES afterDelay:1.5f];
+}
 //导航栏去除黑线的方式（先通过查找navbar的子视图找到黑线的imageview，然后在进入时隐藏该视图，退出时再显示出来）
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];

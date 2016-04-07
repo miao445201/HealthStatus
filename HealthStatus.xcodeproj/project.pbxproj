@@ -21,6 +21,9 @@
 		9116D2E31C9D277900D80A50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9116D2E21C9D277900D80A50 /* CoreGraphics.framework */; };
 		9116D2E91C9D35C900D80A50 /* DiseaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116D2E71C9D35C900D80A50 /* DiseaseViewController.m */; };
 		9116D2EA1C9D35C900D80A50 /* DiseaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9116D2E81C9D35C900D80A50 /* DiseaseViewController.xib */; };
+		9119E3901CB67B80001BBAD9 /* Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 9119E38D1CB67B80001BBAD9 /* Checkmark.png */; };
+		9119E3911CB67B80001BBAD9 /* Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9119E38E1CB67B80001BBAD9 /* Checkmark@2x.png */; };
+		9119E3921CB67B80001BBAD9 /* Checkmark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9119E38F1CB67B80001BBAD9 /* Checkmark@3x.png */; };
 		914B272F1CAD22380037F25B /* Like-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 914B272C1CAD22380037F25B /* Like-50.png */; };
 		915A93821C576978003211EC /* HSDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A93811C576978003211EC /* HSDBModel.m */; };
 		915A93841C57698B003211EC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 915A93831C57698B003211EC /* libsqlite3.tbd */; };
@@ -62,6 +65,8 @@
 		91CCFB861C9F93480043CCEC /* DiseaseDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCFB851C9F93480043CCEC /* DiseaseDetailModel.m */; };
 		91CCFB891C9F95690043CCEC /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCFB881C9F95690043CCEC /* BaseModel.m */; };
 		91CCFB8C1C9F96C80043CCEC /* DiseaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCFB8B1C9F96C80043CCEC /* DiseaseModel.m */; };
+		91E0AAAF1CB654B400BDA91D /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E0AAAD1CB654B400BDA91D /* CollectionViewController.m */; };
+		91E0AAB01CB654B400BDA91D /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E0AAAE1CB654B400BDA91D /* CollectionViewController.xib */; };
 		91E2A9201CB5FAB4006BDA0A /* Contacts-25-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2A91E1CB5FAB4006BDA0A /* Contacts-25-2.png */; };
 		91E2A9211CB5FAB4006BDA0A /* Contacts-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2A91F1CB5FAB4006BDA0A /* Contacts-25.png */; };
 		91E2A9241CB5FB2B006BDA0A /* Home-25-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E2A9221CB5FB2B006BDA0A /* Home-25-2.png */; };
@@ -133,6 +138,9 @@
 		9116D2E61C9D35C900D80A50 /* DiseaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseViewController.h; sourceTree = "<group>"; };
 		9116D2E71C9D35C900D80A50 /* DiseaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseViewController.m; sourceTree = "<group>"; };
 		9116D2E81C9D35C900D80A50 /* DiseaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiseaseViewController.xib; sourceTree = "<group>"; };
+		9119E38D1CB67B80001BBAD9 /* Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checkmark.png; sourceTree = "<group>"; };
+		9119E38E1CB67B80001BBAD9 /* Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark@2x.png"; sourceTree = "<group>"; };
+		9119E38F1CB67B80001BBAD9 /* Checkmark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark@3x.png"; sourceTree = "<group>"; };
 		914B272C1CAD22380037F25B /* Like-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like-50.png"; sourceTree = "<group>"; };
 		915A93801C576978003211EC /* HSDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDBModel.h; sourceTree = "<group>"; };
 		915A93811C576978003211EC /* HSDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDBModel.m; sourceTree = "<group>"; };
@@ -193,6 +201,9 @@
 		91CCFB881C9F95690043CCEC /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		91CCFB8A1C9F96C80043CCEC /* DiseaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseModel.h; sourceTree = "<group>"; };
 		91CCFB8B1C9F96C80043CCEC /* DiseaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseModel.m; sourceTree = "<group>"; };
+		91E0AAAC1CB654B400BDA91D /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		91E0AAAD1CB654B400BDA91D /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		91E0AAAE1CB654B400BDA91D /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		91E2A91E1CB5FAB4006BDA0A /* Contacts-25-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts-25-2.png"; sourceTree = "<group>"; };
 		91E2A91F1CB5FAB4006BDA0A /* Contacts-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts-25.png"; sourceTree = "<group>"; };
 		91E2A9221CB5FB2B006BDA0A /* Home-25-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-25-2.png"; sourceTree = "<group>"; };
@@ -448,6 +459,9 @@
 				91C32AC41CA1663300028B31 /* MyHealthViewController.h */,
 				91C32AC51CA1663300028B31 /* MyHealthViewController.m */,
 				91C32AC61CA1663300028B31 /* MyHealthViewController.xib */,
+				91E0AAAC1CB654B400BDA91D /* CollectionViewController.h */,
+				91E0AAAD1CB654B400BDA91D /* CollectionViewController.m */,
+				91E0AAAE1CB654B400BDA91D /* CollectionViewController.xib */,
 			);
 			name = MyHealth;
 			sourceTree = "<group>";
@@ -471,6 +485,9 @@
 		91FA37C51CA4E11500F8299E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9119E38D1CB67B80001BBAD9 /* Checkmark.png */,
+				9119E38E1CB67B80001BBAD9 /* Checkmark@2x.png */,
+				9119E38F1CB67B80001BBAD9 /* Checkmark@3x.png */,
 				919E6D621CB638D4008E1BE7 /* Rating Filled.png */,
 				919E6D5D1CB6381A008E1BE7 /* Trainers Filled-25.png */,
 				919E6D5E1CB6381A008E1BE7 /* Trainers-25.png */,
@@ -598,6 +615,7 @@
 				910EF4F01CA288A30035B0AD /* InquiryViewController.xib in Resources */,
 				91FA37EF1CA4E11500F8299E /* Active State-50.png in Resources */,
 				91FA37FA1CA4E11500F8299E /* Doctors Bag Filled-50.png in Resources */,
+				9119E3921CB67B80001BBAD9 /* Checkmark@3x.png in Resources */,
 				91C32ABD1CA1450E00028B31 /* HomeSubViewController.xib in Resources */,
 				91E33DCC1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib in Resources */,
 				91FA37F81CA4E11500F8299E /* disease.png in Resources */,
@@ -618,6 +636,7 @@
 				0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */,
 				916AD2CE1CABFEE7003A00BF /* _location.png in Resources */,
 				919E6D611CB6381A008E1BE7 /* Trainers-25.png in Resources */,
+				91E0AAB01CB654B400BDA91D /* CollectionViewController.xib in Resources */,
 				0A52E7EF1C545F8800E25D61 /* Assets.xcassets in Resources */,
 				91E2A9241CB5FB2B006BDA0A /* Home-25-2.png in Resources */,
 				91C32AC31CA165F200028B31 /* ActivityViewController.xib in Resources */,
@@ -625,6 +644,7 @@
 				916AD2CF1CABFEE7003A00BF /* _user.png in Resources */,
 				91FA38091CA4E11500F8299E /* person.png in Resources */,
 				0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */,
+				9119E3901CB67B80001BBAD9 /* Checkmark.png in Resources */,
 				918470011CB39ACC005D9424 /* Star-30.png in Resources */,
 				91FA37FD1CA4E11500F8299E /* Dumbbell-50.png in Resources */,
 				91E2A9211CB5FAB4006BDA0A /* Contacts-25.png in Resources */,
@@ -635,6 +655,7 @@
 				91657CFB1C96FE63000CCE22 /* BodyTableViewCell.xib in Resources */,
 				919E6D5B1CB636B5008E1BE7 /* Forward-20.png in Resources */,
 				916AD2D51CAC019E003A00BF /* _group.png in Resources */,
+				9119E3911CB67B80001BBAD9 /* Checkmark@2x.png in Resources */,
 				91FA37ED1CA4E11500F8299E /* 02.jpg in Resources */,
 				914B272F1CAD22380037F25B /* Like-50.png in Resources */,
 				91FA37F01CA4E11500F8299E /* back.png in Resources */,
@@ -712,6 +733,7 @@
 				91657CFA1C96FE63000CCE22 /* BodyTableViewCell.m in Sources */,
 				9116D2E01C9D24A600D80A50 /* InspectionTableViewCell.m in Sources */,
 				915A93821C576978003211EC /* HSDBModel.m in Sources */,
+				91E0AAAF1CB654B400BDA91D /* CollectionViewController.m in Sources */,
 				91657CF51C96EF35000CCE22 /* BaseViewController.m in Sources */,
 				91FA37BE1CA4CFEB00F8299E /* ImageRollScrollView.m in Sources */,
 				915A93941C576A0D003211EC /* FMDatabaseQueue.m in Sources */,
