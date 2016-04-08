@@ -56,6 +56,10 @@
 		919E6D601CB6381A008E1BE7 /* Trainers Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 919E6D5D1CB6381A008E1BE7 /* Trainers Filled-25.png */; };
 		919E6D611CB6381A008E1BE7 /* Trainers-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 919E6D5E1CB6381A008E1BE7 /* Trainers-25.png */; };
 		919E6D631CB638D4008E1BE7 /* Rating Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 919E6D621CB638D4008E1BE7 /* Rating Filled.png */; };
+		91A616E71CB79131005923D5 /* Dislike Filled-50-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91A616E61CB79131005923D5 /* Dislike Filled-50-2.png */; };
+		91A616EB1CB791B7005923D5 /* AttendActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A616E91CB791B7005923D5 /* AttendActivityViewController.m */; };
+		91A616EC1CB791B7005923D5 /* AttendActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A616EA1CB791B7005923D5 /* AttendActivityViewController.xib */; };
+		91A616EE1CB796B1005923D5 /* icon_shoppingcar_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91A616ED1CB796B1005923D5 /* icon_shoppingcar_default@2x.png */; };
 		91C32ABC1CA1450E00028B31 /* HomeSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C32ABA1CA1450E00028B31 /* HomeSubViewController.m */; };
 		91C32ABD1CA1450E00028B31 /* HomeSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C32ABB1CA1450E00028B31 /* HomeSubViewController.xib */; };
 		91C32AC21CA165F200028B31 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C32AC01CA165F200028B31 /* ActivityViewController.m */; };
@@ -186,6 +190,11 @@
 		919E6D5D1CB6381A008E1BE7 /* Trainers Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Trainers Filled-25.png"; sourceTree = "<group>"; };
 		919E6D5E1CB6381A008E1BE7 /* Trainers-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Trainers-25.png"; sourceTree = "<group>"; };
 		919E6D621CB638D4008E1BE7 /* Rating Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rating Filled.png"; sourceTree = "<group>"; };
+		91A616E61CB79131005923D5 /* Dislike Filled-50-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dislike Filled-50-2.png"; sourceTree = "<group>"; };
+		91A616E81CB791B7005923D5 /* AttendActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendActivityViewController.h; sourceTree = "<group>"; };
+		91A616E91CB791B7005923D5 /* AttendActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendActivityViewController.m; sourceTree = "<group>"; };
+		91A616EA1CB791B7005923D5 /* AttendActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttendActivityViewController.xib; sourceTree = "<group>"; };
+		91A616ED1CB796B1005923D5 /* icon_shoppingcar_default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_shoppingcar_default@2x.png"; sourceTree = "<group>"; };
 		91C32AB91CA1450E00028B31 /* HomeSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeSubViewController.h; sourceTree = "<group>"; };
 		91C32ABA1CA1450E00028B31 /* HomeSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSubViewController.m; sourceTree = "<group>"; };
 		91C32ABB1CA1450E00028B31 /* HomeSubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSubViewController.xib; sourceTree = "<group>"; };
@@ -462,6 +471,9 @@
 				91E0AAAC1CB654B400BDA91D /* CollectionViewController.h */,
 				91E0AAAD1CB654B400BDA91D /* CollectionViewController.m */,
 				91E0AAAE1CB654B400BDA91D /* CollectionViewController.xib */,
+				91A616E81CB791B7005923D5 /* AttendActivityViewController.h */,
+				91A616E91CB791B7005923D5 /* AttendActivityViewController.m */,
+				91A616EA1CB791B7005923D5 /* AttendActivityViewController.xib */,
 			);
 			name = MyHealth;
 			sourceTree = "<group>";
@@ -485,6 +497,8 @@
 		91FA37C51CA4E11500F8299E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				91A616ED1CB796B1005923D5 /* icon_shoppingcar_default@2x.png */,
+				91A616E61CB79131005923D5 /* Dislike Filled-50-2.png */,
 				9119E38D1CB67B80001BBAD9 /* Checkmark.png */,
 				9119E38E1CB67B80001BBAD9 /* Checkmark@2x.png */,
 				9119E38F1CB67B80001BBAD9 /* Checkmark@3x.png */,
@@ -614,6 +628,7 @@
 				917F34201C97EDB000D510B8 /* SymptomTableViewCell.xib in Resources */,
 				910EF4F01CA288A30035B0AD /* InquiryViewController.xib in Resources */,
 				91FA37EF1CA4E11500F8299E /* Active State-50.png in Resources */,
+				91A616EC1CB791B7005923D5 /* AttendActivityViewController.xib in Resources */,
 				91FA37FA1CA4E11500F8299E /* Doctors Bag Filled-50.png in Resources */,
 				9119E3921CB67B80001BBAD9 /* Checkmark@3x.png in Resources */,
 				91C32ABD1CA1450E00028B31 /* HomeSubViewController.xib in Resources */,
@@ -624,6 +639,7 @@
 				91E63E041CA8C58C009757DA /* activity.jpg in Resources */,
 				91FA37EE1CA4E11500F8299E /* 03.jpg in Resources */,
 				91FA38061CA4E11500F8299E /* News Filled-50.png in Resources */,
+				91A616EE1CB796B1005923D5 /* icon_shoppingcar_default@2x.png in Resources */,
 				91E2A9201CB5FAB4006BDA0A /* Contacts-25-2.png in Resources */,
 				91846FF51CB388EE005D9424 /* InquiryDetailViewController.xib in Resources */,
 				91FA37EC1CA4E11500F8299E /* 01.jpg in Resources */,
@@ -663,6 +679,7 @@
 				91E33DC01C994BB700FE46DA /* SecondarySymptomViewController.xib in Resources */,
 				91FA38021CA4E11500F8299E /* icon_header_back_light@2x.png in Resources */,
 				91F31CDF1CB52B3600FE0B95 /* headphoto.jpg in Resources */,
+				91A616E71CB79131005923D5 /* Dislike Filled-50-2.png in Resources */,
 				9116D2EA1C9D35C900D80A50 /* DiseaseViewController.xib in Resources */,
 				91FA38071CA4E11500F8299E /* News-50.png in Resources */,
 				91FA380B1CA4E11500F8299E /* User Group Filled-50.png in Resources */,
@@ -735,6 +752,7 @@
 				915A93821C576978003211EC /* HSDBModel.m in Sources */,
 				91E0AAAF1CB654B400BDA91D /* CollectionViewController.m in Sources */,
 				91657CF51C96EF35000CCE22 /* BaseViewController.m in Sources */,
+				91A616EB1CB791B7005923D5 /* AttendActivityViewController.m in Sources */,
 				91FA37BE1CA4CFEB00F8299E /* ImageRollScrollView.m in Sources */,
 				915A93941C576A0D003211EC /* FMDatabaseQueue.m in Sources */,
 				91E33DC71C994F7500FE46DA /* BaseMenuViewController.m in Sources */,

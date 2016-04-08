@@ -50,6 +50,7 @@
 #define kSelectSymptomNotification       @"SelectSymptomNotification"
 #define kReturnToHomeNotification       @"ReturnToHomeNotification"
 #define kObtainWorkDataNotification     @"ObtainWorkDataNotification"
+#define kReturnToActivityNotification     @"ReturnToActivityNotification"
 
 //Notification Keys
 

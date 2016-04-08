@@ -54,12 +54,17 @@
     self.leftLegButton.transform =  CGAffineTransformRotate (self.leftLegButton.transform, M_PI/36);
     self.rightLegButton.transform = CGAffineTransformRotate(self.rightLegButton.transform, -M_PI/36);
     self.showClickLabel.text = @"当前选择部位";
+    
+    NSIndexPath *selectPath = [NSIndexPath indexPathForRow:[self.bodyArray indexOfObject:@"头"] inSection:0];
+    [self tableView:self.bodyTableview didSelectRowAtIndexPath:selectPath];
+    [self.bodyTableview scrollToRowAtIndexPath:selectPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }
 
 - (void)rightItemTapped {
     self.bodySelect = self.listView.hidden = !self.bodySelect;
     NSString *rightNavString = self.bodySelect?@"列表查看":@"部位图";
     [self setRightNaviItemWithTitle:rightNavString imageName:nil];
+    
 }
 - (void)reloadSymptomTableview:(NSNotification *)notification {
     NSString *selectBody = notification.object;

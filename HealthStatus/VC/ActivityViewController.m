@@ -39,7 +39,7 @@
 }
 
 - (void)loadNewData{
-    sleep(2.);
+    sleep(1.);
     [self.activityTableView.mj_header endRefreshing];
 }
 

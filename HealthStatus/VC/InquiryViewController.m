@@ -37,7 +37,7 @@
 }
 
 - (void)loadNewData{
-    sleep(2.);
+    sleep(1.);
     [self.inquiryTableView.mj_header endRefreshing];
 }
 

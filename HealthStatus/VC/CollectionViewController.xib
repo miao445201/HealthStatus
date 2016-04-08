@@ -23,7 +23,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="Gzu-HE-stk"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <state key="normal" title="资讯">
                                 <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -35,27 +35,30 @@
                                 <constraint firstAttribute="width" constant="1" id="Q7d-fD-LbZ"/>
                             </constraints>
                         </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_hon_1px_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="S7Q-Ac-kwp">
+                            <rect key="frame" x="20" y="43" width="335" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="HCl-jf-lho"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="c7I-43-jb1"/>
+                            </constraints>
+                        </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfm-oQ-Khh">
                             <rect key="frame" x="188" y="0.0" width="187" height="44"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="MwQ-od-Rri"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <state key="normal" title="活动">
                                 <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="line_hon_1px_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="S7Q-Ac-kwp">
-                            <rect key="frame" x="20" y="43" width="335" height="1"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="1" id="HCl-jf-lho"/>
-                            </constraints>
-                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="S7Q-Ac-kwp" firstAttribute="leading" secondItem="mDn-82-nk8" secondAttribute="leading" constant="20" id="0RK-h3-ZVD"/>
                         <constraint firstAttribute="height" constant="44" id="6o3-fq-AoS"/>
                         <constraint firstItem="Yfm-oQ-Khh" firstAttribute="leading" secondItem="bwp-3y-UGw" secondAttribute="trailing" id="AAH-QD-J98"/>
+                        <constraint firstAttribute="trailing" secondItem="S7Q-Ac-kwp" secondAttribute="trailing" constant="20" id="IlV-aT-QAG"/>
                         <constraint firstItem="bwp-3y-UGw" firstAttribute="top" secondItem="mDn-82-nk8" secondAttribute="top" constant="2" id="KsJ-s2-0GW"/>
                         <constraint firstItem="Jh5-Ue-ENr" firstAttribute="top" secondItem="mDn-82-nk8" secondAttribute="top" id="QTe-v5-2Ni"/>
                         <constraint firstItem="Yfm-oQ-Khh" firstAttribute="top" secondItem="mDn-82-nk8" secondAttribute="top" id="VND-Aj-40R"/>
@@ -66,12 +69,18 @@
                         <constraint firstAttribute="bottom" secondItem="bwp-3y-UGw" secondAttribute="bottom" constant="2" id="ilz-Xg-8pg"/>
                         <constraint firstAttribute="bottom" secondItem="Yfm-oQ-Khh" secondAttribute="bottom" id="sem-CC-Ze5"/>
                         <constraint firstItem="bwp-3y-UGw" firstAttribute="centerX" secondItem="mDn-82-nk8" secondAttribute="centerX" id="syr-hB-rPJ"/>
+                        <constraint firstAttribute="bottom" secondItem="S7Q-Ac-kwp" secondAttribute="bottom" id="yP4-YO-eae"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ALk-Vb-CpL">
-                    <rect key="frame" x="0.0" y="110" width="375" height="551"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dislike Filled-50-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="xvn-05-0zI">
+                    <rect key="frame" x="162" y="239" width="50" height="50"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="暂无收藏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZS-Kn-w6d">
+                    <rect key="frame" x="153" y="302" width="68" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -84,6 +93,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Dislike Filled-50-2.png" width="50" height="50"/>
         <image name="line_hon_1px_up.png" width="640" height="2"/>
         <image name="line_ver_1px_right.png" width="2" height="149"/>
     </resources>

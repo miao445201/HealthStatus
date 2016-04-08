@@ -8,7 +8,7 @@
 
 #import "MyHealthViewController.h"
 #import "CollectionViewController.h"
-
+#import "AttendActivityViewController.h"
 
 @interface MyHealthViewController ()
 @property(strong, nonatomic) HKHealthStore *healthStore;
@@ -41,7 +41,6 @@
 - (void)loadSubviews {
     self.headPhotoImageView.layer.cornerRadius = self.headPhotoImageView.frame.size.width / 2;
     self.headPhotoImageView.clipsToBounds = YES;
-
 }
 
 - (void)getAuthorzation {
@@ -210,6 +209,8 @@
 }
 
 - (IBAction)myActivityButtonClicked:(id)sender {
+    AttendActivityViewController *attendVC = [[AttendActivityViewController alloc] init];
+    [self.navigationController pushViewController:attendVC animated:YES];
 }
 
 

@@ -99,7 +99,7 @@
 
 - (void)doSomeWork {
     // Simulate by just waiting.
-    sleep(3.);
+    sleep(1.);
 }
 - (void)showHUBWithString:(NSString *)string {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
