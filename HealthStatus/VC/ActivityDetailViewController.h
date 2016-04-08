@@ -9,6 +9,6 @@
 #import "BaseViewController.h"
 #import "Masonry.h"
 
-@interface ActivityDetailViewController : BaseViewController<UIScrollViewDelegate>
+@interface ActivityDetailViewController : BaseViewController<UIScrollViewDelegate,UINavigationControllerDelegate>
 
 @end

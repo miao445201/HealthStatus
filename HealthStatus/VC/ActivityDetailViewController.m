@@ -9,12 +9,13 @@
 #import "ActivityDetailViewController.h"
 #import "MBProgressHUD.h"
 
-@interface ActivityDetailViewController ()
+@interface ActivityDetailViewController ()<UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *posterImageView;
 @property (weak, nonatomic) IBOutlet UIView *introductionView;
 @property (weak, nonatomic) IBOutlet UITextView *detailTextView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *loveImageView;
+@property (weak, nonatomic) IBOutlet UIButton *attendButton;
 @property BOOL isLike;
 @end
 
@@ -26,6 +27,7 @@
 }
 
 - (void)initScrollView {
+    //self.navigationController.delegate = self;
     //设置导航栏的背景照片为透明图片
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:0];
     self.navigationController.navigationBar.shadowImage=[UIImage new];
@@ -72,7 +74,29 @@
     self.loveImageView.image = self.isLike?LikeImage:NotLikeImage;
     self.isLike?[self showHUBWithString:@"点赞成功"]:[self showHUBWithString:@"哼，不喜欢你了"];
 }
+- (IBAction)takepartinButtonClicked:(id)sender {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+    
+    // Set the label text.
+    hud.labelText = @"正在报名中...";
+    // You can also adjust other label properties if needed.
+    // hud.label.font = [UIFont italicSystemFontOfSize:16.f];
+    
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
+        [self doSomeWork];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [hud hide:YES];
+            [self.attendButton setTitle:@"报名成功" forState:UIControlStateNormal];
+            self.attendButton.backgroundColor = [UIColor grayColor];
+            self.attendButton.enabled = NO;
+        });
+    });
+}
 
+- (void)doSomeWork {
+    // Simulate by just waiting.
+    sleep(3.);
+}
 - (void)showHUBWithString:(NSString *)string {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
     
@@ -88,5 +112,25 @@
     
     [hud hide:YES afterDelay:1.5f];
 }
+
+
+//- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+//
+//    // 如果进入的是当前视图控制器
+//    if (viewController == self) {
+//        // 背景设置为黑色
+//        self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0];
+//        // 透明度设置为0.3
+//        //self.navigationController.navigationBar.alpha = 0.300;
+//        // 设置为半透明
+//        self.navigationController.navigationBar.translucent = YES;
+//    } else {
+//        // 进入其他视图控制器
+//        self.navigationController.navigationBar.alpha = 1;
+//        // 背景颜色设置为系统默认颜色
+//        self.navigationController.navigationBar.barTintColor = [UIColor  colorWithRed:30.f/255 green:158.f/255 blue:185.f/255 alpha:1.0f];
+//        self.navigationController.navigationBar.translucent = NO;
+//    }
+//}
 
 @end

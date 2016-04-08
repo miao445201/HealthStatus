@@ -11,6 +11,7 @@
 #import "ActivityViewController.h"
 #import "InquiryViewController.h"
 #import "ImageRollScrollView.h"
+#import "ActivityDetailViewController.h"
 
 @interface HomeSubViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *activityTableView;
@@ -28,6 +29,15 @@
     self.activityTableView.delegate = self;
     self.activityTableView.dataSource = self;
 }
+
+//- (void)viewWillAppear:(BOOL)animated {
+//    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:0];
+//    self.navigationController.navigationBar.shadowImage = nil;
+//}
+//- (void)viewDidAppear:(BOOL)animated {
+//    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:0];
+//    self.navigationController.navigationBar.shadowImage = nil;
+//}
 
 - (void)layoutForView {
     UIImage *image1 = [UIImage imageNamed:@"01.jpg"];
@@ -84,6 +94,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    ActivityDetailViewController *activityDetail = [[ActivityDetailViewController alloc]init];
+//    [self.navigationController pushViewController:activityDetail animated:YES];
+
 }
 
 @end

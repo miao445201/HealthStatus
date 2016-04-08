@@ -25,10 +25,16 @@
     self.activityTableView.dataSource = self;
 }
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:0];
     self.navigationController.navigationBar.shadowImage = nil;
 }
+//
+//- (void)viewDidAppear:(BOOL)animated {
+//    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:0];
+//    self.navigationController.navigationBar.shadowImage = nil;
+//}
+
 #pragma tableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
@@ -66,5 +72,6 @@
     ActivityDetailViewController *activityDetail = [[ActivityDetailViewController alloc]init];
     [self.navigationController pushViewController:activityDetail animated:YES];
 }
+
 
 @end
