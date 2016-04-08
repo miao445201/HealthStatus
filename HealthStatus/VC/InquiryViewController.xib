@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="97" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="VgB-cC-elm">
-                    <rect key="frame" x="9" y="16" width="357" height="655"/>
+                    <rect key="frame" x="9" y="0.0" width="357" height="671"/>
                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="OcF-5a-FHX"/>
@@ -29,7 +29,7 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="VgB-cC-elm" secondAttribute="bottom" id="RZw-I4-saw"/>
                 <constraint firstItem="VgB-cC-elm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="9" id="fFD-la-vOi"/>
-                <constraint firstItem="VgB-cC-elm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="kCc-yE-xi4"/>
+                <constraint firstItem="VgB-cC-elm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kCc-yE-xi4"/>
                 <constraint firstAttribute="trailing" secondItem="VgB-cC-elm" secondAttribute="trailing" constant="9" id="waq-e6-2MU"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

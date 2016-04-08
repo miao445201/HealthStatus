@@ -9,6 +9,7 @@
 #import "InquiryViewController.h"
 #import "InquiryTableViewCell.h"
 #import "InquiryDetailViewController.h"
+#import "MJRefresh.h"
 
 @interface InquiryViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *inquiryTableView;
@@ -20,12 +21,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"健康资讯";
+    [self loadSubViews];
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)loadSubViews {
+    self.inquiryTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        // 进入刷新状态后会自动调用这个block
+    }];
+    // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
+    self.inquiryTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    
+    // 马上进入刷新状态
+    [self.inquiryTableView.mj_header beginRefreshing];
+}
+
+- (void)loadNewData{
+    sleep(2.);
+    [self.inquiryTableView.mj_header endRefreshing];
 }
 
 #pragma tableViewDelegate
@@ -35,7 +48,7 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 8;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

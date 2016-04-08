@@ -7,6 +7,9 @@
 //
 
 #import "MyHealthViewController.h"
+#import "CollectionViewController.h"
+
+
 @interface MyHealthViewController ()
 @property(strong, nonatomic) HKHealthStore *healthStore;
 @property (weak, nonatomic) IBOutlet UIImageView *headPhotoImageView;
@@ -202,6 +205,8 @@
 
 #pragma IBAction Methods 
 - (IBAction)myCollectionButtonClicked:(id)sender {
+    CollectionViewController *collectionVC = [[CollectionViewController alloc]init];
+    [self.navigationController pushViewController:collectionVC animated:YES];
 }
 
 - (IBAction)myActivityButtonClicked:(id)sender {

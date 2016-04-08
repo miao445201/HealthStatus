@@ -26,6 +26,10 @@
     [self initScrollView];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:0];
+    self.navigationController.navigationBar.shadowImage = nil;
+}
 - (void)initScrollView {
     //self.navigationController.delegate = self;
     //设置导航栏的背景照片为透明图片

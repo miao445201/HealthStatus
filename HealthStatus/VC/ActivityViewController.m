@@ -9,6 +9,7 @@
 #import "ActivityViewController.h"
 #import "ActivityTableViewCell.h"
 #import "ActivityDetailViewController.h"
+#import "MJRefresh.h"
 
 @interface ActivityViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *activityTableView;
@@ -23,17 +24,24 @@
     // Do any additional setup after loading the view from its nib.
     self.activityTableView.delegate = self;
     self.activityTableView.dataSource = self;
+    [self loadSubViews];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:0];
-    self.navigationController.navigationBar.shadowImage = nil;
+- (void)loadSubViews {
+    self.activityTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        // 进入刷新状态后会自动调用这个block
+    }];
+    // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
+    self.activityTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    
+    // 马上进入刷新状态
+    [self.activityTableView.mj_header beginRefreshing];
 }
-//
-//- (void)viewDidAppear:(BOOL)animated {
-//    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:0];
-//    self.navigationController.navigationBar.shadowImage = nil;
-//}
+
+- (void)loadNewData{
+    sleep(2.);
+    [self.activityTableView.mj_header endRefreshing];
+}
 
 #pragma tableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -42,7 +50,7 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 8;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
