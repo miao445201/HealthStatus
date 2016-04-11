@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -19,6 +19,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="步天下红牛帐篷节参加送好礼" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhI-ff-hAN">
                                 <rect key="frame" x="8" y="3" width="191" height="21"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="191" id="5MS-F9-RTc"/>
                                     <constraint firstAttribute="height" constant="21" id="96t-E0-toD"/>
@@ -28,6 +29,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余2天3小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEB-Eb-HAt">
                                 <rect key="frame" x="289" y="6" width="80" height="16"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="TQ1-en-rHv"/>
                                     <constraint firstAttribute="height" constant="16" id="rxg-sz-Whi"/>
@@ -38,12 +40,14 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="U6Y-19-hhi">
                                 <rect key="frame" x="271" y="6" width="16" height="16"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16" id="hzM-v2-I9g"/>
                                     <constraint firstAttribute="height" constant="16" id="un9-8p-W7o"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JhI-ff-hAN" firstAttribute="top" secondItem="Zn3-0K-Nmk" secondAttribute="top" constant="3" id="21o-1y-wt0"/>
@@ -57,11 +61,13 @@
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activity.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YXM-nf-xg8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
+                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="116" id="4iI-30-rJa"/>
                         </constraints>
                     </imageView>
                 </subviews>
+                <animations/>
                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="YXM-nf-xg8" secondAttribute="trailing" id="Gs2-BD-K1t"/>
@@ -72,7 +78,13 @@
                     <constraint firstItem="Zn3-0K-Nmk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iv4-k2-FJ0"/>
                 </constraints>
             </tableViewCellContentView>
+            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="activityImageView" destination="YXM-nf-xg8" id="vxF-R5-mYd"/>
+                <outlet property="activityTime" destination="sEB-Eb-HAt" id="g2z-NB-WVv"/>
+                <outlet property="activityTitle" destination="JhI-ff-hAN" id="TQb-dI-5le"/>
+            </connections>
             <point key="canvasLocation" x="383.5" y="394.5"/>
         </tableViewCell>
     </objects>

@@ -17,6 +17,9 @@
 @property (weak, nonatomic) IBOutlet UITableView *activityTableView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet ImageRollScrollView *imageScrollView;
+@property (strong,nonatomic) NSMutableArray *activityImageArray;
+@property (strong,nonatomic) NSMutableArray *activityTextArray;
+@property (strong,nonatomic) NSMutableArray *activityTimeArray;
 @end
 
 @implementation HomeSubViewController
@@ -40,12 +43,18 @@
 //}
 
 - (void)layoutForView {
+    //初始化滚动图
     UIImage *image1 = [UIImage imageNamed:@"01.jpg"];
     UIImage *image2 = [UIImage imageNamed:@"02.jpg"];
     UIImage *image3 = [UIImage imageNamed:@"03.jpg"];
     NSArray *imageArray = [[NSArray alloc]initWithObjects:image1,image2,image3,nil];
-    NSArray *textArray = @[@"我美吗",@"吻我",@"别说话"];
-    [imageScrollView loadImages:imageArray withRollTime:2.0f optionalText:textArray];
+    NSArray *textArray = @[@"世界公认的最佳吃法 全球各地健康饮食清单",@"一个简单测试 预知心血管疾病风险",@"做不同的运动实际能消耗多少热量？"];
+    [imageScrollView loadImages:imageArray withRollTime:3.0f optionalText:textArray];
+    
+    //初始化推荐图
+    self.activityImageArray = [[NSMutableArray alloc]initWithObjects:[UIImage imageNamed:@"IMG_0650.jpg"],[UIImage imageNamed:@"IMG_0653.jpg"],[UIImage imageNamed:@"IMG_0652.jpg"], nil];
+    self.activityTextArray = [[NSMutableArray alloc]initWithObjects:@"小岛探春之苏州夏令营",@"苏州阳澄湖半岛最盛大梨花开幕在即，你报名了吗",@"春天有约，相聚同里", nil];
+    self.activityTimeArray = [[NSMutableArray alloc] initWithObjects:@"剩余2天3小时",@"剩余7天16小时",@"剩余5天8小时", nil];
 }
 - (IBAction)diseaseButtonClicked:(id)sender {
     RootViewController *rootVC = [[RootViewController alloc]init];
@@ -78,6 +87,9 @@
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"ActivityTableViewCell" owner:self options:nil] lastObject];
     }
+    cell.activityImageView.image = self.activityImageArray[indexPath.section];
+    cell.activityTitle.text = self.activityTextArray[indexPath.section];
+    cell.activityTime.text = self.activityTimeArray[indexPath.section];
     return cell;
 }
 

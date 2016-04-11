@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0F805B1CBB4C8D00FB9BCC /* IMG_0650.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F80571CBB4C8D00FB9BCC /* IMG_0650.JPG */; };
+		0A0F805C1CBB4C8D00FB9BCC /* IMG_0651.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F80581CBB4C8D00FB9BCC /* IMG_0651.JPG */; };
+		0A0F805D1CBB4C8D00FB9BCC /* IMG_0652.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F80591CBB4C8D00FB9BCC /* IMG_0652.JPG */; };
+		0A0F805E1CBB4C8D00FB9BCC /* IMG_0653.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F805A1CBB4C8D00FB9BCC /* IMG_0653.JPG */; };
 		0A52E7E41C545F8800E25D61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52E7E31C545F8800E25D61 /* main.m */; };
 		0A52E7EF1C545F8800E25D61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A52E7EE1C545F8800E25D61 /* Assets.xcassets */; };
 		0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A52E7F01C545F8800E25D61 /* LaunchScreen.storyboard */; };
@@ -117,6 +121,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A0F80571CBB4C8D00FB9BCC /* IMG_0650.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0650.JPG; sourceTree = "<group>"; };
+		0A0F80581CBB4C8D00FB9BCC /* IMG_0651.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0651.JPG; sourceTree = "<group>"; };
+		0A0F80591CBB4C8D00FB9BCC /* IMG_0652.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0652.JPG; sourceTree = "<group>"; };
+		0A0F805A1CBB4C8D00FB9BCC /* IMG_0653.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0653.JPG; sourceTree = "<group>"; };
 		0A52E7DF1C545F8800E25D61 /* HealthStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A52E7E31C545F8800E25D61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A52E7E51C545F8800E25D61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -497,6 +505,10 @@
 		91FA37C51CA4E11500F8299E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0A0F80571CBB4C8D00FB9BCC /* IMG_0650.JPG */,
+				0A0F80581CBB4C8D00FB9BCC /* IMG_0651.JPG */,
+				0A0F80591CBB4C8D00FB9BCC /* IMG_0652.JPG */,
+				0A0F805A1CBB4C8D00FB9BCC /* IMG_0653.JPG */,
 				91A616ED1CB796B1005923D5 /* icon_shoppingcar_default@2x.png */,
 				91A616E61CB79131005923D5 /* Dislike Filled-50-2.png */,
 				9119E38D1CB67B80001BBAD9 /* Checkmark.png */,
@@ -563,7 +575,6 @@
 				0A52E7DB1C545F8800E25D61 /* Sources */,
 				0A52E7DC1C545F8800E25D61 /* Frameworks */,
 				0A52E7DD1C545F8800E25D61 /* Resources */,
-				8592334F0E8D46C82642CA0B /* Embed Pods Frameworks */,
 				164CBBC1F6F80A662902B352 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -622,6 +633,7 @@
 				91846FF01CB385B2005D9424 /* head.jpg in Resources */,
 				91FA37F41CA4E11500F8299E /* Circle_32px.png in Resources */,
 				9116D2D81C9D1F3200D80A50 /* InspectionResultViewController.xib in Resources */,
+				0A0F805C1CBB4C8D00FB9BCC /* IMG_0651.JPG in Resources */,
 				91846FEE1CB36BC1005D9424 /* Hearts Filled-20.png in Resources */,
 				916AD2D11CABFF7B003A00BF /* -dollar.png in Resources */,
 				9116D2E11C9D24A600D80A50 /* InspectionTableViewCell.xib in Resources */,
@@ -635,7 +647,9 @@
 				91E33DCC1C9959CE00FE46DA /* SecondarySymptomTableViewCell.xib in Resources */,
 				91FA37F81CA4E11500F8299E /* disease.png in Resources */,
 				916AD2BB1CABCAB4003A00BF /* ActivityDetailViewController.xib in Resources */,
+				0A0F805E1CBB4C8D00FB9BCC /* IMG_0653.JPG in Resources */,
 				91FA38041CA4E11500F8299E /* line_ver_1px_right.png in Resources */,
+				0A0F805B1CBB4C8D00FB9BCC /* IMG_0650.JPG in Resources */,
 				91E63E041CA8C58C009757DA /* activity.jpg in Resources */,
 				91FA37EE1CA4E11500F8299E /* 03.jpg in Resources */,
 				91FA38061CA4E11500F8299E /* News Filled-50.png in Resources */,
@@ -660,6 +674,7 @@
 				916AD2CF1CABFEE7003A00BF /* _user.png in Resources */,
 				91FA38091CA4E11500F8299E /* person.png in Resources */,
 				0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */,
+				0A0F805D1CBB4C8D00FB9BCC /* IMG_0652.JPG in Resources */,
 				9119E3901CB67B80001BBAD9 /* Checkmark.png in Resources */,
 				918470011CB39ACC005D9424 /* Star-30.png in Resources */,
 				91FA37FD1CA4E11500F8299E /* Dumbbell-50.png in Resources */,
@@ -723,21 +738,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8592334F0E8D46C82642CA0B /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthStatus/Pods-HealthStatus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

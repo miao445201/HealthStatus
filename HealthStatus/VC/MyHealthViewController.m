@@ -34,8 +34,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"我的健康";
-    [self getAuthorzation];
     [self loadSubviews];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self getAuthorzation];
 }
 
 - (void)loadSubviews {
