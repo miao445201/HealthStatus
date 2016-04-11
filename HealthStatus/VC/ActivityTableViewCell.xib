@@ -18,20 +18,20 @@
                         <rect key="frame" x="0.0" y="116" width="375" height="27"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="步天下红牛帐篷节参加送好礼" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhI-ff-hAN">
-                                <rect key="frame" x="8" y="3" width="191" height="21"/>
+                                <rect key="frame" x="8" y="3" width="235" height="21"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="191" id="5MS-F9-RTc"/>
+                                    <constraint firstAttribute="width" constant="235" id="5MS-F9-RTc"/>
                                     <constraint firstAttribute="height" constant="21" id="96t-E0-toD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余2天3小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEB-Eb-HAt">
-                                <rect key="frame" x="289" y="6" width="80" height="16"/>
+                                <rect key="frame" x="283" y="6" width="92" height="16"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="TQ1-en-rHv"/>
+                                    <constraint firstAttribute="width" constant="92" id="TQ1-en-rHv"/>
                                     <constraint firstAttribute="height" constant="16" id="rxg-sz-Whi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -39,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="U6Y-19-hhi">
-                                <rect key="frame" x="271" y="6" width="16" height="16"/>
+                                <rect key="frame" x="264" y="6" width="16" height="16"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16" id="hzM-v2-I9g"/>
@@ -53,8 +53,8 @@
                             <constraint firstItem="JhI-ff-hAN" firstAttribute="top" secondItem="Zn3-0K-Nmk" secondAttribute="top" constant="3" id="21o-1y-wt0"/>
                             <constraint firstItem="sEB-Eb-HAt" firstAttribute="top" secondItem="Zn3-0K-Nmk" secondAttribute="top" constant="6" id="5hk-GU-E4E"/>
                             <constraint firstAttribute="height" constant="27" id="97s-ST-TWU"/>
-                            <constraint firstItem="sEB-Eb-HAt" firstAttribute="leading" secondItem="U6Y-19-hhi" secondAttribute="trailing" constant="2" id="bVp-eZ-1K7"/>
-                            <constraint firstAttribute="trailing" secondItem="sEB-Eb-HAt" secondAttribute="trailing" constant="6" id="l6F-bP-me5"/>
+                            <constraint firstItem="sEB-Eb-HAt" firstAttribute="leading" secondItem="U6Y-19-hhi" secondAttribute="trailing" constant="3" id="bVp-eZ-1K7"/>
+                            <constraint firstAttribute="trailing" secondItem="sEB-Eb-HAt" secondAttribute="trailing" id="l6F-bP-me5"/>
                             <constraint firstItem="U6Y-19-hhi" firstAttribute="top" secondItem="Zn3-0K-Nmk" secondAttribute="top" constant="6" id="zCp-Cc-Php"/>
                             <constraint firstItem="JhI-ff-hAN" firstAttribute="leading" secondItem="Zn3-0K-Nmk" secondAttribute="leading" constant="8" id="zyu-h5-fjy"/>
                         </constraints>
@@ -85,7 +85,7 @@
                 <outlet property="activityTime" destination="sEB-Eb-HAt" id="g2z-NB-WVv"/>
                 <outlet property="activityTitle" destination="JhI-ff-hAN" id="TQb-dI-5le"/>
             </connections>
-            <point key="canvasLocation" x="383.5" y="394.5"/>
+            <point key="canvasLocation" x="383.5" y="394"/>
         </tableViewCell>
     </objects>
     <resources>

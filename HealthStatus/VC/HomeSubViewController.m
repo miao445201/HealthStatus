@@ -52,8 +52,8 @@
     [imageScrollView loadImages:imageArray withRollTime:3.0f optionalText:textArray];
     
     //初始化推荐图
-    self.activityImageArray = [[NSMutableArray alloc]initWithObjects:[UIImage imageNamed:@"IMG_0650.jpg"],[UIImage imageNamed:@"IMG_0653.jpg"],[UIImage imageNamed:@"IMG_0652.jpg"], nil];
-    self.activityTextArray = [[NSMutableArray alloc]initWithObjects:@"小岛探春之苏州夏令营",@"苏州阳澄湖半岛最盛大梨花开幕在即，你报名了吗",@"春天有约，相聚同里", nil];
+    self.activityImageArray = [[NSMutableArray alloc]initWithObjects:[UIImage imageNamed:@"IMG_0651.jpg"],[UIImage imageNamed:@"IMG_0653.jpg"],[UIImage imageNamed:@"IMG_0652.jpg"], nil];
+    self.activityTextArray = [[NSMutableArray alloc]initWithObjects:@"小岛探春之苏州夏令营",@"苏州阳澄湖半岛最盛大梨花节",@"春天有约，相聚同里", nil];
     self.activityTimeArray = [[NSMutableArray alloc] initWithObjects:@"剩余2天3小时",@"剩余7天16小时",@"剩余5天8小时", nil];
 }
 - (IBAction)diseaseButtonClicked:(id)sender {

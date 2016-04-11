@@ -85,6 +85,9 @@
 }
 
 -(void)obtainData {
+    self.currentDistance = 0;
+    self.currentEnergy = 0;
+    self.currentFootCount = 0;
     // Set your start and end date for your query of interest
     NSDate *startDate, *endDate;
     NSDate *date = [NSDate date]; //获得时间对象
@@ -127,7 +130,6 @@
                                                                             double footCount = [samples.quantity doubleValueForUnit:footUnit];
                                                                         self.currentFootCount += footCount;
                                                                     }
-                                                                    NSLog(@"我今天到现在一共走了%f步",self.currentFootCount);
                                                                     dispatch_async(dispatch_get_main_queue(), ^{
                                                                         self.footCountLabel.text = [NSString stringWithFormat:@"%d",                                                                    (int)self.currentFootCount];                                                                    });
                                                                     
@@ -150,7 +152,7 @@
                                                                         double distance = [samples.quantity doubleValueForUnit:distanceUnit];
                                                                         self.currentDistance += distance;
                                                                     }
-                                                                    NSLog(@"我今天到现在一共走了%f公里",self.currentDistance);
+                                                                    
                                                                     dispatch_async(dispatch_get_main_queue(), ^{
                                                                         self.distanceLabel.text = [NSString stringWithFormat:@"%.1f",                                                                    self.currentDistance];                                                                    });
                                                                     
@@ -172,7 +174,6 @@
                                                                         double energy = [samples.quantity doubleValueForUnit:energyUnit];
                                                                         self.currentEnergy += energy;
                                                                     }
-                                                                    NSLog(@"我今天到现在一共花费了%f能量",self.currentEnergy);
                                                                     dispatch_async(dispatch_get_main_queue(), ^{
                                                                          self.energyLabel.text = [NSString stringWithFormat:@"%d",                                                                    (int)self.currentEnergy];                                                                    });
                   
