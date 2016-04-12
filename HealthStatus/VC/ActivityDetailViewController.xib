@@ -62,20 +62,20 @@
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8lZ-Uz-NtV">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8lZ-Uz-NtV">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="IMG_0651.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="o2T-XA-emj">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
                             <animations/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="325" id="hZv-G2-Nul"/>
+                                <constraint firstAttribute="height" priority="250" constant="325" id="CNu-FB-fbn"/>
                             </constraints>
                         </imageView>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qAr-n0-qde">
                             <rect key="frame" x="0.0" y="325" width="375" height="183"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="【第一期】 一字影评接龙大赛" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqG-ms-axR">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="小岛探春之苏州夏令营" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqG-ms-axR">
                                     <rect key="frame" x="8" y="17" width="278" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -85,7 +85,7 @@
                                     <rect key="frame" x="13" y="55" width="16" height="16"/>
                                     <animations/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="哇啦秀（官方活动）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFZ-wL-fwK">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="丫头（非官方活动）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFZ-wL-fwK">
                                     <rect key="frame" x="44" y="52" width="161" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -96,7 +96,7 @@
                                     <rect key="frame" x="13" y="84" width="16" height="16"/>
                                     <animations/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="03月03日周四19:00 -- 04月03日周日23:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJZ-Lb-Tmq">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="04月04日周四19:00 -- 04月10日周日23:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJZ-Lb-Tmq">
                                     <rect key="frame" x="44" y="81" width="295" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -107,7 +107,7 @@
                                     <rect key="frame" x="13" y="113" width="16" height="16"/>
                                     <animations/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="线上活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD3-Lb-oIj">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="线下活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD3-Lb-oIj">
                                     <rect key="frame" x="44" y="110" width="161" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -118,8 +118,8 @@
                                     <rect key="frame" x="13" y="138" width="16" height="16"/>
                                     <animations/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="免费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiR-PI-HOx">
-                                    <rect key="frame" x="44" y="135" width="161" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="孩子4300元，大人3500元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiR-PI-HOx">
+                                    <rect key="frame" x="44" y="135" width="286" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,7 +132,7 @@
                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="96" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqW-3D-WjJ">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqW-3D-WjJ">
                                     <rect key="frame" x="270" y="157" width="45" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -153,11 +153,6 @@
                     </subviews>
                     <animations/>
                     <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstItem="o2T-XA-emj" firstAttribute="leading" secondItem="8lZ-Uz-NtV" secondAttribute="leading" id="aNl-zT-YQ3"/>
-                        <constraint firstItem="o2T-XA-emj" firstAttribute="top" secondItem="8lZ-Uz-NtV" secondAttribute="top" id="dUp-s0-OOa"/>
-                        <constraint firstAttribute="trailing" secondItem="o2T-XA-emj" secondAttribute="trailing" id="lBo-zv-JDH"/>
-                    </constraints>
                 </scrollView>
             </subviews>
             <animations/>

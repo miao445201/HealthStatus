@@ -106,8 +106,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    ActivityDetailViewController *activityDetail = [[ActivityDetailViewController alloc]init];
-//    [self.navigationController pushViewController:activityDetail animated:YES];
+    ActivityDetailViewController *activityDetail = [[ActivityDetailViewController alloc]init];
+    activityDetail.selectImage = self.activityImageArray[indexPath.section];
+    [self.navigationController pushViewController:activityDetail animated:YES];
 
 }
 

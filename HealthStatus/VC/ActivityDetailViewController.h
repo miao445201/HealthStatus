@@ -11,4 +11,5 @@
 
 @interface ActivityDetailViewController : BaseViewController<UIScrollViewDelegate,UINavigationControllerDelegate>
 
+@property (nonatomic,strong) UIImage *selectImage;
 @end
