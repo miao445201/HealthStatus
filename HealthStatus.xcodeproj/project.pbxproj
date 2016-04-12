@@ -16,6 +16,10 @@
 		0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A52E7F01C545F8800E25D61 /* LaunchScreen.storyboard */; };
 		0A52E8001C54608700E25D61 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52E7FE1C54608700E25D61 /* RootViewController.m */; };
 		0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A52E7FF1C54608700E25D61 /* RootViewController.xib */; };
+		0AE5B09F1CBC9DA000081238 /* InquiryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B09E1CBC9DA000081238 /* InquiryModel.m */; };
+		0AE5B0A11CBCBEE100081238 /* 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B0A01CBCBEE000081238 /* 04.jpg */; };
+		0AE5B0A41CBCC60100081238 /* symptomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B0A31CBCC60100081238 /* symptomModel.m */; };
+		0AE5B0A71CBCC69E00081238 /* accompanySymptom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B0A61CBCC69E00081238 /* accompanySymptom.m */; };
 		910EF4EF1CA288A30035B0AD /* InquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910EF4ED1CA288A30035B0AD /* InquiryViewController.m */; };
 		910EF4F01CA288A30035B0AD /* InquiryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910EF4EE1CA288A30035B0AD /* InquiryViewController.xib */; };
 		9116D2D71C9D1F3200D80A50 /* InspectionResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116D2D51C9D1F3200D80A50 /* InspectionResultViewController.m */; };
@@ -134,6 +138,13 @@
 		0A52E7FF1C54608700E25D61 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		0A52E8021C5460B200E25D61 /* HealthStatus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthStatus-Prefix.pch"; sourceTree = "<group>"; };
 		0A52E8031C54617700E25D61 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		0AE5B09D1CBC9DA000081238 /* InquiryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InquiryModel.h; sourceTree = "<group>"; };
+		0AE5B09E1CBC9DA000081238 /* InquiryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InquiryModel.m; sourceTree = "<group>"; };
+		0AE5B0A01CBCBEE000081238 /* 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04.jpg; sourceTree = "<group>"; };
+		0AE5B0A21CBCC60100081238 /* symptomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symptomModel.h; sourceTree = "<group>"; };
+		0AE5B0A31CBCC60100081238 /* symptomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = symptomModel.m; sourceTree = "<group>"; };
+		0AE5B0A51CBCC69E00081238 /* accompanySymptom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = accompanySymptom.h; sourceTree = "<group>"; };
+		0AE5B0A61CBCC69E00081238 /* accompanySymptom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = accompanySymptom.m; sourceTree = "<group>"; };
 		33054840A52F16142B3E54F9 /* Pods-HealthStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthStatus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthStatus/Pods-HealthStatus.debug.xcconfig"; sourceTree = "<group>"; };
 		910EF4EC1CA288A30035B0AD /* InquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InquiryViewController.h; sourceTree = "<group>"; };
 		910EF4ED1CA288A30035B0AD /* InquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InquiryViewController.m; sourceTree = "<group>"; };
@@ -405,6 +416,12 @@
 				91CCFB8B1C9F96C80043CCEC /* DiseaseModel.m */,
 				91CCFB841C9F93480043CCEC /* DiseaseDetailModel.h */,
 				91CCFB851C9F93480043CCEC /* DiseaseDetailModel.m */,
+				0AE5B09D1CBC9DA000081238 /* InquiryModel.h */,
+				0AE5B09E1CBC9DA000081238 /* InquiryModel.m */,
+				0AE5B0A21CBCC60100081238 /* symptomModel.h */,
+				0AE5B0A31CBCC60100081238 /* symptomModel.m */,
+				0AE5B0A51CBCC69E00081238 /* accompanySymptom.h */,
+				0AE5B0A61CBCC69E00081238 /* accompanySymptom.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -498,6 +515,7 @@
 		91FA37C51CA4E11500F8299E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0AE5B0A01CBCBEE000081238 /* 04.jpg */,
 				0A0F80571CBB4C8D00FB9BCC /* IMG_0650.JPG */,
 				0A0F80581CBB4C8D00FB9BCC /* IMG_0651.JPG */,
 				0A0F80591CBB4C8D00FB9BCC /* IMG_0652.JPG */,
@@ -626,6 +644,7 @@
 				91FA37F41CA4E11500F8299E /* Circle_32px.png in Resources */,
 				9116D2D81C9D1F3200D80A50 /* InspectionResultViewController.xib in Resources */,
 				0A0F805C1CBB4C8D00FB9BCC /* IMG_0651.JPG in Resources */,
+				0AE5B0A11CBCBEE100081238 /* 04.jpg in Resources */,
 				91846FEE1CB36BC1005D9424 /* Hearts Filled-20.png in Resources */,
 				916AD2D11CABFF7B003A00BF /* -dollar.png in Resources */,
 				9116D2E11C9D24A600D80A50 /* InspectionTableViewCell.xib in Resources */,
@@ -747,8 +766,11 @@
 				915A93941C576A0D003211EC /* FMDatabaseQueue.m in Sources */,
 				91E33DC71C994F7500FE46DA /* BaseMenuViewController.m in Sources */,
 				91E33DBF1C994BB700FE46DA /* SecondarySymptomViewController.m in Sources */,
+				0AE5B0A41CBCC60100081238 /* symptomModel.m in Sources */,
 				917F341F1C97EDB000D510B8 /* SymptomTableViewCell.m in Sources */,
+				0AE5B0A71CBCC69E00081238 /* accompanySymptom.m in Sources */,
 				91E33DCB1C9959CE00FE46DA /* SecondarySymptomTableViewCell.m in Sources */,
+				0AE5B09F1CBC9DA000081238 /* InquiryModel.m in Sources */,
 				91846FF41CB388EE005D9424 /* InquiryDetailViewController.m in Sources */,
 				91C32ABC1CA1450E00028B31 /* HomeSubViewController.m in Sources */,
 				91CCFB8C1C9F96C80043CCEC /* DiseaseModel.m in Sources */,
@@ -890,7 +912,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.miao.healthstatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "017ca8ae-be96-404e-bead-877caede263c";
+				PROVISIONING_PROFILE = "4c7a5772-10cb-4ac5-babb-46da9f41f1a6";
 			};
 			name = Debug;
 		};
@@ -916,7 +938,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.miao.healthstatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "017ca8ae-be96-404e-bead-877caede263c";
+				PROVISIONING_PROFILE = "4c7a5772-10cb-4ac5-babb-46da9f41f1a6";
 			};
 			name = Release;
 		};

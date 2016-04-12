@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface InquiryTableViewCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UILabel *inquiryTitleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *inquiryCorePromptLabel;
+@property (strong, nonatomic) IBOutlet UILabel *enjoyNumberLabel;
+@property (strong, nonatomic) IBOutlet UILabel *releaseTimeLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *inquiryImageView;
 
 @end

@@ -115,11 +115,11 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="-dollar.png" translatesAutoresizingMaskIntoConstraints="NO" id="j3e-3A-34u">
-                                    <rect key="frame" x="13" y="138" width="16" height="16"/>
+                                    <rect key="frame" x="13" y="142" width="16" height="16"/>
                                     <animations/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="孩子4300元，大人3500元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiR-PI-HOx">
-                                    <rect key="frame" x="44" y="135" width="286" height="21"/>
+                                    <rect key="frame" x="44" y="139" width="286" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
