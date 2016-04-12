@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -16,12 +16,14 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_hon_1px_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="pcB-Fg-YEJ">
                         <rect key="frame" x="15" y="42" width="305" height="1"/>
+                        <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="x1Q-FW-tj0"/>
                         </constraints>
                     </imageView>
                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-Oe-XYx">
                         <rect key="frame" x="200" y="22" width="108" height="3"/>
+                        <animations/>
                         <constraints>
                             <constraint firstAttribute="width" constant="108" id="HSW-aT-quT"/>
                         </constraints>
@@ -30,6 +32,7 @@
                     </progressView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冠心病" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkr-cS-vtA">
                         <rect key="frame" x="15" y="12" width="140" height="21"/>
+                        <animations/>
                         <constraints>
                             <constraint firstAttribute="width" constant="140" id="r6v-v1-DXd"/>
                             <constraint firstAttribute="height" constant="21" id="thJ-hd-vqd"/>
@@ -39,6 +42,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <animations/>
                 <constraints>
                     <constraint firstItem="pcB-Fg-YEJ" firstAttribute="top" secondItem="pkr-cS-vtA" secondAttribute="bottom" constant="9" id="47S-Ne-m9n"/>
                     <constraint firstItem="pcB-Fg-YEJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Daz-n5-s8w"/>
@@ -56,7 +60,9 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <animations/>
             <connections>
+                <outlet property="diseaseNameLabel" destination="pkr-cS-vtA" id="hGT-Dh-NFc"/>
                 <outlet property="diseaseProgressView" destination="pRn-Oe-XYx" id="Mcb-LH-pQL"/>
             </connections>
         </tableViewCell>

@@ -10,5 +10,6 @@
 
 @interface InspectionTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIProgressView *diseaseProgressView;
+@property (strong, nonatomic) IBOutlet UILabel *diseaseNameLabel;
 
 @end

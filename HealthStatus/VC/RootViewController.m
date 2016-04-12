@@ -24,7 +24,11 @@
 @property (strong, nonatomic) IBOutlet UIView *listView;
 @property (weak, nonatomic) IBOutlet UITableView *symptomTableview;
 @property (strong,nonatomic) NSArray *bodyArray;
+@property (strong,nonatomic) NSMutableArray *dataSymptomArray;
 @property (strong,nonatomic) NSMutableArray *selectSymptomArray;
+@property (strong,nonatomic) NSMutableDictionary *dataDictionary;
+
+
 @property (strong, nonatomic) NSString *selectBodyString;
 @property BOOL  forwardSelect;
 @property BOOL  bodySelect;
@@ -42,7 +46,23 @@
     self.title = @"疾病自查";
     [self setRightNaviItemWithTitle:@"列表查看" imageName:nil];
     self.bodyArray = [[NSArray alloc]initWithObjects:@"头",@"脑",@"眼",@"咽喉",@"鼻",@"耳",@"口",@"面部",@"颈",@"胸",@"腹",@"腰",@"臀",@"上肢",@"手部",@"肩部",@"下肢",@"大腿",@"膝部",@"小腿",@"足部",@"骨",@"生殖",@"盆腔",@"全身",@"肌肉",@"淋巴",@"血液血管",@"皮肤",@"心理",@"背部", nil];
-    self.selectSymptomArray = [[NSMutableArray alloc]initWithObjects:@"咳嗽",@"头痛",@"头晕",@"脸上长斑",@"牙龈出血",@"口干舌燥",@"扁桃体发炎",@"眼睑浮肿",@"干咳",@"耳后淋巴结肿大",@"咳痰",@"眼屎多", nil];
+    self.dataSymptomArray = [[NSMutableArray alloc]initWithObjects:@"咳嗽",@"头痛",@"头晕",@"脸上长斑",@"牙龈出血",@"口干舌燥",@"扁桃体发炎",@"眼睑浮肿",@"干咳",@"耳后淋巴结肿大",@"咳痰",@"眼屎多", nil];
+    
+    self.dataDictionary = [[NSMutableDictionary alloc]init];
+    [self.dataDictionary setValue:self.dataSymptomArray forKey:@"头"];
+    [self.dataDictionary setValue:[[NSMutableArray alloc]initWithObjects:@"咳嗽",@"心悸",@"胸痛",@"胸闷",@"呼吸困难",@"心率过缓",@"腰酸背痛",@"胸骨后疼痛",@"肩背痛",@"心慌气短", nil] forKey:@"胸"];
+    [self.dataDictionary setValue:[[NSMutableArray alloc]initWithObjects:@"咳嗽",@"心悸",@"胸痛",@"胸闷",@"呼吸困难",@"心率过缓",@"腰酸背痛",@"胸骨后疼痛",@"肩背痛",@"心慌气短", nil] forKey:@"腹"];
+    [self.dataDictionary setValue:[[NSMutableArray alloc]initWithObjects:@"性欲减退",@"尿道局部肿胀", nil] forKey:@"生殖"];
+    [self.dataDictionary setValue:[[NSMutableArray alloc]initWithObjects:@"四肢无力",@"肩膀酸痛",@"上肢麻痹",@"手热",@"四肢麻木",@"指甲异常",@"偏瘫",@"肢体冰凉", nil] forKey:@"上肢"];
+    [self.dataDictionary setValue:[[NSMutableArray alloc]initWithObjects:@"脚臭",@"小腿酸痛",@"水肿",@"大腿内侧红斑",@"大腿刺痛",@"打软腿",@"四肢抽搐",@"下肢无力", nil] forKey:@"下肢"];
+    [self.dataDictionary setValue:[[NSMutableArray alloc]initWithObjects:@"肩痛",@"肩关节活动受损", nil] forKey:@"肩部"];
+    [self.dataDictionary setValue:[[NSMutableArray alloc]initWithObjects:@"背部酸痛", nil] forKey:@"背部"];
+    [self.dataDictionary setValue:[[NSMutableArray alloc]initWithObjects:@"肛门疼痛",@"排便困难",@"直肠疼痛",@"骨盆痛",@"痔出血",@"排便时间过长",@"臀部酸痛", nil] forKey:@"臀"];
+
+
+    
+
+
     
     self.selectBodyString = nil;
     [self.view addSubview:self.listView];
@@ -123,6 +143,9 @@
         cell.backgroundColor = kWhiteColor;
         [self.bodyTableview reloadData];
         //数据请求操作，并旋转小菊花
+        
+        self.selectSymptomArray = [self.dataDictionary objectForKey:self.selectBodyString];
+        [self.symptomTableview reloadData];
     }
     if (tableView == self.symptomTableview) {
         //进入下一页面
@@ -164,7 +187,7 @@
             bodyPart = @"下肢";
             break;
         case 1006:
-            bodyPart = @"手部";
+            bodyPart = @"上肢";
             break;
         default:
             break;

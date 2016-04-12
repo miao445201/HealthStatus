@@ -13,5 +13,6 @@
 
 @property (nonatomic, copy) DiseaseDetailModel *diseaseInfo;
 @property (nonatomic, copy) NSString *diseaseName;
+@property  float progress;
 
 @end
