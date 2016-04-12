@@ -49,7 +49,7 @@
     UIImage *image3 = [UIImage imageNamed:@"03.jpg"];
     NSArray *imageArray = [[NSArray alloc]initWithObjects:image1,image2,image3,nil];
     NSArray *textArray = @[@"世界公认的最佳吃法 全球各地健康饮食清单",@"一个简单测试 预知心血管疾病风险",@"做不同的运动实际能消耗多少热量？"];
-    [imageScrollView loadImages:imageArray withRollTime:3.0f optionalText:textArray];
+    [imageScrollView loadImages:imageArray withRollTime:3 optionalText:textArray andContentMode:nil];
     
     //初始化推荐图
     self.activityImageArray = [[NSMutableArray alloc]initWithObjects:[UIImage imageNamed:@"IMG_0651.jpg"],[UIImage imageNamed:@"IMG_0653.jpg"],[UIImage imageNamed:@"IMG_0652.jpg"], nil];

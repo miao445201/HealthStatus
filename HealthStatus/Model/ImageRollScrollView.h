@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Masonry.h"
 
 @interface ImageRollScrollView : UIView <UIScrollViewDelegate>
 
-- (void)loadImages:(NSArray *)images withRollTime:(NSTimeInterval)time optionalText:(NSArray *)texts;
+- (void)loadImages:(NSArray *)images withRollTime:(NSTimeInterval)time optionalText:(NSArray *)texts andContentMode:(UIViewContentMode *)contentMode;
 
 @end

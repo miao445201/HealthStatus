@@ -7,6 +7,7 @@
 //
 
 #import "ImageRollScrollView.h"
+#import "Masonry.h"
 
 @interface ImageRollScrollView ()
 
@@ -32,7 +33,7 @@
     return self;
 }
 
-- (void)loadImages:(NSArray *)images withRollTime:(NSTimeInterval)time optionalText:(NSArray *)texts
+- (void)loadImages:(NSArray *)images withRollTime:(NSTimeInterval)time optionalText:(NSArray *)texts andContentMode:(UIViewContentMode *)contentMode
 {
     [self initSubViewsWithText:(texts != nil)];
     
@@ -65,7 +66,9 @@
     for (int i = 0; i < realImages.count; i++) {
         UIImageView *imageView = [[UIImageView alloc] initWithImage:realImages[i]];
         [self.scrollView addSubview:imageView];
-
+        if (contentMode) {
+            imageView.contentMode = *contentMode;
+        }
         [imageView makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.scrollView);
             if (leftView) {
@@ -105,7 +108,6 @@
     }
     point = self.scrollView.contentOffset;
     [self.scrollView setContentOffset:CGPointMake(point.x + pageWidth, point.y) animated:YES];
-
     
     if (self.pageControl.currentPage == self.pageControl.numberOfPages - 1) {
         self.pageControl.currentPage = 0;
@@ -113,13 +115,18 @@
         self.pageControl.currentPage++;
     }
     self.currentPage = self.pageControl.currentPage;
-    
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     [self.scrollTimer invalidate];
     self.scrollTimer = nil;
+    CGFloat pageWidth = self.frame.size.width;
+    CGPoint point = scrollView.contentOffset;
+    if (point.x == pageWidth * (self.images.count + 1)) {
+        [self.scrollView setContentOffset:CGPointMake(pageWidth, point.y)];
+    }
+    
 }
 
 
