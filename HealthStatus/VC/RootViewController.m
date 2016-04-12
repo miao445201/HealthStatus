@@ -42,7 +42,8 @@
     self.title = @"疾病自查";
     [self setRightNaviItemWithTitle:@"列表查看" imageName:nil];
     self.bodyArray = [[NSArray alloc]initWithObjects:@"头",@"脑",@"眼",@"咽喉",@"鼻",@"耳",@"口",@"面部",@"颈",@"胸",@"腹",@"腰",@"臀",@"上肢",@"手部",@"肩部",@"下肢",@"大腿",@"膝部",@"小腿",@"足部",@"骨",@"生殖",@"盆腔",@"全身",@"肌肉",@"淋巴",@"血液血管",@"皮肤",@"心理",@"背部", nil];
-    self.selectSymptomArray = [[NSMutableArray alloc]initWithObjects:@"咳嗽",@"头痛",@"头晕", nil];
+    self.selectSymptomArray = [[NSMutableArray alloc]initWithObjects:@"咳嗽",@"头痛",@"头晕",@"脸上长斑",@"牙龈出血",@"口干舌燥",@"扁桃体发炎",@"眼睑浮肿",@"干咳",@"耳后淋巴结肿大",@"咳痰",@"眼屎多", nil];
+    
     self.selectBodyString = nil;
     [self.view addSubview:self.listView];
     self.listView.hidden = YES;

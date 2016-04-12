@@ -10,6 +10,7 @@
 #import "MBProgressHUD.h"
 
 @interface ActivityDetailViewController ()<UINavigationControllerDelegate>
+@property (strong, nonatomic) IBOutlet UIView *attendView;
 @property (weak, nonatomic) IBOutlet UIView *introductionView;
 @property (weak, nonatomic) IBOutlet UITextView *detailTextView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -75,6 +76,10 @@
         make.height.equalTo(@1200);
     }];
     
+    [self.attendView makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.left.right.equalTo(self.view);
+        make.height.equalTo(@49);
+    }];
     
     [self.view layoutIfNeeded];
     CGFloat y = self.detailTextView.frame.origin.y + self.detailTextView.frame.size.height;
@@ -112,6 +117,19 @@
             make.height.equalTo(@(height));
             make.centerX.equalTo(self.view.centerX);
         }];
+        
+        [self.introductionView makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.posterImageView.bottom);
+            make.height.equalTo(@183);
+            make.width.equalTo(@(ScreenWidth));
+        }];
+        
+        [self.detailTextView makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.introductionView.bottom).offset(16);
+            make.width.equalTo(@(ScreenWidth - 16));
+            make.height.equalTo(@1200);
+        }];
+
 
     }
     else {
