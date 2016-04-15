@@ -16,6 +16,7 @@
 		0A52E7F21C545F8800E25D61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A52E7F01C545F8800E25D61 /* LaunchScreen.storyboard */; };
 		0A52E8001C54608700E25D61 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52E7FE1C54608700E25D61 /* RootViewController.m */; };
 		0A52E8011C54608700E25D61 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A52E7FF1C54608700E25D61 /* RootViewController.xib */; };
+		0AA0F3381CBF77F900853A7C /* HSNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0F3371CBF77F900853A7C /* HSNetWork.m */; };
 		0AE5B09F1CBC9DA000081238 /* InquiryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B09E1CBC9DA000081238 /* InquiryModel.m */; };
 		0AE5B0A11CBCBEE100081238 /* 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5B0A01CBCBEE000081238 /* 04.jpg */; };
 		0AE5B0A41CBCC60100081238 /* symptomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B0A31CBCC60100081238 /* symptomModel.m */; };
@@ -34,11 +35,6 @@
 		9119E3921CB67B80001BBAD9 /* Checkmark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9119E38F1CB67B80001BBAD9 /* Checkmark@3x.png */; };
 		914B272F1CAD22380037F25B /* Like-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 914B272C1CAD22380037F25B /* Like-50.png */; };
 		915A93841C57698B003211EC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 915A93831C57698B003211EC /* libsqlite3.tbd */; };
-		915A93911C576A0D003211EC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A93871C576A0D003211EC /* FMDatabase.m */; };
-		915A93921C576A0D003211EC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A93891C576A0D003211EC /* FMDatabaseAdditions.m */; };
-		915A93931C576A0D003211EC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A938B1C576A0D003211EC /* FMDatabasePool.m */; };
-		915A93941C576A0D003211EC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A938D1C576A0D003211EC /* FMDatabaseQueue.m */; };
-		915A93951C576A0D003211EC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A93901C576A0D003211EC /* FMResultSet.m */; };
 		91657CF51C96EF35000CCE22 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91657CF41C96EF35000CCE22 /* BaseViewController.m */; };
 		91657CFA1C96FE63000CCE22 /* BodyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91657CF81C96FE63000CCE22 /* BodyTableViewCell.m */; };
 		91657CFB1C96FE63000CCE22 /* BodyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91657CF91C96FE63000CCE22 /* BodyTableViewCell.xib */; };
@@ -138,6 +134,8 @@
 		0A52E7FF1C54608700E25D61 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		0A52E8021C5460B200E25D61 /* HealthStatus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthStatus-Prefix.pch"; sourceTree = "<group>"; };
 		0A52E8031C54617700E25D61 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		0AA0F3361CBF77F900853A7C /* HSNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSNetWork.h; sourceTree = "<group>"; };
+		0AA0F3371CBF77F900853A7C /* HSNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSNetWork.m; sourceTree = "<group>"; };
 		0AE5B09D1CBC9DA000081238 /* InquiryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InquiryModel.h; sourceTree = "<group>"; };
 		0AE5B09E1CBC9DA000081238 /* InquiryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InquiryModel.m; sourceTree = "<group>"; };
 		0AE5B0A01CBCBEE000081238 /* 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04.jpg; sourceTree = "<group>"; };
@@ -164,17 +162,6 @@
 		9119E38F1CB67B80001BBAD9 /* Checkmark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark@3x.png"; sourceTree = "<group>"; };
 		914B272C1CAD22380037F25B /* Like-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Like-50.png"; sourceTree = "<group>"; };
 		915A93831C57698B003211EC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		915A93861C576A0D003211EC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		915A93871C576A0D003211EC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		915A93881C576A0D003211EC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		915A93891C576A0D003211EC /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		915A938A1C576A0D003211EC /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		915A938B1C576A0D003211EC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		915A938C1C576A0D003211EC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		915A938D1C576A0D003211EC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		915A938E1C576A0D003211EC /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		915A938F1C576A0D003211EC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		915A93901C576A0D003211EC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		91657CF31C96EF35000CCE22 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		91657CF41C96EF35000CCE22 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		91657CF71C96FE63000CCE22 /* BodyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyTableViewCell.h; sourceTree = "<group>"; };
@@ -400,7 +387,8 @@
 		915A937D1C57690A003211EC /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				915A93851C576A0D003211EC /* fmdb */,
+				0AA0F3361CBF77F900853A7C /* HSNetWork.h */,
+				0AA0F3371CBF77F900853A7C /* HSNetWork.m */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -424,24 +412,6 @@
 				0AE5B0A61CBCC69E00081238 /* accompanySymptom.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		915A93851C576A0D003211EC /* fmdb */ = {
-			isa = PBXGroup;
-			children = (
-				915A93861C576A0D003211EC /* FMDatabase.h */,
-				915A93871C576A0D003211EC /* FMDatabase.m */,
-				915A93881C576A0D003211EC /* FMDatabaseAdditions.h */,
-				915A93891C576A0D003211EC /* FMDatabaseAdditions.m */,
-				915A938A1C576A0D003211EC /* FMDatabasePool.h */,
-				915A938B1C576A0D003211EC /* FMDatabasePool.m */,
-				915A938C1C576A0D003211EC /* FMDatabaseQueue.h */,
-				915A938D1C576A0D003211EC /* FMDatabaseQueue.m */,
-				915A938E1C576A0D003211EC /* FMDB.h */,
-				915A938F1C576A0D003211EC /* FMResultSet.h */,
-				915A93901C576A0D003211EC /* FMResultSet.m */,
-			);
-			path = fmdb;
 			sourceTree = "<group>";
 		};
 		91657CF61C96FE0E000CCE22 /* SymCheckList */ = {
@@ -760,10 +730,10 @@
 				91657CFA1C96FE63000CCE22 /* BodyTableViewCell.m in Sources */,
 				9116D2E01C9D24A600D80A50 /* InspectionTableViewCell.m in Sources */,
 				91E0AAAF1CB654B400BDA91D /* CollectionViewController.m in Sources */,
+				0AA0F3381CBF77F900853A7C /* HSNetWork.m in Sources */,
 				91657CF51C96EF35000CCE22 /* BaseViewController.m in Sources */,
 				91A616EB1CB791B7005923D5 /* AttendActivityViewController.m in Sources */,
 				91FA37BE1CA4CFEB00F8299E /* ImageRollScrollView.m in Sources */,
-				915A93941C576A0D003211EC /* FMDatabaseQueue.m in Sources */,
 				91E33DC71C994F7500FE46DA /* BaseMenuViewController.m in Sources */,
 				91E33DBF1C994BB700FE46DA /* SecondarySymptomViewController.m in Sources */,
 				0AE5B0A41CBCC60100081238 /* symptomModel.m in Sources */,
@@ -780,13 +750,9 @@
 				91E5249F1CA3C0EC00088ECD /* ActivityTableViewCell.m in Sources */,
 				91C32AC71CA1663300028B31 /* MyHealthViewController.m in Sources */,
 				9116D2D71C9D1F3200D80A50 /* InspectionResultViewController.m in Sources */,
-				915A93911C576A0D003211EC /* FMDatabase.m in Sources */,
-				915A93931C576A0D003211EC /* FMDatabasePool.m in Sources */,
 				916AD2BA1CABCAB4003A00BF /* ActivityDetailViewController.m in Sources */,
-				915A93951C576A0D003211EC /* FMResultSet.m in Sources */,
 				910EF4EF1CA288A30035B0AD /* InquiryViewController.m in Sources */,
 				0A52E8001C54608700E25D61 /* RootViewController.m in Sources */,
-				915A93921C576A0D003211EC /* FMDatabaseAdditions.m in Sources */,
 				91CCFB891C9F95690043CCEC /* BaseModel.m in Sources */,
 				91C32AC21CA165F200028B31 /* ActivityViewController.m in Sources */,
 				9116D2E91C9D35C900D80A50 /* DiseaseViewController.m in Sources */,

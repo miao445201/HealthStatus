@@ -7,6 +7,8 @@
 //
 
 #import "RootViewController.h"
+#import "HSNetWork.h"
+
 
 @interface RootViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *headButton;
@@ -143,7 +145,7 @@
         cell.backgroundColor = kWhiteColor;
         [self.bodyTableview reloadData];
         //数据请求操作，并旋转小菊花
-        
+        [self obtainData];
         self.selectSymptomArray = [self.dataDictionary objectForKey:self.selectBodyString];
         [self.symptomTableview reloadData];
     }
@@ -153,6 +155,14 @@
         secondSymVC.mainSymptom = self.selectSymptomArray[indexPath.row];
         [self.navigationController pushViewController:secondSymVC animated:YES];
     }
+}
+
+- (void)obtainData {
+    [[HSNetWork shareManager]requestWithMethod:GET WithPath:@"/get" WithParams:nil WithSuccessBlock:^(NSDictionary *dict) {
+        //NSLog(@"%@",dict);
+    } WithFailureBlock:^(NSError *error) {
+        //NSLog(@"%@",error);
+    }];
 }
 
 - (BOOL)StateForCellSelect:(NSIndexPath *)indexPath {

@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "DiseaseDetailModel.h"
+#import "Mantle.h"
 
-@interface DiseaseModel : NSObject
+@interface DiseaseModel : NSObject<MTLJSONSerializing>
 
 @property (nonatomic, copy) DiseaseDetailModel *diseaseInfo;
 @property (nonatomic, copy) NSString *diseaseName;
