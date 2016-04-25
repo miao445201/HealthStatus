@@ -209,11 +209,13 @@
 #pragma IBAction Methods 
 - (IBAction)myCollectionButtonClicked:(id)sender {
     CollectionViewController *collectionVC = [[CollectionViewController alloc]init];
+    collectionVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:collectionVC animated:YES];
 }
 
 - (IBAction)myActivityButtonClicked:(id)sender {
     AttendActivityViewController *attendVC = [[AttendActivityViewController alloc] init];
+    attendVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:attendVC animated:YES];
 }
 
