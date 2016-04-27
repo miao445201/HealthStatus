@@ -894,7 +894,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.miao.healthstatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4c7a5772-10cb-4ac5-babb-46da9f41f1a6";
+				PROVISIONING_PROFILE = "1f50cf8f-34a4-4c28-a6af-a946def05a89";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -920,7 +921,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.miao.healthstatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4c7a5772-10cb-4ac5-babb-46da9f41f1a6";
+				PROVISIONING_PROFILE = "1f50cf8f-34a4-4c28-a6af-a946def05a89";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
